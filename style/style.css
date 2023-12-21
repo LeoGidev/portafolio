@@ -1,0 +1,18 @@
+
+    /* Estilos adicionales */
+    .navbar.transparent {
+        background-color: transparent !important;
+        border-bottom: none;
+        box-shadow: none;
+    }
+    .navbar.transparent .navbar-brand,
+    .navbar.transparent .navbar-nav .nav-link {
+        color: #ffffff; /* Letras blancas */
+    }
+    .navbar.fixed {
+        background-color: #000000; /* Fondo negro */
+    }
+    .navbar.fixed .navbar-brand,
+    .navbar.fixed .navbar-nav .nav-link {
+        color: #ffffff; /* Letras blancas */
+    }
