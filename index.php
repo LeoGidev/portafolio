@@ -57,17 +57,21 @@
               <div class="card-body">
               <h4 class="card-title">Leo Gimenez</h4>
               <p class="card-text">Programador</p>
-              <a href="#" >GitHub</a>
+              <ul class="nav nav-pills flex-column">
+                <a href="#" >GitHub</a>
+                <a href="#" >Correo</a>
+              </ul>
               </div>
             </div>
           </div>
         
           <div class="col-4 col-lg-8">    
             <h4>Sobre mí<h4>
-            <p>................................</p>
-            <p>................................</p>
-            <p>................................</p>
-            <p>................................</p>
+            <h6>Hola, soy Leo Gimenez 👋</h6>
+            <p>Actualmente estoy dedicado y enfocado integramente en el desarrollo de aplicaciones con distintas tecnologías.
+               Durante siete años trabajé para una empresa de internet, tiempo en el cual participé de diferentes proyectos tanto en programación 
+               web como en desarrollos de tecnologías IoT y automatizaciones de tareas. He decidido dar el salto y dedicarme enteramente a este apasionante 
+               campo laboral.</p>
           </div>
         </div>
       </div>
