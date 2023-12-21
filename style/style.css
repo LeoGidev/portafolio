@@ -3,15 +3,15 @@
     .navbar.transparent {
         /*background-color: transparent !important;*/
        
-        background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0)) !important;
+        background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)) !important;
           
           
         border-bottom: none;
         box-shadow: none;
     }
     /* Estilo para el efecto hover */
-.navbar .nav-link:hover {
-    color: rgb(0, 0, 0); /* Color al pasar el cursor */
+    a:hover {
+    color: rgb(207, 207, 207) !important; /* Color al pasar el cursor */
     transition: color 0.3s ease; /* Transición suave del cambio de color */
 }
 

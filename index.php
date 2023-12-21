@@ -37,8 +37,12 @@
     </ul>
   </div>
 </nav>
+
         <div class='container-fluid' style="height: 200px; background-image: url('img/portada.png');">
         <h1>Hola</h1>
+        </div>
+        <div class='container-fluid' style="height: 60px; background-color: black;">
+        
         </div>
         
     </header>
