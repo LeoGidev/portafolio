@@ -27,3 +27,14 @@
     .navbar.fixed .navbar-nav .nav-link {
         color: #ffffff; /* Letras blancas */
     }
+    #cubridor{
+        height: 200px; 
+        position: absolute; 
+        top: 0; 
+        bottom: 0;
+         left: 0; 
+         right: 0; 
+         /*background:linear-gradient(to right, rgba(0, 0, 0, 0.7), transparent), linear-gradient(to left, rgba(0, 0, 0, 0.7), transparent); */
+         background:linear-gradient(to right, rgba(0, 0, 0, 0.9),rgba(0,0,0,0), rgba(0,0,0,0),rgba(0,0,0,0), rgba(0,0,0,0.9)); 
+         pointer-events: none;
+    }

@@ -21,7 +21,7 @@
 <body>
     <header>
         <!-- Barra de navegación -->
-<nav class="navbar navbar-expand-lg fixed-top transparent">
+<nav class="navbar navbar-expand-sm navbar-dark fixed-top transparent">
   <a class="navbar-brand" href="#">Leo Developer</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -39,7 +39,8 @@
 </nav>
 
         <div class='container-fluid' style="height: 200px; background-image: url('img/portada.png');">
-        <h1>Hola</h1>
+        <div id='cubridor'></div>
+        
         </div>
         <div class='container-fluid' style="height: 60px; background-color: black;">
         
