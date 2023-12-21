@@ -14,12 +14,41 @@
   <link rel="shortcut icon" href="img/icono.png" type="image/x-icon">
   
   <link rel="stylesheet" href="style/style.css">
+
+  
   </head>
 <body>
     <header>
-        <div class='container-fluid'>
-            <img src='img/portada.png' width=100%>
+        <!-- Barra de navegación -->
+<nav class="navbar navbar-expand-lg fixed-top transparent">
+  <a class="navbar-brand" href="#">Mi Sitio</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#seccion1">Sección 1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#seccion2">Sección 2</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+        <div class='container-fluid' style="background-image: url('img/portada.png');">
+            
         </div>
         
     </header>
+    <script>
+  // Cambio de color de la barra de navegación al hacer scroll
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > $('.container-fluid').height()) {
+      $('.navbar').removeClass('transparent').addClass('fixed');
+    } else {
+      $('.navbar').removeClass('fixed').addClass('transparent');
+    }
+  });
+</script>
 </body>
