@@ -17,8 +17,8 @@
   </head>
 <body>
     <header>
-        <div class='jumbotron text-center'>
-            <img src='portada.jpg'>
+        <div class='container-fluid'>
+            <img src='img/portada.png' width=100%>
         </div>
         
     </header>
