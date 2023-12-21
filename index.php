@@ -17,6 +17,9 @@
   </head>
 <body>
     <header>
+        <div class='jumbotron text-center'>
+            <img src='portada.png'>
+        </div>
         
     </header>
 </body>
