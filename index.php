@@ -48,22 +48,29 @@
         
     </header>
     <section id='Sobremi'>
-      <div class="container" id="perfil">
+    
+      <div class="container-fluid">
         <div class="row">
-          <h4>Leo Gimenez<h4>
-          <p>................................</p>
-          <p>................................</p>
-          <p>................................</p>
-          <p>................................</p>
+          <div class= col-4 id="perfil">
+            <div class="card" style="width:400px">
+              <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+              <div class="card-body">
+              <h4 class="card-title">Leo Gimenez</h4>
+              <p class="card-text">Programador</p>
+              <a href="#" >GitHub</a>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-4 col-lg-8">    
+            <h4>Sobre mí<h4>
+            <p>................................</p>
+            <p>................................</p>
+            <p>................................</p>
+            <p>................................</p>
+          </div>
         </div>
       </div>
-   
-    
-    <h4>Sobre mí<h4>
-    <p>................................</p>
-    <p>................................</p>
-    <p>................................</p>
-    <p>................................</p>
     </setcion>
     <section id='Teconologías'>
     <h4>Teconologías<h4>
