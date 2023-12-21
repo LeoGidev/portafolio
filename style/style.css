@@ -1,10 +1,21 @@
 
     /* Estilos adicionales */
     .navbar.transparent {
-        background-color: transparent !important;
+        /*background-color: transparent !important;*/
+       
+        background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0)) !important;
+          
+          
         border-bottom: none;
         box-shadow: none;
     }
+    /* Estilo para el efecto hover */
+.navbar .nav-link:hover {
+    color: rgb(0, 0, 0); /* Color al pasar el cursor */
+    transition: color 0.3s ease; /* Transición suave del cambio de color */
+}
+
+      
     .navbar.transparent .navbar-brand,
     .navbar.transparent .navbar-nav .nav-link {
         color: #ffffff; /* Letras blancas */

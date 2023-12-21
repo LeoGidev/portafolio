@@ -29,7 +29,7 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link" href="#seccion1">Sobre mí</a>
+        <a class="nav-link" href="#Sobremi">Sobre mí</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#seccion2">Proyectos</a>
@@ -42,6 +42,35 @@
         </div>
         
     </header>
+    <section id='Perfil'>
+    <h4>Leo Gimenez<h4>
+    <p>................................</p>
+    <p>................................</p>
+    <p>................................</p>
+    <p>................................</p>
+    </setcion>
+    <section id='Sobremi'>
+    <h4>Sobre mí<h4>
+    <p>................................</p>
+    <p>................................</p>
+    <p>................................</p>
+    <p>................................</p>
+    </setcion>
+    <section id='Teconologías'>
+    <h4>Teconologías<h4>
+    <p>................................</p>
+    <p>................................</p>
+    <p>................................</p>
+    <p>................................</p>
+    </setcion>
+    <section id='Proyectos'>
+    <h4>Proyectos<h4>
+    <p>................................</p>
+    <p>................................</p>
+    <p>................................</p>
+    <p>................................</p>
+    </setcion>
+
     <script>
   // Cambio de color de la barra de navegación al hacer scroll
   $(window).scroll(function() {
