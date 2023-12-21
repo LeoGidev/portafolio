@@ -18,7 +18,7 @@
 <body>
     <header>
         <div class='jumbotron text-center'>
-            <img src='portada.png'>
+            <img src='portada.jpg'>
         </div>
         
     </header>
