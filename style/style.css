@@ -69,3 +69,12 @@
          background-color: #363636;
          transition: background-color 1s ease;
      }
+/* Estilo para que el ul adopte el color de fondo del contenedor */
+ul.list-group.list-group-flush {
+    background-color: transparent;
+}
+
+/* Estilo para los elementos <li> */
+ul.list-group.list-group-flush li {
+    color:#ffffff;
+}

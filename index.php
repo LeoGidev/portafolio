@@ -57,9 +57,9 @@
               <div class="card-body">
                 <h4 class="card-title">Leo Gimenez</h4>
                 <p class="card-text">Programador</p>
-                <ul class="nav nav-pills flex-column">
-                  <li><a href="https://github.com/LeoGidev" >github.com/LeoGidevGitHub</a></li>
-                  <li><a href="#" >leogimenez.dev@gmail.com</a></li>
+                <ul class="list-group list-group-flush">
+                  <li class='list-group-item'><a href="https://github.com/LeoGidev" target='_blank' >GitHub</a></li>
+                  <li class='list-group-item'>Correo: leogimenez.dev@gmail.com</li>
                 </ul>
               </div>
             </div>
