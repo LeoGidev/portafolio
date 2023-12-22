@@ -47,7 +47,7 @@
         </div>
         
     </header>
-    <section id='Sobremi'>
+    <section>
     
       <div class="container-fluid">
         <div class="row">
@@ -65,13 +65,17 @@
             </div>
           </div>
         
-          <div class="col-4 col-lg-8">    
-            <h4>Sobre mí<h4>
-            <h6>Hola, soy Leo Gimenez 👋</h6>
-            <p>Actualmente estoy dedicado y enfocado integramente en el desarrollo de aplicaciones con distintas tecnologías.
-               Durante siete años trabajé para una empresa de internet, tiempo en el cual participé de diferentes proyectos tanto en programación 
-               web como en desarrollos de tecnologías IoT y automatizaciones de tareas. He decidido dar el salto y dedicarme enteramente a este apasionante 
-               campo laboral.</p>
+          <div class="col-4 col-lg-8">   
+            <div class='card' id='Sobremi'>
+              <div class='card-body'>
+                <h4 class='card-title'>Sobre mí<h4>
+                <h6>Hola, soy Leo Gimenez 👋</h6>
+                <p class='card-text'>Actualmente estoy dedicado y enfocado integramente en el desarrollo de aplicaciones con distintas tecnologías.
+                Durante siete años trabajé para una empresa de internet, tiempo en el cual participé de diferentes proyectos tanto en programación 
+                web como en desarrollos de tecnologías IoT y automatizaciones de tareas. He decidido dar el salto y dedicarme enteramente a este apasionante 
+                campo laboral.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -101,5 +105,12 @@
       $('.navbar').removeClass('fixed').addClass('transparent');
     }
   });
+  document.addEventListener('DOMContentLoaded', function() {
+    var links = document.querySelectorAll('a');
+    links.forEach(function(link) {
+        link.setAttribute('target', '_blank');
+    });
+});
+
 </script>
 </body>
