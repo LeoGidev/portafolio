@@ -52,12 +52,13 @@
       <div class="container-fluid">
         <div class="row">
           <div class='col-12 col-sm-8 col-md-4 col-lg-4' >
-            <div class="card" id='perfil'>
-              <img class="card-img-top rounded" src="img/logo.jpg" alt="Card image">
+            <div class="card" id='perfil' >
+              <img class="card-img-top "  src="img/logo.jpg" alt="Card image">
               <div class="card-body">
-                <h4 class="card-title">Leo Gimenez</h4>
-                <p class="card-text">Programador</p>
-                <ul id='Datos'>
+                <h3>Leo Gimenez</h3>
+                <h5 class="card-text">Programador</h5>
+                <h6> Datos Personales </h6>
+                <ul class= card-text id='Datos'>
                   <li>Ciudad: Mendoza</li>
                   <li>Pais: Argentina</li>
                   <li>Correo: leogimenez.dev@gmail.com</li>

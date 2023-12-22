@@ -54,6 +54,8 @@
        background-color: #212121;
        margin-top: 30px;
        color:#ffffff;
+       border-radius: 20px; 
+       overflow: hidden !important;
     }
     #perfil:hover{
         background-color: #2b2b2b;
@@ -72,6 +74,12 @@
 
 
 /* Datos */
+h6 {
+    padding-top:20px;
+    border-bottom: 2px solid #7c7c7c;  
+    padding-bottom: 10px;           
+}
+
 #Datos{
     color:#ffffff;
     list-style-type: none;
