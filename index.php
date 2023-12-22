@@ -70,7 +70,7 @@
               <div class='card-body'>
                 <h4 class='card-title'>Sobre mí<h4>
                 <h6>Hola, soy Leo Gimenez 👋</h6>
-                <p class='card-text'>Actualmente estoy dedicado y enfocado integramente en el desarrollo de aplicaciones con distintas tecnologías.
+                <p class='card-text'>Actualmente estoy dedicado y enfocado integramente al desarrollo de aplicaciones con distintas tecnologías.
                 Durante siete años trabajé para una empresa de internet, tiempo en el cual participé de diferentes proyectos tanto en programación 
                 web como en desarrollos de tecnologías IoT y automatizaciones de tareas. He decidido dar el salto y dedicarme enteramente a este apasionante 
                 campo laboral.</p>
@@ -111,6 +111,11 @@
         link.setAttribute('target', '_blank');
     });
 });
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    $('body').css('background-position', 'center ' + (-scroll/10) + 'px');
+});
+
 
 </script>
 </body>
