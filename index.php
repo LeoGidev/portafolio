@@ -65,28 +65,37 @@
             </div>
           </div>
         
-          <div class="col-4 col-lg-8">   
-            <div class='card' id='Sobremi'>
-              <div class='card-body'>
-                <h4 class='card-title'>Sobre mí<h4>
-                <h6>Hola, soy Leo Gimenez 👋</h6>
-                <p class='card-text'>Actualmente estoy dedicado y enfocado integramente al desarrollo de aplicaciones con distintas tecnologías.
-                Durante siete años trabajé para una empresa de internet, tiempo en el cual participé de diferentes proyectos tanto en programación 
-                web como en desarrollos de tecnologías IoT y automatizaciones de tareas. He decidido dar el salto y dedicarme enteramente a este apasionante 
-                campo laboral.</p>
+          <div class="col-4 col-lg-8"> 
+            <div class='row'> 
+              <div class=col-12>
+                <div class='card' id='Sobremi'>
+                  <div class='card-body'>
+                    <h4 class='card-title'>Sobre mí<h4>
+                    <h6>Hola, soy Leo Gimenez 👋</h6>
+                    <p class='card-text'>Actualmente estoy dedicado y enfocado integramente al desarrollo de aplicaciones con distintas tecnologías.
+                    Durante siete años trabajé para una empresa de internet en donde alcancé el puesto de supervisor de laboratorio de Electronica. Durante este 
+                    tiempo participé en diferentes proyectos tanto en programación 
+                    web como en desarrollos de tecnologías IoT y automatizaciones de tareas. He decidido dar el salto y dedicarme enteramente a este apasionante 
+                    campo laboral.</p>
+                  </div>
+                </div>
               </div>
             </div>
+          
+       
+              <div class='row'>
+                <div class='col-12'>
+                  <h4>Teconologías<h4>
+                  <p>................................</p>
+                </div>
+              </div>
+           
           </div>
         </div>
       </div>
    
-    </setcion>
-    <section id='Teconologías'>
-    <h4>Teconologías<h4>
-    <p>................................</p>
-    <p>................................</p>
-    <p>................................</p>
-    <p>................................</p>
+    
+    
     </setcion>
     <section id='Proyectos'>
     <h4>Proyectos<h4>
