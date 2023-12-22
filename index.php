@@ -114,12 +114,7 @@
       $('.navbar').removeClass('fixed').addClass('transparent');
     }
   });
-  document.addEventListener('DOMContentLoaded', function() {
-    var links = document.querySelectorAll('a');
-    links.forEach(function(link) {
-        link.setAttribute('target', '_blank');
-    });
-});
+  
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
     $('body').css('background-position', 'center ' + (-scroll/10) + 'px');
