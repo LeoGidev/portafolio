@@ -51,16 +51,16 @@
     
       <div class="container-fluid">
         <div class="row">
-          <div class= col-4 id="perfil">
-            <div class="card" style="width:400px">
-              <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+          <div class= col-4 >
+            <div class="card" id='perfil' style="width:400px">
+              <img class="card-img-top" src="img/logo.jpg" alt="Card image">
               <div class="card-body">
-              <h4 class="card-title">Leo Gimenez</h4>
-              <p class="card-text">Programador</p>
-              <ul class="nav nav-pills flex-column">
-                <a href="#" >GitHub</a>
-                <a href="#" >Correo</a>
-              </ul>
+                <h4 class="card-title">Leo Gimenez</h4>
+                <p class="card-text">Programador</p>
+                <ul class="nav nav-pills flex-column">
+                  <li><a href="https://github.com/LeoGidev" >github.com/LeoGidevGitHub</a></li>
+                  <li><a href="#" >leogimenez.dev@gmail.com</a></li>
+                </ul>
               </div>
             </div>
           </div>
@@ -75,6 +75,7 @@
           </div>
         </div>
       </div>
+   
     </setcion>
     <section id='Teconologías'>
     <h4>Teconologías<h4>
