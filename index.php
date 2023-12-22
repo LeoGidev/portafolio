@@ -51,8 +51,8 @@
     
       <div class="container-fluid">
         <div class="row">
-          <div class= col-4 >
-            <div class="card" id='perfil' style="width:400px">
+          <div class='col-12 col-sm-8 col-md-4 col-lg-4' >
+            <div class="card" id='perfil'>
               <img class="card-img-top" src="img/logo.jpg" alt="Card image">
               <div class="card-body">
                 <h4 class="card-title">Leo Gimenez</h4>
@@ -65,7 +65,7 @@
             </div>
           </div>
         
-          <div class="col-4 col-lg-8"> 
+          <div class="col-12 col-sm-12 col-md-8 col-lg-8"> 
             <div class='row'> 
               <div class=col-12>
                 <div class='card' id='Sobremi'>

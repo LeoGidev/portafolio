@@ -71,7 +71,7 @@
      }
 /* Estilo para que el ul adopte el color de fondo del contenedor */
 ul.list-group.list-group-flush {
-    background-color: transparent;
+    background-color: transparent !important;
 }
 
 /* Estilo para los elementos <li> */
