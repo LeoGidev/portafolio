@@ -53,13 +53,16 @@
         <div class="row">
           <div class='col-12 col-sm-8 col-md-4 col-lg-4' >
             <div class="card" id='perfil'>
-              <img class="card-img-top" src="img/logo.jpg" alt="Card image">
+              <img class="card-img-top rounded" src="img/logo.jpg" alt="Card image">
               <div class="card-body">
                 <h4 class="card-title">Leo Gimenez</h4>
                 <p class="card-text">Programador</p>
-                <ul class="list-group list-group-flush">
-                  <li class='list-group-item'><a href="https://github.com/LeoGidev" target='_blank' >GitHub</a></li>
-                  <li class='list-group-item'>Correo: leogimenez.dev@gmail.com</li>
+                <ul id='Datos'>
+                  <li>Ciudad: Mendoza</li>
+                  <li>Pais: Argentina</li>
+                  <li>Correo: leogimenez.dev@gmail.com</li>
+                  <li><a href="https://github.com/LeoGidev" target='_blank' >GitHub</a></li>
+                  
                 </ul>
               </div>
             </div>
