@@ -90,9 +90,13 @@
               <div class='row'>
                 <div class='col-12'>
                   <div class='card' id='tecnologias'>
-                  <h4>Teconologías<h4>
-                  <p>................................</p>
-                 </div>
+                    <h4 class='card-title'>Teconologías:<h4>
+                      <div class='card-body'>
+                    
+                      <div class='row'><div class='col-12 col-sm-4 col-md-4 col-lg-2'><div class='card'><img class='card-img-top'src='img/piton.png'><div class='card-body'><p>Python</p></div></div></div></div>
+
+                      </div>
+                  </div>
                 </div>
               </div>
            
