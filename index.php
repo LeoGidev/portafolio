@@ -89,8 +89,10 @@
        
               <div class='row'>
                 <div class='col-12'>
+                  <div class='card' id='tecnologias'>
                   <h4>Teconologías<h4>
                   <p>................................</p>
+                 </div>
                 </div>
               </div>
            
