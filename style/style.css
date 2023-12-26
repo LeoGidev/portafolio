@@ -87,15 +87,33 @@
         border-radius: 10px;
         overflow: hidden !important;
         border-color: #ffffff;
-        
-        
-
-     }
+        }
      #tecnologias:hover{
          background-color: #363636;
          transition: background-color 1s ease;
      }
 
+     #proyectos{
+        transition: background-color 1s ease;
+        background-color: #212121;
+        margin-top: 30px;
+        color:#ffffff;
+        border-radius: 20px; 
+        overflow: hidden !important;
+     }
+     #proyectos:hover{
+         background-color: #363636;
+         transition: background-color 1s ease;
+     }
+     .proyect{
+        background-color:#212121 !important;
+        
+        border-radius: 10px;
+        overflow: hidden !important;
+        border-color: #ffffff;
+        }
+
+     
 
 /* Datos */
 h6 {

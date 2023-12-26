@@ -139,13 +139,13 @@
                       <div class='card-header'>
                         <a class='card-link' data-toggle='collapse' href='#colla1'>Sistema Web administrador de Tareas</a>
                       </div>
-                      <div id='colla1' class='collapse show' parent='#pro1'>
+                      <div id='colla1' class='collapse' parent='#pro1'>
                         <div>
                         <p>Con el fin de administrar las tareas del personal acargo se desarrolla un eficiiente sistema de control y asignación de tareas 
                           el cual permite elegir sitio y sub tareas que el personal debe ir compliendo. Todos los datos se guardan en una base de datos la cual 
                           permite obtener estadísticas de rendimiento.
                         </p>
-                        <h6>Tecnologías usadas</h6>
+                        <h6>Tecnologías usadas:</h6>
                         <ul>
                         <li>PHP</li>
                         <li>HTML</li>
