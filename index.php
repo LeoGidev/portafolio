@@ -89,14 +89,21 @@
        
               <div class='row'>
                 <div class='col-12'>
-                  <div class='card' id='tecnologias'>
+                  <div class='conatiner-fluid'>
+                    <div class='card' id='tecnologias'>
                     
-                      <div class='card-body'>
-                      <h4 class='card-title'>Tecnologías:<h4>
+                        <div class='card-body'>
+                          <h4 class='card-title'>Tecnologías:<h4>
                     
-                      <div class='row'><div class='col-12 col-sm-4 col-md-4 col-lg-3'><div class='media p-3 border tecn'><img class='card-img-topmr-3 mt-3 rounded-circle'src='img/piton.png' style='width:40px ;'><div class='media-body'><p class='card-body'>Python</p></div></div></div></div>
+                          <div class='row'>
+                            <div class='col-12 col-sm-6 col-md-12 col-lg-6 col-xl-4'><div class='media p-3 border tecn'><img class='mr-3 mt-3 rounded-circle'src='img/piton.png' style='width:40px ;'><div class='media-body'><p class='card-body'>Python</p></div></div></div>
+                            <div class='col-12 col-sm-6 col-md-12 col-lg-6 col-xl-4'><div class='media p-3 border tecn'><img class='mr-3 mt-3 rounded-circle'src='img/piton.png' style='width:40px ;'><div class='media-body'><p class='card-body'>PHP</p></div></div></div>
+                          </div>
+                        
 
-                      </div>
+
+                        </div>
+                    </div>
                   </div>
                 </div>
               </div>
