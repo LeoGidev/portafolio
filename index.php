@@ -126,10 +126,15 @@
     
     
     </setcion>
-    <section >
+    <section class='mt-3'>
     <div class='container-fluid'>
-      <div class='card' id='proyectos'>
-      <h4>Proyectos<h4>
+      <div class='row'>
+        <div class='col-12'>
+          <div class='card' id='proyectos'>
+            <h4>Proyectos<h4></div>
+          </div>
+        </div>
+      </div>
       
     </setcion>
     </div>
