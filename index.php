@@ -128,13 +128,21 @@
     </setcion>
     <section class='mt-3'>
     <div class='container-fluid'>
-      <div class='row'>
-        <div class='col-12'>
-          <div class='card' id='proyectos'>
-            <h4>Proyectos<h4></div>
-          </div>
+      <div class='card' id='proyectos'>
+        <div class='card-body'>
+          <h6 class='card-title'>Proyectos</h6>
+            <p>Con el paso del tiempo he realizado muchos proyectos de progamación entre los cuales destaco los siguientes:</p>
+              <div class='row'>
+                <div class='col-12 col-xl-3'>
+                  <div id='pro1'>
+                    <div class='card'><div class='card-header'><></div>
+                  </div>
+
+                </div>
+              </div>
         </div>
       </div>
+    </div>
       
     </setcion>
     </div>
