@@ -78,6 +78,18 @@
         background-color: #212121;
         margin-top: 30px;
         color:#ffffff;
+        border-radius: 20px; 
+        overflow: hidden !important;
+     }
+     .tecn{
+        background-color:#212121 !important;
+        padding: 15px;
+        border-radius: 10px;
+        overflow: hidden !important;
+        border-color: #ffffff;
+        
+        
+
      }
      #tecnologias:hover{
          background-color: #363636;

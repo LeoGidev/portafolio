@@ -90,10 +90,11 @@
               <div class='row'>
                 <div class='col-12'>
                   <div class='card' id='tecnologias'>
-                    <h4 class='card-title'>Tecnologías:<h4>
-                      <div class='card-body'>
                     
-                      <div class='row'><div class='col-12 col-sm-4 col-md-4 col-lg-2'><div class='card'><img class='card-img-top'src='img/piton.png'><div class='card-body'><p>Python</p></div></div></div></div>
+                      <div class='card-body'>
+                      <h4 class='card-title'>Tecnologías:<h4>
+                    
+                      <div class='row'><div class='col-12 col-sm-4 col-md-4 col-lg-3'><div class='media p-3 border tecn'><img class='card-img-topmr-3 mt-3 rounded-circle'src='img/piton.png' style='width:40px ;'><div class='media-body'><p class='card-body'>Python</p></div></div></div></div>
 
                       </div>
                   </div>
