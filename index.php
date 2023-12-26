@@ -133,19 +133,19 @@
           <h6 class='card-title'>Proyectos</h6>
             <p>Con el paso del tiempo he realizado muchos proyectos de progamación entre los cuales destaco los siguientes:</p>
               <div class='row'>
-                <div class='col-12 col-xl-3'>
-                  <div id='pro1'>
-                    <div class='card'>
-                      <div class='card-header'>
+                <div class='col-12 col-xl-3 '>
+                  <div id='pro1' >
+                    <div class='card proyect'>
+                      <div class='card-header '>
                         <a class='card-link' data-toggle='collapse' href='#colla1'>Sistema Web administrador de Tareas</a>
                       </div>
-                      <div id='colla1' class='collapse' parent='#pro1'>
+                      <div id='colla1' class='collapse ' parent='#pro1'>
                         <div>
-                        <p>Con el fin de administrar las tareas del personal acargo se desarrolla un eficiiente sistema de control y asignación de tareas 
+                        <p class='m-3'>Con el fin de administrar las tareas del personal a cargo se desarrolla un eficiente sistema de control y asignación de tareas 
                           el cual permite elegir sitio y sub tareas que el personal debe ir compliendo. Todos los datos se guardan en una base de datos la cual 
-                          permite obtener estadísticas de rendimiento.
+                          nos ayuda a obtener estadísticas de rendimiento y tomar decisiones.
                         </p>
-                        <h6>Tecnologías usadas:</h6>
+                        <h6 class='ml-3'>Tecnologías usadas:</h6>
                         <ul>
                         <li>PHP</li>
                         <li>HTML</li>
