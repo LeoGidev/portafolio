@@ -137,7 +137,7 @@
                   <div id='pro1'>
                     <div class='card'>
                       <div class='card-header'>
-                        <a class='card-link' data-toggle='collapse' href='#colla1'></a>
+                        <a class='card-link' data-toggle='collapse' href='#colla1'>Sistema Web administrador de Tareas</a>
                       </div>
                       <div id='colla1' class='collapse show' parent='#pro1'>
 
