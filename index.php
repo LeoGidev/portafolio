@@ -32,7 +32,7 @@
         <a class="nav-link" href="#Sobremi">Sobre mí</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#seccion2">Proyectos</a>
+        <a class="nav-link" href="#proyectos">Proyectos</a>
       </li>
     </ul>
   </div>
@@ -126,13 +126,13 @@
     
     
     </setcion>
-    <section id='Proyectos'>
-    <h4>Proyectos<h4>
-    <p>................................</p>
-    <p>................................</p>
-    <p>................................</p>
-    <p>................................</p>
+    <section >
+    <div class='container-fluid'>
+      <div class='card' id='proyectos'>
+      <h4>Proyectos<h4>
+      
     </setcion>
+    </div>
 
     <script>
   // Cambio de color de la barra de navegación al hacer scroll
