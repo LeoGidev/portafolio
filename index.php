@@ -139,7 +139,7 @@
                       <div class='card-header'>
                         <a class='card-link' data-toggle='collapse' href='#colla1'></a>
                       </div>
-                      <div class=''>
+                      <div id='colla1' class='collapse show' parent='#pro1'>
 
                       </div>
 
