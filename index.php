@@ -135,7 +135,15 @@
               <div class='row'>
                 <div class='col-12 col-xl-3'>
                   <div id='pro1'>
-                    <div class='card'><div class='card-header'><></div>
+                    <div class='card'>
+                      <div class='card-header'>
+                        <a class='card-link' data-toggle='collapse' href='#colla1'></a>
+                      </div>
+                      <div class=''>
+
+                      </div>
+
+                    </div>
                   </div>
 
                 </div>
