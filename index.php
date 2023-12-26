@@ -106,9 +106,9 @@
                             <div class='col-12 col-sm-6 col-md-12 col-lg-6 col-xl-4'><div class='media p-3 border tecn'><img class='mr-3 mt-3 rounded-circle'src='img/3.png' style='width:40px ;'><div class='media-body'><p class='card-body'>GitHub</p></div></div></div>
                             <div class='col-12 col-sm-6 col-md-12 col-lg-6 col-xl-4'><div class='media p-3 border tecn'><img class='mr-3 mt-3 rounded-circle'src='img/3.png' style='width:40px ;'><div class='media-body'><p class='card-body'>Git</p></div></div></div>
                             <div class='col-12 col-sm-6 col-md-12 col-lg-6 col-xl-4'><div class='media p-3 border tecn'><img class='mr-3 mt-3 rounded-circle'src='img/3.png' style='width:40px ;'><div class='media-body'><p class='card-body'>Arduino</p></div></div></div>
-
-
-
+                            <div class='col-12 col-sm-6 col-md-12 col-lg-6 col-xl-4'><div class='media p-3 border tecn'><img class='mr-3 mt-3 rounded-circle'src='img/3.png' style='width:40px ;'><div class='media-body'><p class='card-body'>C++</p></div></div></div>
+                            <div class='col-12 col-sm-6 col-md-12 col-lg-6 col-xl-4'><div class='media p-3 border tecn'><img class='mr-3 mt-3 rounded-circle'src='img/3.png' style='width:40px ;'><div class='media-body'><p class='card-body'>Esp32</p></div></div></div>
+                            <div class='col-12 col-sm-6 col-md-12 col-lg-6 col-xl-4'><div class='media p-3 border tecn'><img class='mr-3 mt-3 rounded-circle'src='img/3.png' style='width:40px ;'><div class='media-body'><p class='card-body'>Selenium</p></div></div></div>
                           </div>
                         
 
