@@ -96,8 +96,19 @@
                           <h4 class='card-title'>Tecnologías:<h4>
                     
                           <div class='row'>
-                            <div class='col-12 col-sm-6 col-md-12 col-lg-6 col-xl-4'><div class='media p-3 border tecn'><img class='mr-3 mt-3 rounded-circle'src='img/piton.png' style='width:40px ;'><div class='media-body'><p class='card-body'>Python</p></div></div></div>
-                            <div class='col-12 col-sm-6 col-md-12 col-lg-6 col-xl-4'><div class='media p-3 border tecn'><img class='mr-3 mt-3 rounded-circle'src='img/piton.png' style='width:40px ;'><div class='media-body'><p class='card-body'>PHP</p></div></div></div>
+                            <div class='col-12 col-sm-6 col-md-12 col-lg-6 col-xl-4'><div class='media p-3 border tecn'><img class='mr-3 mt-3 rounded-circle'src='img/1.png' style='width:40px ;'><div class='media-body'><p class='card-body'>Python</p></div></div></div>
+                            <div class='col-12 col-sm-6 col-md-12 col-lg-6 col-xl-4'><div class='media p-3 border tecn'><img class='mr-3 mt-3 rounded-circle'src='img/2.png' style='width:40px ;'><div class='media-body'><p class='card-body'>PHP</p></div></div></div>
+                            <div class='col-12 col-sm-6 col-md-12 col-lg-6 col-xl-4'><div class='media p-3 border tecn'><img class='mr-3 mt-3 rounded-circle'src='img/3.png' style='width:40px ;'><div class='media-body'><p class='card-body'>HTML</p></div></div></div>
+                            <div class='col-12 col-sm-6 col-md-12 col-lg-6 col-xl-4'><div class='media p-3 border tecn'><img class='mr-3 mt-3 rounded-circle'src='img/4.png' style='width:40px ;'><div class='media-body'><p class='card-body'>JavaScript</p></div></div></div>
+                            <div class='col-12 col-sm-6 col-md-12 col-lg-6 col-xl-4'><div class='media p-3 border tecn'><img class='mr-3 mt-3 rounded-circle'src='img/5.png' style='width:40px ;'><div class='media-body'><p class='card-body'>CSS</p></div></div></div>
+                            <div class='col-12 col-sm-6 col-md-12 col-lg-6 col-xl-4'><div class='media p-3 border tecn'><img class='mr-3 mt-3 rounded-circle'src='img/3.png' style='width:40px ;'><div class='media-body'><p class='card-body'>BOOSTRAP</p></div></div></div>
+                            <div class='col-12 col-sm-6 col-md-12 col-lg-6 col-xl-4'><div class='media p-3 border tecn'><img class='mr-3 mt-3 rounded-circle'src='img/3.png' style='width:40px ;'><div class='media-body'><p class='card-body'>MySQL</p></div></div></div>
+                            <div class='col-12 col-sm-6 col-md-12 col-lg-6 col-xl-4'><div class='media p-3 border tecn'><img class='mr-3 mt-3 rounded-circle'src='img/3.png' style='width:40px ;'><div class='media-body'><p class='card-body'>GitHub</p></div></div></div>
+                            <div class='col-12 col-sm-6 col-md-12 col-lg-6 col-xl-4'><div class='media p-3 border tecn'><img class='mr-3 mt-3 rounded-circle'src='img/3.png' style='width:40px ;'><div class='media-body'><p class='card-body'>Git</p></div></div></div>
+                            <div class='col-12 col-sm-6 col-md-12 col-lg-6 col-xl-4'><div class='media p-3 border tecn'><img class='mr-3 mt-3 rounded-circle'src='img/3.png' style='width:40px ;'><div class='media-body'><p class='card-body'>Arduino</p></div></div></div>
+
+
+
                           </div>
                         
 
