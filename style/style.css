@@ -49,7 +49,7 @@
     a{
         text-decoration: none;
     }
-    #perfil{
+    .contenido{
         transition: background-color 1s ease;
        background-color: #212121;
        margin-top: 30px;
@@ -57,30 +57,11 @@
        border-radius: 20px; 
        overflow: hidden !important;
     }
-    #perfil:hover{
+    .contenido:hover{
         background-color: #2b2b2b;
         transition: background-color 1s ease;
     }
-    #Sobremi{
-        transition: background-color 1s ease;
-        background-color: #212121;
-        margin-top: 30px;
-        color:#ffffff;
-        border-radius: 20px; 
-        overflow: hidden !important;
-     }
-     #Sobremi:hover{
-         background-color: #363636;
-         transition: background-color 1s ease;
-     }
-     #tecnologias{
-        transition: background-color 1s ease;
-        background-color: #212121;
-        margin-top: 30px;
-        color:#ffffff;
-        border-radius: 20px; 
-        overflow: hidden !important;
-     }
+    
      .tecn{
         background-color:#212121 !important;
         
@@ -88,10 +69,7 @@
         overflow: hidden !important;
         border-color: #ffffff;
         }
-     #tecnologias:hover{
-         background-color: #363636;
-         transition: background-color 1s ease;
-     }
+   
 
      #proyectos{
         transition: background-color 1s ease;
