@@ -138,10 +138,10 @@
                     <!--tarjeta de modulo de proyecto individual-->
                     <div class='card proyect'>
                       <div class='card-header ' style="text-align: center;">
-                        <a class='card-title tool' data-toggle='collapse' href='#colla1' title="ver mas" style="color: #ffffff; font-weight: bold;">Sistema administrador de Tareas   ▼</a>
+                        <a class='toggleLink card-title tool' data-toggle='collapse' href='#colla1' title="ver mas" style="color: #ffffff; font-weight: bold;" onclick="toggleIconAndTitle(this)">Sistema administrador de Tareas   ▼</a>
                         
                       </div>
-                      <a data-toggle="collapse" href="#colla1" title="ver mas"><img class="card-img-top" src="img/pro1.jpg"></a>
+                      <a data-toggle="collapse toggleLink" href="#colla1" title="ver mas"><img class="card-img-top" src="img/pro1.jpg" ></a>
                       <div id='colla1' class='collapse' parent='#pro1'>
                         <div id='subpro1'>
                           <!--boton de video-->
@@ -233,6 +233,18 @@ $(window).scroll(function() {
     var scroll = $(window).scrollTop();
     $('body').css('background-position', 'center ' + (-scroll/10) + 'px');
 });
+
+//funcion que cambia iconos y titles 
+function toggleIconAndTitle(clickedElement) {
+        var toggleLink = clickedElement.previousElementSibling; // Obtener el enlace anterior al elemento clickeado
+        if (toggleLink.innerText.includes("▼")) {
+            toggleLink.innerText = toggleLink.innerText.replace("▼", "▲");
+            toggleLink.title = "ver menos";
+        } else {
+            toggleLink.innerText = toggleLink.innerText.replace("▲", "▼");
+            toggleLink.title = "ver mas";
+        }
+    }
 
 
 
