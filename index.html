@@ -234,17 +234,7 @@ $(window).scroll(function() {
     $('body').css('background-position', 'center ' + (-scroll/10) + 'px');
 });
 
-//funcion que cambia iconos y titles 
-function toggleIconAndTitle(clickedElement) {
-        var toggleLink = clickedElement.previousElementSibling; // Obtener el enlace anterior al elemento clickeado
-        if (toggleLink.innerText.includes("▼")) {
-            toggleLink.innerText = toggleLink.innerText.replace("▼", "▲");
-            toggleLink.title = "ver menos";
-        } else {
-            toggleLink.innerText = toggleLink.innerText.replace("▲", "▼");
-            toggleLink.title = "ver mas";
-        }
-    }
+
 
 
 
