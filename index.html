@@ -633,28 +633,37 @@ $(window).scroll(function() {
     $('body').css('background-position', 'center ' + (-scroll/10) + 'px');
 });
 
-<script>
+
 document.addEventListener('DOMContentLoaded', function() {
-    // Selecciona todos los elementos con la clase "collapse"
-    var elementos = document.querySelectorAll('.collapse');
+    // Obtener todos los botones
+    var botones = document.querySelectorAll('.tool');
+    console.log("entramos al bucle");
+    console.log(botones);
+    // Añadir evento click a cada botón
+    botones.forEach(function(boton) {
+      console.log("aqui");
+      console.log(boton);
+        boton.addEventListener('click', function() {
+          console.log("click en");
+          console.log(boton);
+            // Obtener el contenido asociado al botón
+            var contenido = boton.nextElementSibling;
+            console.log(contenido);
 
-    // Agrega un evento "click" a cada elemento
-    elementos.forEach(function(elemento) {
-        elemento.addEventListener('show.bs.collapse', function() {
-            // Busca todos los elementos con la clase "collapse show"
-            var elementosMostrados = document.querySelectorAll('.collapse.show');
-            
-            // Itera sobre cada elemento mostrado y remueve la clase "show"
-            elementosMostrados.forEach(function(mostrado) {
-                mostrado.classList.remove('show');
-            });
+            // Obtener todos los contenidos que están visibles
+      //      var contenidosVisibles = document.querySelectorAll('.contenido.show');
 
-            // Añade la clase "show" solo al elemento que está activo
-            elemento.classList.add('show');
+            // Ocultar todos los contenidos visibles
+            //contenidosVisibles.forEach(function(c) {
+               // c.classList.remove('show');
+           // });
+
+            // Mostrar el contenido asociado al botón
+            //contenido.classList.add('show');
         });
-    });
+   });
 });
-</script
+
 
 
 
