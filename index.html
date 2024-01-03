@@ -138,10 +138,10 @@
                     <!--tarjeta de modulo de proyecto individual-->
                     <div class='card proyect mt-3'>
                       <div class='card-header ' style="text-align: center;">
-                        <a class='card-title tool' data-toggle='collapse' href='#colla1' title="ver mas" style="color: #000000; font-weight: bold;">Sistema administrador de Tareas   ▼</a>
+                        <a class='card-title tool'  href='#colla1' title="ver mas" style="color: #000000; font-weight: bold;">Sistema administrador de Tareas   ▼</a>
                         
                       </div>
-                      <a data-toggle="collapse" href="#colla1" title="ver mas"><img class="card-img-top" src="img/pro1.jpg" ></a>
+                      <a href="#colla1" title="ver mas"><img class="card-img-top" src="img/pro1.jpg" ></a>
                       <div id='colla1' class='collapse' parent='#pro1'>
                         <div>
                           <!--boton de video-->
@@ -652,10 +652,17 @@ document.addEventListener('DOMContentLoaded', function() {
            console.log(idelement);
            var ideextract = idelement.substring(1);
            console.log(ideextract);
-           var cambia = document.getElementById(ideextract);
-           console.log(cambia);
-           var estado = cambia.getAttribute('class');
+           var ele = document.getElementById(ideextract);
+           console.log(ele);
+           var estado = ele.getAttribute('class');
            console.log(estado);
+           if(estado.includes('show')){
+            ele.classList.remove('show');
+            console.log("esta en show");
+            
+           }else{
+            ele.classList.add('show');
+           }
 
             //Obtener todos los contenidos que están visibles
             var contenidosVisibles = document.querySelectorAll('.show');

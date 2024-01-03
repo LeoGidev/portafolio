@@ -94,3 +94,9 @@ h6 {
 #Datos a {
     color:#0f0f0f !important;
 }
+
+/* Agregar una transición lenta para el colapso */
+.collapse {
+    transition: height 0.5s ease-in-out; /* 0.5s es la duración de la transición; puedes ajustarla según tus necesidades */
+}
+
