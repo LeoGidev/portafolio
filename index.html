@@ -607,9 +607,12 @@
     </setcion>
 
     <footer>
-      <div class="card">
+      <div class="card mt-3">
         <div class="card-header">
           <h6 class="card-title"> Si necesitas de mis servicios, no dudes en contactarme.</h6>
+        </div>
+        <div class="card-body"><p class="card-text">Contacto: leogimenez@gmail.com </p>
+          <button class="btn-whatsapp" onclick="enviarWhatsApp()">Enviar mensaje por WhatsApp</button>
         </div>
 
       </div>
@@ -632,6 +635,12 @@ $(window).scroll(function() {
     var scroll = $(window).scrollTop();
     $('body').css('background-position', 'center ' + (-scroll/10) + 'px');
 });
+
+function enviarWhatsApp() {
+  var telefono = '2615700'; // Reemplaza con tu número de teléfono
+  var mensaje = encodeURIComponent('Hola, quiero contactarte.'); // Mensaje predefinido
+  window.open('https://api.whatsapp.com/send?phone=' + telefono + '&text=' + mensaje, '_blank');
+}
 
 
 
