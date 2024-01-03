@@ -143,20 +143,20 @@
                       </div>
                       <a data-toggle="collapse" href="#colla1" title="ver mas"><img class="card-img-top" src="img/pro1.jpg" ></a>
                       <div id='colla1' class='collapse' parent='#pro1'>
-                        <div id='subpro1'>
+                        <div>
                           <!--boton de video-->
-                          <a data-toggle="collapse" href="#sub1-col" style="color: rgb(5, 5, 5);" title="click aquí"><h6 class="ml-3">Video</h6></a>
-                          <div id="sub1-col" class="collapse show" parent="#subpro1">Video</div>
+                          <h6 class="ml-3" style="color: rgb(0, 0, 0);">Video</h6>
+                          <div class="ml-3">Video</div>
                           <!--boton de Descripcion-->
-                          <a  data-toggle='collapse' href='#sub2-col' style='color:rgb(0, 0, 0);'><h6 class="ml-3">Descripción</h6></a>
-                          <div id='sub2-col' class='collapse show' parent='#subpro1'>
+                          <h6 class="ml-3" style="color: rgb(0, 0, 0);">Descripción</h6></a>
+                          <div>
                             <p class='m-3'>Con el fin de administrar las tareas del personal a cargo se desarrolla un eficiente sistema de control y asignación de tareas 
                             el cual permite elegir sitio y sub tareas que el personal debe ir compliendo. Todos los datos se guardan en una base de datos la cual 
                               nos ayuda a obtener estadísticas de rendimiento y tomar decisiones.
                             </p>
                           </div>
                           <!-- boton de tecnologias-->
-                          <a data-toggle="collapse" href="#sub3-col" style="color: rgb(0, 0, 0);" title="click Aquí"><h6 class='ml-3'>Tecnologías usadas</h6></a>
+                          <h6 class='ml-3' style="color: rgb(0, 0, 0);">Tecnologías usadas</h6></a>
                           <div id='sub3-col' class='collapse show' parent='#subpro1'>
                             <ul>
                             <li>PHP</li>
@@ -377,13 +377,13 @@
                       </div>
                       <a data-toggle="collapse" href="#colla1c" title="ver mas"><img class="card-img-top" src="img/pro1.jpg" ></a>
                       <div id='colla1c' class='collapse' parent='#pro1c'>
-                        <div id='subpro1c'>
+                        <div>
                           <!--boton de video-->
-                          <a data-toggle="collapse" href="#sub1-colc" style="color: rgb(5, 5, 5);" title="click aquí"><h6 class="ml-3">Video</h6></a>
-                          <div id="sub1-colc" class="collapse show" parent="#subpro1c">Video</div>
+                          <h6 class="ml-3">Video</h6>
+                          <div class="ml-3">Video</div>
                           <!--boton de Descripcion-->
-                          <a  data-toggle='collapse' href='#sub2-colc' style='color:rgb(0, 0, 0);'><h6 class="ml-3">Descripción</h6></a>
-                          <div id='sub2-colc' class='collapse show' parent='#subpro1c'>
+                          <h6 class="ml-3" style="color:rgb(0, 0, 0);">Descripción</h6>
+                          <div>
                             <p class='m-3'>
                               Con el fin de mejorar las pruebas que el personal realizaba respecto a la velocidad en el cliente, se realiza una app en Python capaza de medir 
                               el ancho de banda en la conexión de un dispositivo RaspberryPi. Este sistema tambien reporta a un grupo de telegram específico el resultado de las pruebas 
@@ -391,8 +391,8 @@
                             </p>
                           </div>
                           <!-- boton de tecnologias-->
-                          <a data-toggle="collapse" href="#sub3-colc" style="color: rgb(0, 0, 0);" title="click Aquí"><h6 class='ml-3'>Tecnologías usadas</h6></a>
-                          <div id='sub3-colc' class='collapse show' parent='#subpro1c'>
+                          <h6 class='ml-3' style="color: rgb(0, 0, 0);">Tecnologías usadas</h6>
+                          <div>
                             <ul>
                             <li>Python</li>
                             <li>Speedcli</li>
@@ -647,16 +647,17 @@ document.addEventListener('DOMContentLoaded', function() {
           console.log("click en");
           console.log(boton);
             // Obtener el contenido asociado al botón
-            var contenido = boton.nextElementSibling;
-            console.log(contenido);
+            //var contenido = boton.nextElementSibling;
+           // console.log(contenido);
 
-            // Obtener todos los contenidos que están visibles
-      //      var contenidosVisibles = document.querySelectorAll('.contenido.show');
+            //Obtener todos los contenidos que están visibles
+            var contenidosVisibles = document.querySelectorAll('.show');
+            console.log(contenidosVisibles);
 
             // Ocultar todos los contenidos visibles
-            //contenidosVisibles.forEach(function(c) {
-               // c.classList.remove('show');
-           // });
+            contenidosVisibles.forEach(function(c) {
+               c.classList.remove('show');
+           });
 
             // Mostrar el contenido asociado al botón
             //contenido.classList.add('show');
