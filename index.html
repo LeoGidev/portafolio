@@ -659,13 +659,13 @@ $(window).scroll(function() {
     var scroll = $(window).scrollTop();
     $('body').css('background-position', 'center ' + (-scroll/10) + 'px');
 });
-//////////////////////////////////////////////////////////////////////////////////////////////////////
+//enviar whatsapp
 function enviarWhatsApp() {
   var telefono = '+542615008072'; 
   var mensaje = encodeURIComponent('Hola, quiero contactarte.'); // Mensaje predefinido
   window.open('https://api.whatsapp.com/send?phone=' + telefono + '&text=' + mensaje, '_blank');
 }
-/////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Cambia los estilos
 document.getElementById('menuBtn').addEventListener('click', function() {
   document.getElementById('sideMenu').classList.toggle('show');
 });
@@ -675,11 +675,11 @@ const options = document.querySelectorAll('.option');
 options.forEach(option => {
   option.addEventListener('click', function() {
     const color = this.getAttribute('data-color');
-    console.log(color);
     
-    // Obtén todos los elementos con la clase 'contenido'
+    
+    // Obtiene todos los elementos con la clase 'contenido'
     var contenidos = document.querySelectorAll('.contenido');
-    console.log(contenidos);
+   
     
     // Itera sobre cada elemento 'contenido' y aplica los cambios
     contenidos.forEach(function(contenido) {
