@@ -108,3 +108,58 @@ h6 {
     text-decoration: none;
   }
 
+ 
+  
+  #menuBtn {
+    position: fixed;
+    top: 100px;
+    right: 10px;
+    z-index: 1000;
+  }
+  
+  #sideMenu {
+    position: fixed;
+    top: 110;
+    right: -200px;
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    transition: 0.3s;
+  }
+  
+  #sideMenu.show {
+    right: 0;
+  }
+  
+  .option {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+
+  
+  .contenido.dark {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .contenido.red {
+    background-color: red;
+    color: #fff;
+  }
+  
+  .contenido.pink {
+    background-color: pink;
+    color: #fff;
+  }
+  
+  .contenido.light {
+    background-color: #fff;
+    color: #333;
+  }
+  
+
