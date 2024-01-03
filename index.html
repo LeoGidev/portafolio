@@ -530,21 +530,21 @@
                       </div>
                       <a data-toggle="collapse" href="#colla2d" title="ver mas"><img class="card-img-top" src="img/pro1.jpg" ></a>
                       <div id='colla2d' class='collapse' parent='#pro1d'>
-                        <div id='subpro2d'>
+                        <div>
                           <!--boton de video-->
-                          <a data-toggle="collapse" href="#sub1-col2d" style="color: rgb(5, 5, 5);" title="click aquí"><h6 class="ml-3">Video</h6></a>
-                          <div id="sub1-col2d" class="collapse show" parent="#subpro2d">Video</div>
+                          <h6 class="ml-3" style="color: rgb(0, 0, 0);">Video</h6>
+                          <div class="ml-3">Video</div>
                           <!--boton de Descripcion-->
-                          <a  data-toggle='collapse' href='#sub2-col2d' style='color:rgb(0, 0, 0);'><h6 class="ml-3">Descripción</h6></a>
-                          <div id='sub2-col2d' class='collapse show' parent='#subpro2d'>
+                          <h6 class="ml-3" style="color: rgb(0, 0, 0);">Descripción</h6>
+                          <div>
                             <p class='m-3'>Desarrollé una app en lenguaje Python que puede crear una serie de etiquetas con datos obtenidos a partir de un documento EXCEL.
                               En concreto, la app toma los valores de ciertas columnas del excel y crea etiquetas gráficas con el fondo seleccionado.
                               Esto sirvió para automatizar la tarea de crear miles de etiquetas distintas.
                             </p>
                           </div>
                           <!-- boton de tecnologias-->
-                          <a data-toggle="collapse" href="#sub3-col2d" style="color: rgb(0, 0, 0);" title="click Aquí"><h6 class='ml-3'>Tecnologías usadas</h6></a>
-                          <div id='sub3-col2d' class='collapse show' parent='#subpro2d'>
+                          <h6 class='ml-3' style="color: rgb(0, 0, 0);">Tecnologías usadas</h6></a>
+                          <div>
                             <ul>
                             <li>Python</li>
                             <li>Tkinter</li>
@@ -566,20 +566,20 @@
                       </div>
                       <a data-toggle="collapse" href="#colla3d" title="ver mas"><img class="card-img-top" src="img/pro1.jpg" ></a>
                       <div id='colla3d' class='collapse' parent='#pro1c'>
-                        <div id='subpro3d'>
+                        <div>
                           <!--boton de video-->
-                          <a data-toggle="collapse" href="#sub1-col3d" style="color: rgb(5, 5, 5);" title="click aquí"><h6 class="ml-3">Video</h6></a>
-                          <div id="sub1-col3d" class="collapse show" parent="#subpro3d">Video</div>
+                          <h6 class="ml-3">Video</h6>
+                          <div class="ml-3">Video</div>
                           <!--boton de Descripcion-->
-                          <a  data-toggle='collapse' href='#sub2-col3d' style='color:rgb(0, 0, 0);'><h6 class="ml-3">Descripción</h6></a>
-                          <div id='sub2-col3d' class='collapse show' parent='#subpro3d'>
+                          <h6 class="ml-3" style="color: rgb(0, 0, 0);">Descripción</h6>
+                          <div>
                             <p class='m-3'>Se crea y configura una página web informativa para un club de Futsal Local (YPLEF Futsal). Por razones económicas se encuentra en un host
                               gratuito. Aún así, la misma cuenta con un sistema de notificaciones vía telegram en el caso de que algún cliente necesite contactar a dicho club.
                             </p>
                           </div>
                           <!-- boton de tecnologias-->
-                          <a data-toggle="collapse" href="#sub3-col3d" style="color: rgb(0, 0, 0);" title="click Aquí"><h6 class='ml-3'>Tecnologías usadas</h6></a>
-                          <div id='sub3-col3d' class='collapse show' parent='#subpro3d'>
+                          <h6 class='ml-3' style="color: rgb(0, 0, 0);">Tecnologías usadas</h6>
+                          <div>
                             <ul>
                             <li>HTML</li>
                             <li>PHP</li>
@@ -637,22 +637,22 @@ $(window).scroll(function() {
 document.addEventListener('DOMContentLoaded', function() {
     // Obtener todos los botones
     var botones = document.querySelectorAll('.tool');
-    console.log("entramos al bucle");
-    console.log(botones);
+    //console.log("entramos al bucle");
+    //console.log(botones);
     // Añadir evento click a cada botón
     botones.forEach(function(boton) {
-      console.log("aqui");
-      console.log(boton);
+      //console.log("aqui");
+      //console.log(boton);
         boton.addEventListener('click', function() {
-          console.log("click en");
-          console.log(boton);
+          //console.log("click en");
+         // console.log(boton);
             // Obtener el contenido asociado al botón
             //var contenido = boton.nextElementSibling;
            // console.log(contenido);
 
             //Obtener todos los contenidos que están visibles
             var contenidosVisibles = document.querySelectorAll('.show');
-            console.log(contenidosVisibles);
+            //console.log(contenidosVisibles);
 
             // Ocultar todos los contenidos visibles
             contenidosVisibles.forEach(function(c) {
