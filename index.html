@@ -637,10 +637,10 @@
     <img src="img/config.png" id="menuBtn">
 
     <div id="sideMenu">
-      <button class="option" data-color="dark">Oscuro</button>
-      <button class="option" data-color="red">Rojo</button>
-      <button class="option" data-color="pink">Rosa</button>
-      <button class="option" data-color="white">Blanco</button>
+      <button class="option btn btn-dark rounded-circle" data-color="dark"></button>
+      <button class="option btn btn-danger rounded-circle" data-color="red"></button>
+      <button class="option btn btn-primary rounded-circle" data-color="blue"></button>
+      <button class="option btn btn-light rounded-circle" data-color="white"></button>
     </div>
     
 
@@ -684,7 +684,7 @@ options.forEach(option => {
     // Itera sobre cada elemento 'contenido' y aplica los cambios
     contenidos.forEach(function(contenido) {
       // Elimina todas las clases existentes relacionadas con los colores
-      contenido.classList.remove('dark', 'red', 'pink', 'white');
+      contenido.classList.remove('dark', 'red', 'blue', 'white');
       
       // Agrega la clase correspondiente al color seleccionado
       contenido.classList.add(color);

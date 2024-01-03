@@ -116,19 +116,20 @@ h6 {
     right: 10px;
     z-index: 1000;
     width:50px;
+    
   }
-  #menuBtn{
-    width:51px;
+
+  #menuBtn:hover{
+    width:52px;
     cursor: pointer;
   }
   
   #sideMenu {
     position: fixed;
-    top: 110;
+    top: 250;
     right: -200px;
-    width: 200px;
-    height: 100%;
-    background-color: #333;
+    width: 50px;
+    background-color: #33333300;
     transition: 0.3s;
   }
   
@@ -151,20 +152,36 @@ h6 {
     background-color: #303030;
     color: #fff;
   }
+  .contenido.light:hover{
+    background-color: #2a2a2ae4;
+    transition: background-color 1s ease;
+}
   
   .contenido.red {
-    background-color: red;
+    background-color: rgb(149, 39, 39);
     color: #fff;
   }
+  .contenido.red:hover{
+    background-color: #ca6f6fd2;
+    transition: background-color 1s ease;
+}
   
-  .contenido.pink {
-    background-color: pink;
-    color: #0a0a0a;
+  .contenido.blue {
+    background-color: rgb(37, 43, 92);
+    color: #ffffff;
   }
+  .contenido.blue:hover{
+    background-color: #3e3653e4;
+    transition: background-color 1s ease;
+}
   
   .contenido.light {
     background-color: #fff;
     color: #333;
   }
+  .contenido.light:hover{
+    background-color: #eeeeeee4;
+    transition: background-color 1s ease;
+}
   
 
