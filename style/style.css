@@ -101,7 +101,10 @@ h6 {
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 10px;
     font-weight: bold;
+  }
+  a{
+    text-decoration: none;
   }
 
