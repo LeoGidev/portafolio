@@ -676,10 +676,19 @@ options.forEach(option => {
   option.addEventListener('click', function() {
     const color = this.getAttribute('data-color');
     console.log(color);
-    var conte = document.getElementsByClassName('contenido')[0];
-    console.log(conte);
-    conte.classList.remove('dark', 'red', 'pink', 'light');
-    conte.classList.add(color);
+    
+    // Obtén todos los elementos con la clase 'contenido'
+    var contenidos = document.querySelectorAll('.contenido');
+    console.log(contenidos);
+    
+    // Itera sobre cada elemento 'contenido' y aplica los cambios
+    contenidos.forEach(function(contenido) {
+      // Elimina todas las clases existentes relacionadas con los colores
+      contenido.classList.remove('dark', 'red', 'pink', 'white');
+      
+      // Agrega la clase correspondiente al color seleccionado
+      contenido.classList.add(color);
+    });
   });
 });
 
