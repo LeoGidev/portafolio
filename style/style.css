@@ -97,20 +97,16 @@ h6 {
     color:#0f0f0f !important;
 }
 
-.btn-whatsapp {
-    display: inline-block;
-    background-color: #25d366;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 10px;
+.btn-wsp {
+    height: 30px;
     font-weight: bold;
+    font-size: 15;
   }
   a{
     text-decoration: none;
   }
 
- 
+ /*estilos de las opciones de estilo deweb*/
   
   #menuBtn {
     position: fixed;
