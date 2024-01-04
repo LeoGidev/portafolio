@@ -89,12 +89,13 @@ h6 {
 }
 
 #Datos{
-    color:#141414;
+    
     list-style-type: none;
 
 }
 #Datos a {
-    color:#0f0f0f !important;
+  font-weight: bold;
+    color:#00ff51 !important;
 }
 
 .btn-wsp {
@@ -150,13 +151,13 @@ h6 {
     background-color: #303030;
     color: #fff;
   }
-  .contenido.light:hover{
-    background-color: #2a2a2ae4;
+  .contenido.dark:hover{
+    background-color: #2a2a2ac1;
     transition: background-color 1s ease;
 }
   
   .contenido.red {
-    background-color: rgb(149, 39, 39);
+    background-color: rgb(92, 46, 46);
     color: #fff;
   }
   .contenido.red:hover{
@@ -165,7 +166,7 @@ h6 {
 }
   
   .contenido.blue {
-    background-color: rgb(37, 43, 92);
+    background-color: rgb(67, 82, 200);
     color: #ffffff;
   }
   .contenido.blue:hover{
