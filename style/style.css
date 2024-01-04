@@ -183,5 +183,17 @@ h6 {
     transition: background-color 1s ease;
 }
 /*estilos de las palabras animadas de portada*/
+#word-animation {
+  font-size: 48px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.881);
+  position: absolute;
+  top: 150;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1; /* Inicialmente oculto */
+  transition: opacity 0.5s; /* Transición suave de opacidad */
+}
+
   
 

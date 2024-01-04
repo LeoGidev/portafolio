@@ -710,6 +710,30 @@ options.forEach(option => {
   });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    var words = ['LeoGimenez', 'Developer', 'fullstack'];
+    var currentIndex = 0;
+    var wordAnimation = document.getElementById('word-animation');
+
+    function changeWord() {
+        // Oculta el elemento actual
+        wordAnimation.style.opacity = 0;
+
+        setTimeout(function() {
+            // Cambia la palabra
+            wordAnimation.textContent = words[currentIndex];
+            // Muestra el elemento
+            wordAnimation.style.opacity = 1;
+            // Actualiza el índice para la próxima palabra
+            currentIndex = (currentIndex + 1) % words.length;
+        }, 500);
+    }
+
+    // Cambia la palabra cada 2 segundos
+    setInterval(changeWord, 2000);
+});
+
+
 
 
 
