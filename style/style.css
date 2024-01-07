@@ -54,7 +54,7 @@
        background-color: #ffffff;
        margin-top: 30px;
        color:#1a1919;
-       border-radius: 20px; 
+       border-radius: 10px; 
        overflow: hidden !important;
     }
     .contenido:hover{
@@ -155,6 +155,9 @@ padding: 5px;
     background-color: #303030;
     color: #fff;
   }
+  .contenido.dark table{
+    color:white;
+  }
   .contenido.dark:hover{
     background-color: #2a2a2ac1;
     transition: background-color 1s ease;
@@ -163,6 +166,9 @@ padding: 5px;
   .contenido.red {
     background-color: rgb(92, 46, 46);
     color: #fff;
+  }
+  .contenido.red table{
+    color:white;
   }
   .contenido.red:hover{
     background-color: #ca6f6fd2;
@@ -176,6 +182,9 @@ padding: 5px;
   .contenido.blue:hover{
     background-color: #3e3653e4;
     transition: background-color 1s ease;
+}
+.contenido.blue table{
+  color:white;
 }
   
   .contenido.light {
