@@ -223,7 +223,12 @@ footer .table{
 }
 
 .recursos{
-  width: 200px;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;     /* Centra verticalmente */
 }
   
+.recursos img{
+  width: 200px;
+}
 
