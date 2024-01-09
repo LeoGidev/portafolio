@@ -144,7 +144,7 @@
                         <a data-toggle="collapse" class='card-title tool'  href='#colla1' title="ver mas" style="color: #000000; font-weight: bold;">Sistema administrador de Tareas   ▼</a>
                         
                       </div>
-                      <a data-toggle="collapse" href="#colla1" title="ver mas"><img class="card-img-top" src="img/pro1.jpg" ></a>
+                      <a data-toggle="collapse" href="#colla1" title="ver mas"><img class="card-img-top change-image" src="img/cover1.jpg" data-hover-src="img/pro1.jpg"></a>
                       <div id='colla1' class='collapse' data-parent='#super'>
                         <div>
                           <!--boton de video
@@ -653,6 +653,15 @@
 
       </section>
 
+      <section id="recursos">
+        <div class="conatiner-fluid contenido"> 
+          <h6 class="m-3">Recursos:</h6>
+          <p class="m-3">En mi proceso de formación continua como programador, he recurrido a diversos recursos y plataformas líderes en la industria, las cuales 
+            han sido fundamentales para resolver desafíos específicos y mantenerme actualizado con las últimas tendencias en programación:</p>
+        </div>
+
+        </section>
+
     <footer>
       <div class="card mt-4">
         <div class="card-header">
@@ -785,6 +794,30 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Inicia el cambio de palabra
     changeWord();
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Obtener todas las imágenes con la clase 'change-image'
+    const images = document.querySelectorAll('.change-image');
+
+    // Recorrer cada imagen y agregar el evento mouseover y mouseout
+    images.forEach(function(img) {
+        // Guardar el src original para revertirlo cuando el mouse salga
+        const originalSrc = img.src;
+
+        // Obtener la URL de la imagen de hover del atributo personalizado
+        const hoverSrc = img.getAttribute('data-hover-src');
+
+        // Evento al pasar el mouse sobre la imagen
+        img.addEventListener('mouseover', function() {
+            img.src = hoverSrc; // Cambiar la imagen al hoverSrc
+        });
+
+        // Evento al retirar el mouse de la imagen
+        img.addEventListener('mouseout', function() {
+            img.src = originalSrc; // Revertir a la imagen original
+        });
+    });
 });
 
 
