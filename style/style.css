@@ -234,7 +234,25 @@ footer .table{
  /*estilo responsive del carrusel */
  .carousel-inner img {
     width: 480px !important;
+    
     border-radius: 10px;
+    margin-left: 30;
+    margin-right: 30;
+    margin-bottom: 30;
+    box-shadow: 2px 2px 6px #000000;
     
   }
+  #cobertorcarro{
+    height: 390px; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+     background:linear-gradient(to right, rgb(255, 254, 254),rgba(0,0,0,0), rgba(0,0,0,0),rgba(0,0,0,0), rgb(255, 253, 253)); 
+     z-index: 100;
+  }
+  #certificados{
+    background-color: white;
+  }
+ 
 
