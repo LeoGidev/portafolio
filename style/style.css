@@ -38,7 +38,10 @@
     }
     #cubridor{
         height: 200px; 
-       
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
          background:linear-gradient(to right, rgba(0, 0, 0, 0.9),rgba(0,0,0,0), rgba(0,0,0,0),rgba(0,0,0,0), rgba(0,0,0,0.9)); 
          pointer-events: none;
     }
@@ -227,4 +230,11 @@ footer .table{
 .recursos img{
   width: 200px;
 }
+
+ /*estilo responsive del carrusel */
+ .carousel-inner img {
+    width: 480px !important;
+    border-radius: 10px;
+    
+  }
 
