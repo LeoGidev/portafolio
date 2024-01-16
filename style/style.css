@@ -39,7 +39,7 @@
     #portada{
       overflow: hidden;
       
-      color: aqua;
+      color: rgba(14, 255, 255, 0.152);
       
   }
     #cubridor{
@@ -50,6 +50,7 @@
         right: 0;
          background:linear-gradient(to right, rgba(0, 0, 0, 0.9),rgba(0,0,0,0), rgba(0,0,0,0),rgba(0,0,0,0), rgba(0,0,0,0.9)); 
          pointer-events: none;
+         z-index: 10;
     }
     a{
         text-decoration: none;
