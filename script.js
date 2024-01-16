@@ -153,6 +153,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // Evento al pasar el mouse sobre la imagen
         img.addEventListener('mouseover', function() {
+             
             
             img.src = hoverSrc; // Cambiar la imagen al hoverSrc
             
@@ -161,7 +162,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // Evento al retirar el mouse de la imagen
         img.addEventListener('mouseout', function() {
+          
             img.src = originalSrc; // Revertir a la imagen original
         });
+       
     });
+    
 });
