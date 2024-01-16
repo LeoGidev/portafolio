@@ -36,6 +36,12 @@
     .navbar.fixed .navbar-nav .nav-link {
         color: #ffffff; /* Letras blancas */
     }
+    #portada{
+      overflow: hidden;
+      
+      color: aqua;
+      
+  }
     #cubridor{
         height: 200px; 
         position: absolute;
