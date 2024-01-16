@@ -205,14 +205,16 @@ padding: 5px;
 /*estilos de las palabras animadas de portada*/
 #word-animation {
   font-size: 48px;
+  font-weight: bolder;
   text-align: center;
   color: rgb(255, 255, 255);
   position: absolute;
-  top: 150;
+  top: 100;
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 1; /* Inicialmente oculto */
   transition: opacity 2s; /* Transición suave de opacidad */
+  z-index: 200;
 }
 footer{
   
