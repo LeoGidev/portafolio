@@ -139,33 +139,3 @@ function efecto(){
     numero3.style.opacity=`${(d * 0.2)+0.1}`;
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-    // Obtener todas las imágenes con la clase 'change-image'
-    const images = document.querySelectorAll('.change-image');
-
-    // Recorrer cada imagen y agregar el evento mouseover y mouseout
-    images.forEach(function(img) {
-        // Guardar el src original para revertirlo cuando el mouse salga
-        const originalSrc = img.src;
-
-        // Obtener la URL de la imagen de hover del atributo personalizado
-        const hoverSrc = img.getAttribute('data-hover-src');
-
-        // Evento al pasar el mouse sobre la imagen
-        img.addEventListener('mouseover', function() {
-             
-            
-            img.src = hoverSrc; // Cambiar la imagen al hoverSrc
-            
-           
-        });
-
-        // Evento al retirar el mouse de la imagen
-        img.addEventListener('mouseout', function() {
-          
-            img.src = originalSrc; // Revertir a la imagen original
-        });
-       
-    });
-    
-});
