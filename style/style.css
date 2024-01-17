@@ -64,7 +64,7 @@
        overflow: hidden !important;
     }
     .contenido:hover{
-        background-color: #eeeeeee4;
+        background-color: #eeeeeef6;
         transition: background-color 1s ease;
     }
     
@@ -80,8 +80,8 @@
      .proyect{
         background-color:#ffffff !important;
         
-        border-radius: 10px;
-        overflow: hidden !important;
+        
+       
         
         
         }
@@ -92,8 +92,12 @@
 h6 {
     padding-top:20px;
     border-bottom: 2px solid #7c7c7c;  
-    padding-bottom: 10px;           
+    padding-bottom: 10px;    
+    font-family: 'Nanum Gothic', sans-serif;
+      
 }
+
+
 
 #Datos{
     
