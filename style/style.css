@@ -229,10 +229,19 @@ padding: 5px;
   z-index: 200;
 }
 footer{
-  
+ 
   color:rgb(53, 53, 53);
+  font-weight: lighter;
   font-family: 'Blinker', monospace;
   background-color: rgb(224, 224, 224);
+}
+#findeweb{
+  height: 100px;
+  background-color: #303030;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: small;
+  font-weight: lighter;
 }
 
 
