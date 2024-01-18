@@ -15,7 +15,7 @@ $(window).scroll(function() {
 //portada
 $(window).scroll(function() {
   var scroll = $(window).scrollTop();
-  $('#portada').css('background-position', 'center ' + (-scroll/20) + 'px');
+  $('#portada').css('background-position', 'center ' + (-scroll/5) + 'px');
 });
 //enviar whatsapp
 function enviarWhatsApp() {
