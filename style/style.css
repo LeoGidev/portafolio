@@ -117,10 +117,21 @@ h6 {
     color:#00ff51 !important;
 }
 
-.btn-wsp {
-    height: 30px;
+#telegram {
+  margin: 10px;
+    padding: 10px;
+    background-color: white;
+    border-color: rgb(125, 208, 236);
+    border-style:solid;
+    border-width: 4px;
     font-weight: bold;
+    font-family: 'Ubuntu Mono', monospace;
     font-size: 15;
+    color: rgb(125, 208, 236); 
+  }
+  #telegram:hover{
+    background-color:rgb(125, 208, 236) ;
+    color:white !important;
   }
   a{
     text-decoration: none;
@@ -236,7 +247,7 @@ footer{
   background-color: rgb(224, 224, 224);
 }
 #findeweb{
-  height: 100px;
+  height: 80px;
   background-color: #303030;
   color: white;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -283,4 +294,9 @@ footer{
     background-color: white;
   }
  
+  .email-icon::before {
+    content: '\2709'; /* Código Unicode para el símbolo de sobre */
+    font-size: 24px; /* Tamaño del icono, ajusta según sea necesario */
+    margin-right: 5px; /* Margen derecho para separación del texto */
+}
 
