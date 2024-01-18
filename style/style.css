@@ -90,11 +90,18 @@
      
 
 /* Datos */
+h3{
+  font-family: 'Blinker', sans-serif;
+}
+h4{
+  font-family: 'Blinker', sans-serif;
+
+}
 h6 {
     padding-top:20px;
     border-bottom: 2px solid #7c7c7c;  
     padding-bottom: 10px;    
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Ubuntu Mono', monospace;
       
 }
 
@@ -223,13 +230,12 @@ padding: 5px;
 }
 footer{
   
-  color:white;
+  color:rgb(63, 63, 63);
+  font-family: 'Ubuntu Mono', monospace;
+  background-color: rgb(189, 189, 189);
 }
-footer .card{
-  background-color: rgb(34, 31, 42);
-  border-radius: 0;
-  
-}
+
+
 footer .table{
   background-color: #262c3400;
   color: white;
