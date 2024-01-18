@@ -296,7 +296,7 @@ footer{
  
   .email-icon::before {
     content: '\2709'; /* Código Unicode para el símbolo de sobre */
-    font-size: 24px; /* Tamaño del icono, ajusta según sea necesario */
+    font-size: 24px; /* Tamaño del icono*/
     margin-right: 5px; /* Margen derecho para separación del texto */
 }
 
