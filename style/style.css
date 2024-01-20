@@ -128,10 +128,12 @@ h6 {
     font-family: 'Ubuntu Mono', monospace;
     font-size: 15;
     color: rgb(125, 208, 236); 
+    transition: color 1s ease, background-color 1s ease;
   }
   #telegram:hover{
     background-color:rgb(125, 208, 236) ;
     color:white !important;
+    transition: color 1s ease, background-color 1s ease;
   }
   a{
     text-decoration: none;
