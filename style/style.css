@@ -65,13 +65,13 @@
        overflow: hidden !important;
     }
     .contenido:hover{
-        background-color: #eeeeeef6;
+        background-color: #fffffffc;
         transition: background-color 1s ease;
     }
     
      .tecn{
         background-color:#e3e3e300 !important;
-        border-radius: 10px;
+        height: 80;
         overflow: hidden !important;
         border-color: #7c7c7c3c;
         width: 200px;
@@ -300,3 +300,19 @@ footer{
     margin-right: 5px; /* Margen derecho para separación del texto */
 }
 
+/*boton para los demos*/
+.botondemo {
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(47, 53, 73);
+   font-weight: bold;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 15;
+    color: rgb(255, 255, 255); 
+    transition: color 1s ease, background-color 1s ease;
+  }
+  .botondemo:hover{
+    background-color: #525252;
+    color:rgb(61, 7, 255);
+    transition: color 1s ease, background-color 1s ease;
+  }
