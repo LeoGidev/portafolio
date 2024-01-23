@@ -25,11 +25,29 @@
       </head>
 </head>
 <body>
+  <header>
+  <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="../../index.html">Leo Developer</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="../../index.html#Sobremi">Sobre mí</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../index.html#proyectos">Proyectos</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  </header>
 
   <div class="container-fluid">
     <div class="row border" id="portada">
       <div class="col-12">
-        <h1>Generador cartones de Rifa</h1>
+        <h1>Generador  de Carton de Rifa</h1>
       </div>
     </div>
     <div class="row">
@@ -59,7 +77,7 @@
           <input class="form-control" type="text" id="descripcion" placeholder="Ingrese la descripción (máx. 40 caracteres)" maxlength="40" row="5" oninput="cambiarDescripcion()"></li>
 
           <li><label for="valor">Valor:</label>
-            <input class="form-control" type="number" id="valor" placeholder="valor (máx. 40 caracteres)" maxlength="100" oninput="cambiarValor()"></li>
+            <input class="form-control" type="number" id="valor" placeholder="valor (máx. 10 caracteres)" maxlength="10" oninput="cambiarValor()"></li>
             
           <li><label for="valor">Imagen:</label>
              <input class="form-control" type="file" id="imagenFondoInput" accept="image/*" onchange="dibujarCuadricula()"></li>
