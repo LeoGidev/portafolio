@@ -17,7 +17,7 @@
   <link rel="icon" href="img/icono.png" type="image/x-icon">
   <link rel="shortcut icon" href="img/icono.png" type="image/x-icon">
   
-  <link rel="stylesheet" href="style.css">
+  
 
   <script>
 function mostrar(){document.getElementById('spi').hidden =false;}
@@ -58,7 +58,7 @@ function showUser(str) { setInterval(mostrar(),3000);
 <body>
     <header>
         <!-- Barra de navegación -->
-<nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark">
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
   <a class="navbar-brand" href="../../index.html">Leo Developer</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -75,22 +75,25 @@ function showUser(str) { setInterval(mostrar(),3000);
   </div>
 </nav>
 </header>
-<div class="conatiner">
+<div class="container-fluid" >
   <div class="jumbotron ">
-    <div class="container-fluid">
+    
       <h3>Herramienta de Diagnóstico:</h3><p>Por favor ingrese el nombre del dominio, por ejemplo "www.google.com" para realizar la prueba.</p>
-    </div>
+    
   </div>
-  <div class="row justify-content-center">
-    <div class="col-xs-12 ">
-      <form onKeypress="if(event.keyCode == 13) event.returnValue = false;">
-        <input type="text" name="q" placeholder="ip" >
+</div>
+<div class="container">
+
+  <div class="row justify-content-center m-3">
+    <div>
+      <form onkeypress="if(event.keyCode == 13) event.returnValue = false;">
+        <input type="text" name="q" placeholder="Dominio del tipo www." >
 	      <input type="button" class="btn btn-primary" value="Probar" onclick="showUser(q.value)">
       </form>
     </div>
   </div>
   <div class="row justify-content-center">
-    <div class="col-xs-12 ">
+    <div>
       <div  id="txtHint">
 
       </div>
@@ -102,7 +105,14 @@ function showUser(str) { setInterval(mostrar(),3000);
   <?php
 
   $ip = isset($_SERVER['HTTP_X_FORWARDED_FOR']) ? $_SERVER['HTTP_X_FORWARDED_FOR'] : $_SERVER['REMOTE_ADDR'];
-  echo '<div class="row justify-content-center"><h6>Su ip: </h6>'.$ip.'</div>';
+  echo '<div class="row justify-content-center border mt-3"> <div><h6>Su ip pública: </h6>'.$ip.'</div></div>';
   ?>
 </div>	
+<div class="container">
+<div class="row justify-content-center mt-3"><p class="m-3">Este es un DEMO del sistema de diagnóstico para equipos de Red, debido a las 
+    restricciones del hosting compartido, no es posible disponer de todas las funcionalidades que este sistema cuenta si es instalado en 
+un servidor propio.</p>
+
+</div>
+</div>
 </body>

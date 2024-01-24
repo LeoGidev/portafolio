@@ -3,6 +3,8 @@ $q = $_GET['q'];
 
 
 
+if (preg_match('/^[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/', $q)) {
+    // La entrada del usuario es un dominio válido
 
 
 $port = 80; // Puedes ajustar el puerto según tus necesidades
@@ -20,10 +22,15 @@ if ($fp) {
     echo "<ul class='list-group list-group-horizontal'><li class='list-group-item list-group-item-danger'> Error en la conexion entre el servidor y ";
 	echo $q;
 	echo " </li><li class='list-group-item list-group-item-danger'>Diagnostico: Down</li></ul>";
-    echo "Error al realizar el ping: $errstr ($errno)";
+    //echo "Error al realizar la prueba: $errstr ($errno)";
 }
 
+}else{
+    echo "<ul class='list-group list-group-horizontal'><li class='list-group-item list-group-item-danger'> Entrada no valida ";
+	echo $q;
+	echo " </li><li class='list-group-item list-group-item-danger'>Debe ingresar un dominio con el formato www.google.com</li></ul>";
 
+}
 
     //echo $q2;
 	//$comando = "ping ".$q." -n 2 ";
