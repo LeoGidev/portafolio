@@ -58,18 +58,18 @@ function showUser(str) { setInterval(mostrar(),3000);
 <body>
     <header>
         <!-- Barra de navegación -->
-<nav class="navbar navbar-expand-sm navbar-dark fixed-top transparent">
-  <a class="navbar-brand" href="#">Leo Developer</a>
+<nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark">
+  <a class="navbar-brand" href="../../index.html">Leo Developer</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link" href="#Sobremi">Sobre mí</a>
+        <a class="nav-link" href="../../index.html#Sobremi">Sobre mí</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#proyectos">Proyectos</a>
+        <a class="nav-link" href="../../index.html#proyectos">Proyectos</a>
       </li>
     </ul>
   </div>
@@ -78,7 +78,7 @@ function showUser(str) { setInterval(mostrar(),3000);
 <div class="conatiner">
   <div class="jumbotron ">
     <div class="container-fluid">
-      <h3>Herramienta ping</h3><p>Por favor ingrese la ip para realizar la prueba.</p>
+      <h3>Herramienta de Diagnóstico:</h3><p>Por favor ingrese el nombre del dominio, por ejemplo "www.google.com" para realizar la prueba.</p>
     </div>
   </div>
   <div class="row justify-content-center">
@@ -99,5 +99,10 @@ function showUser(str) { setInterval(mostrar(),3000);
       </div>
     </div>
   </div>
+  <?php
+
+  $ip = isset($_SERVER['HTTP_X_FORWARDED_FOR']) ? $_SERVER['HTTP_X_FORWARDED_FOR'] : $_SERVER['REMOTE_ADDR'];
+  echo '<div class="row justify-content-center"><h6>Su ip: </h6>'.$ip.'</div>';
+  ?>
 </div>	
 </body>
