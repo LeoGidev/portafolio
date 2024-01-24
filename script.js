@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
   // Inicia el cambio de palabra
   changeWord();
-  setInterval(efecto, 10000);
+  
 });
 
  

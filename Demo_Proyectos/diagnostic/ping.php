@@ -1,5 +1,8 @@
 <?php
 $q = $_GET['q'];
+$q = substr($q, 0, 255); // Limita a 255 caracteres
+$q = str_replace(array('http://', 'https://'), 'www.', $q);
+
 
 
 
