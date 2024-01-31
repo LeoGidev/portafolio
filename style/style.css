@@ -82,7 +82,11 @@
         background-color:#ffffff !important;
         }
       .proyect:hover{
-        
+        animation: movimiento 5s ;
+      }
+
+      @keyframes movimiento{
+        50%{border-top:10px solid lightblue;}
       }
 
      
