@@ -11,7 +11,11 @@ body {
  
  
  .foot{
- background-color:#3E6BEB; color:white; font-weight:bold; font-size:15px; border-radius:5px;
+ background-color:#3E6BEB; 
+ color:white; 
+ font-weight:bold;
+  font-size:10px; 
+  border-radius:5px;
  padding:2px;
  position: absolute;
    bottom: 0;
@@ -42,26 +46,26 @@ body {
  
  
  .Boton{
- background:-webkit-linear-gradient(#3946DA,#333DA0,#3946DA);
+ background:rgb(72, 78, 134);
  text-decoration:none;
  padding: 20px 20px 20px 20px;
  border-radius:7px 7px 7px 7px;
  color:white;
- border:2px solid black;
+ font-family:'Blinker', sans-serif;
  }
  .Boton:hover{
- background:#333DA0;
+ background:#3d51ff;
+ text-decoration:none;
+ color:#d6dafd
  }
  
  .Boton:active{
- background:#141B62;
+ background:#1b1f45;
+ text-decoration:none;
+ color:#6e6e6f
  }
  
- body img{
- position:relative;
- top:10px;
- left:10px;
- }
+
  
  #myProgress {
    position: relative;
@@ -233,7 +237,11 @@ body {
  }
  
  #logo{
-   top:-10px;
+   
    width: 100px;
    position: relative;
+ }
+ .portada{
+    height: 100px;
+    margin-bottom: 20px;
  }

@@ -23,16 +23,18 @@
     
 
 <body onload="ValoresAjax()">
-   <div class="container">
-      <h1 >Reboot EdgePoints</h1> 
+   <div class="container portada">
+      <div class="row justify-content-center">
+      <h1 >Device Reboot</h1> 
       <img id="logo" src="../../img/logo.jpg"/>
+      </div>
    </div>
 
 
         
 <div class="row justify-content-center">
        
-   <div class="col-12 col-md-4">
+   <div class="col-12 col-md-3">
       <div class="card">
          <div  class="card-header items">Device A</div>
          <div class="card-body corp"> 
@@ -45,7 +47,7 @@
          <div class="card-footer"><p><a href="#">Descripción</a></p></div>
       </div>
    </div>
-   <div class="col-12 col-md-4">
+   <div class="col-12 col-md-3">
       <div class="card">
          <div  class="card-header items">Device B</div>
          <div class="card-body corp"> 
@@ -58,7 +60,7 @@
          <div class="card-footer"><p><a href="#">Descripción</a></p></div>
       </div>
    </div>
-   <div class="col-12 col-md-4">
+   <div class="col-12 col-md-3">
       <div class="card">
          <div  class="card-header items">Device B</div>
          <div class="card-body corp"> 
@@ -71,35 +73,23 @@
          <div class="card-footer"><p><a href="#">Descripción</a></p></div>
       </div>
    </div>
-
-
-
-        
-
-
-
-<td> 
-   
-</td>
-<td> <a onclick="RebootD();moveD()" id="BotD" class="Boton">REBOOT</a>
-   <div hidden="hidden" id="myProgressD">
-   <div id="myBarD"></div>
-   <div id="labelD"></div>
-   </div>
-</td> 
-</tr>
-
-<tr>
-
-<td><p><a href="#">Descripción</a></p></td>
-<td><p><a href="#">Descripción</a></p></td>
-<td><p><a href="#">Descripción</a></p></td>
-</tr>
-   
+   <div class="col-12 col-md-3">
+      <div class="card">
+         <div  class="card-header items">Device B</div>
+         <div class="card-body corp"> 
+            <a onclick="RebootD();moveD()" id="BotD" class="Boton">REBOOT</a>
+            <div hidden="hidden" id="myProgressD">
+               <div id="myBarD"></div>
+               <div id="labelD"></div>
+            </div>
+         </div>
+         <div class="card-footer"><p><a href="#">Descripción</a></p></div>
+      </div>
+   </div> 
 </div>
 
     
-	<footer class="foot"> Realizado por Departamento de Electronica 2018</footer>
+<footer class="foot"> Realizado por Departamento de Electronica 2018</footer>
   <script src="script.js">
    
   </script>
