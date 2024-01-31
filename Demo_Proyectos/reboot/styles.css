@@ -1,0 +1,234 @@
+body {
+    background:#E0E3FF; 
+    text-align: center;
+ }
+ table td{
+     border-spacing:5px 5px;
+     border-collapse:separate;
+     background-color:white;
+     padding:25px;
+ }
+ 
+ 
+ .foot{
+ background-color:#3E6BEB; color:white; font-weight:bold; font-size:15px; border-radius:5px;
+ padding:2px;
+ position: absolute;
+   bottom: 0;
+   width: 99%;
+   height: 17px;
+ 
+ }
+ 
+ h1{
+ 
+ font-weight:bold;
+ font-family:'Blinker', sans-serif;
+ width:350px;
+ top:10px;
+ }
+ 
+ 
+ .items{
+ background-color:#3E6BEB; color:white; font-weight:bold; font-size:15px; border-radius:5px;
+ padding:1px;
+ }
+ 
+ 
+ 
+ .Boton{
+ background:-webkit-linear-gradient(#3946DA,#333DA0,#3946DA);
+ text-decoration:none;
+ padding: 20px 20px 20px 20px;
+ border-radius:7px 7px 7px 7px;
+ color:white;
+ border:2px solid black;
+ }
+ .Boton:hover{
+ background:#333DA0;
+ }
+ 
+ .Boton:active{
+ background:#141B62;
+ }
+ 
+ body img{
+ position:relative;
+ top:10px;
+ left:10px;
+ }
+ 
+ #myProgress {
+   position: relative;
+   width: 100%;
+   height: 30px;
+   background-color: #ddd;
+ }
+ 
+ #myBar {
+   position: absolute;
+   width: 1%;
+   height: 100%;
+   background-color: #4CAF50;
+   z-index: 2;
+ }
+ #label {
+   text-align: center;
+   line-height: 30px;
+   color: white;
+   z-index: 3;
+   position:relative;
+ }
+ #myProgressB {
+   position: relative;
+   width: 100%;
+   height: 30px;
+   background-color: #ddd;
+ }
+ 
+ #myBarB {
+   position: absolute;
+   width: 1%;
+   height: 100%;
+   background-color: #4CAF50;
+   z-index: 2;
+ }
+ #labelB {
+   text-align: center;
+   line-height: 30px;
+   color: white;
+   z-index: 3;
+   position:relative;
+ }
+ #myProgressC {
+   position: relative;
+   width: 100%;
+   height: 30px;
+   background-color: #ddd;
+ }
+ 
+ #myBarC {
+   position: absolute;
+   width: 1%;
+   height: 100%;
+   background-color: #4CAF50;
+   z-index: 2;
+ }
+ #labelC {
+   text-align: center;
+   line-height: 30px;
+   color: white;
+   z-index: 3;
+   position:relative;
+ }
+ #myProgressD {
+   position: relative;
+   width: 100%;
+   height: 30px;
+   background-color: #ddd;
+ }
+ 
+ #myBarD {
+   position: absolute;
+   width: 1%;
+   height: 100%;
+   background-color: #4CAF50;
+   z-index: 2;
+ }
+ #labelD {
+   text-align: center;
+   line-height: 30px;
+   color: white;
+   z-index: 3;
+   position:relative;
+ }
+ #myProgressE {
+   position: relative;
+   width: 100%;
+   height: 30px;
+   background-color: #ddd;
+ }
+ 
+ #myBarE {
+   position: absolute;
+   width: 1%;
+   height: 100%;
+   background-color: #4CAF50;
+   z-index: 2;
+ }
+ #labelE {
+   text-align: center;
+   line-height: 30px;
+   color: white;
+   z-index: 3;
+   position:relative;
+ }
+ #myProgressF {
+   position: relative;
+   width: 100%;
+   height: 30px;
+   background-color: #ddd;
+ }
+ 
+ #myBarF {
+   position: absolute;
+   width: 1%;
+   height: 100%;
+   background-color: #4CAF50;
+   z-index: 2;
+ }
+ #labelF {
+   text-align: center;
+   line-height: 30px;
+   color: white;
+   z-index: 3;
+   position:relative;
+ }
+ #myProgressG {
+   position: relative;
+   width: 100%;
+   height: 30px;
+   background-color: #ddd;
+ }
+ 
+ #myBarG {
+   position: absolute;
+   width: 1%;
+   height: 100%;
+   background-color: #4CAF50;
+   z-index: 2;
+ }
+ #labelG {
+   text-align: center;
+   line-height: 30px;
+   color: white;
+   z-index: 3;
+   position:relative;
+ }
+ #myProgressH {
+   position: relative;
+   width: 100%;
+   height: 30px;
+   background-color: #ddd;
+ }
+ 
+ #myBarH {
+   position: absolute;
+   width: 1%;
+   height: 100%;
+   background-color: #4CAF50;
+   z-index: 2;
+ }
+ #labelH {
+   text-align: center;
+   line-height: 30px;
+   color: white;
+   z-index: 3;
+   position:relative;
+ }
+ 
+ #logo{
+   top:-10px;
+   width: 100px;
+   position: relative;
+ }
