@@ -2,7 +2,7 @@ body {
     background:#E0E3FF !important; 
     text-align: center !important;
  }
- table td{
+ .corps{
      border-spacing:5px 5px;
      border-collapse:separate;
      background-color:white;
