@@ -146,17 +146,20 @@ h6 {
   #menuBtn {
     position: fixed;
     top: 200px;
-    right: 0px;
+    right: -33px;
     z-index: 1000;
     background-color: #000000;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    transition: 1s;
   }
 #menuBtn img {
 width: 50px;
 padding: 5px;
 }
   #menuBtn:hover{
+    transition: 1s;
+    right: 0px;
     width:52px;
     cursor: pointer;
   }
