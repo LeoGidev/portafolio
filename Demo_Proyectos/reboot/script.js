@@ -23,7 +23,7 @@ function RebootA(){
 var user= prompt("clave de Reboot");
  $.ajax({
       url: 'simArduno.php',
-      method: 'GET',
+      method: 'POST',
       data: {psw:user, Ac:'RebootA'}, 
   success: function(response) {
       // Actualizar el contenido del div con la respuesta de novedad.php

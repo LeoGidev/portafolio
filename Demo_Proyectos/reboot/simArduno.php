@@ -8,6 +8,9 @@ if($clave == '123'){
         echo 'Reboot exitoso';
     }
 }
+else{
+    echo 'Reboot no realizado';
+}
 
 
 ?>
