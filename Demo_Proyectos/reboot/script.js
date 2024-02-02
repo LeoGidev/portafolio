@@ -47,6 +47,7 @@ tig=1;
 
 
 clearInterval(id);
+mostrarbotones();
 } else {
 width++; 
 elem.style.width = width + '%';
@@ -89,6 +90,7 @@ document.getElementById('myProgressB').hidden = true;
 
 tigB=1;
 clearInterval(id);
+mostrarbotones();
 } else {
 width++; 
 elem.style.width = width + '%';
@@ -123,6 +125,7 @@ document.getElementById('myProgressC').hidden = true;
 
 tigC=1;
 clearInterval(id);
+mostrarbotones();
 } else {
 width++; 
 elem.style.width = width + '%';
