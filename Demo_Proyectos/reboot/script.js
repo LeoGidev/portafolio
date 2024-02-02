@@ -26,7 +26,7 @@ var user= prompt("clave de Reboot");
       method: 'POST',
       data: {psw:user, Ac:'RebootA'}, 
   success: function(response) {
-      // Actualizar el contenido del div con la respuesta de novedad.php
+      // Actualizar el contenido del div con la respuesta 
       $('#respuestaA').html(response);
   },
   error: function(error) {
@@ -70,8 +70,8 @@ $.ajax({
   method: 'POST',
   data: {psw:userB, Ac:'RebootB'}, 
 success: function(response) {
-  // Actualizar el contenido del div con la respuesta de novedad.php
-  $('#respuestaA').html(response);
+  // Actualizar el contenido del div con la respuesta 
+  $('#respuestaB').html(response);
 },
 error: function(error) {
   console.error('Error al realizar la consulta AJAX:', error);
@@ -100,13 +100,18 @@ ocultarbotones();
 }
 function RebootC(){
 var userC= prompt("clave de Reboot");
-nocache = "&nocache=" + Math.random() * 1000000;
-var request = new XMLHttpRequest();
-strRC = userC;
-request.open("GET", "REBOOTER" +"&"+ strRC + "&RebootC" + nocache, true);
-request.send(null);
-userC = "";
-strRC = "";
+$.ajax({
+  url: 'simArduno.php',
+  method: 'POST',
+  data: {psw:userC, Ac:'RebootC'}, 
+success: function(response) {
+  // Actualizar el contenido del div con la respuesta de novedad.php
+  $('#respuestaC').html(response);
+},
+error: function(error) {
+  console.error('Error al realizar la consulta AJAX:', error);
+}
+});
 }
 function moveC() {
 var elem = document.getElementById("myBarC"); 
@@ -129,13 +134,18 @@ ocultarbotones();
 }
 function RebootD(){
 var userD= prompt("clave de Reboot");
-nocache = "&nocache=" + Math.random() * 1000000;
-var request = new XMLHttpRequest();
-strRD = userD;
-request.open("POST", "REBOOTER" +"&"+ strRD + "&RebootD" + nocache, true);
-request.send(null);
-userD = "";
-strRD = "";
+$.ajax({
+  url: 'simArduno.php',
+  method: 'POST',
+  data: {psw:userD, Ac:'RebootD'}, 
+success: function(response) {
+  // Actualizar el contenido del div con la respuesta de novedad.php
+  $('#respuestaD').html(response);
+},
+error: function(error) {
+  console.error('Error al realizar la consulta AJAX:', error);
+}
+});
 }
 
 function moveD() {
