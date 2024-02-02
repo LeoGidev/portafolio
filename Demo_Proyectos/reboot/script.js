@@ -74,7 +74,7 @@ mostrarbotones();}
            
 
 
-request.open("GET", "ajax_inputs" + nocache, true);
+request.open("GET", "simArduno.php" + nocache, true);
 
 request.send(null);
 
@@ -100,6 +100,18 @@ request.open("POST", "REBOOTER" +"&"+ strRA + "&RebootA" + nocache, true);
 request.send(null);
 user = "";
 strRA = "";
+    $.ajax({
+      url: 'simArduno.php',
+      method: 'GET',
+      data: { Ac:'RebootA'}, 
+  success: function(response) {
+      // Actualizar el contenido del div con la respuesta de novedad.php
+      $('#respuestaA').html(response);
+  },
+  error: function(error) {
+      console.error('Error al realizar la consulta AJAX:', error);
+  }
+});
 }
 
 function move() {
