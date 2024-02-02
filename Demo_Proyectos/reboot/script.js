@@ -163,6 +163,7 @@ document.getElementById('myProgressD').hidden = true;
 
 tigD= 1;
 clearInterval(id);
+mostrarbotones();
 } else {
 width++; 
 elem.style.width = width + '%';
