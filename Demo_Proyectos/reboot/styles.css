@@ -2,6 +2,9 @@ body {
     background:#E0E3FF !important; 
     text-align: center !important;
  }
+ .navbar {
+  background-color: #000000; /* Fondo negro */
+}
  .corps{
      border-spacing:5px 5px;
      border-collapse:separate;
@@ -243,5 +246,6 @@ body {
  }
  .portada{
     height: 100px;
+    margin-top: 100px !important;
     margin-bottom: 20px;
  }
