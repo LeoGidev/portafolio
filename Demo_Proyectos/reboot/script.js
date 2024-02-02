@@ -65,13 +65,18 @@ ocultarbotones();
 function RebootB(){
 var userB = prompt("clave de Reboot");
 
-nocache = "&nocache=" + Math.random() * 1000000;
-var request = new XMLHttpRequest();
-strRB = userB;
-request.open("POST", "REBOOTER" +"&"+ strRB + "&RebootB" + nocache, true);
-request.send(null);
-userB = "";
-strRB = "";
+$.ajax({
+  url: 'simArduno.php',
+  method: 'POST',
+  data: {psw:userB, Ac:'RebootB'}, 
+success: function(response) {
+  // Actualizar el contenido del div con la respuesta de novedad.php
+  $('#respuestaA').html(response);
+},
+error: function(error) {
+  console.error('Error al realizar la consulta AJAX:', error);
+}
+});
 }
 
 function moveB() {
