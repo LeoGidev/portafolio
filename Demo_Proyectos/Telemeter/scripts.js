@@ -1,13 +1,41 @@
 strText = '';
 strText2 = '';
 
-function SendText(){
-    var user= prompt('escriba el password');
-    nocache = '&nocache=' + Math.random() * 1000000; var request = new XMLHttpRequest();
-    strPS = user;
-    strText = '&Nodo=' + document.getElementById('txt_form').form_text.value +'&IP=' + document.getElementById('txt_form').form_text1.value + '&GW=' + document.getElementById('txt_form').form_text2.value + '&end=end';
-    request.open('GET', 'SETEO' + '&pass=' + strPS + strText +  nocache, true);
-    request.send(null);location.href ='main.htm';}
+function SendText() {
+    var user = prompt('Escriba el password');
+    var xhr = new XMLHttpRequest();
+
+    // Obtener los valores del formulario
+    var ipValue = document.getElementById('txt_form').form_text.value;
+    var gwValue = document.getElementById('txt_form').form_text2.value;
+
+    var formData = new FormData();
+    formData.append('pass', user);
+    formData.append('Nodo', ipValue);
+    formData.append('IP', '192.168.9.' + ipValue);
+    formData.append('GW', '192.168.9.' + gwValue);
+
+    xhr.open('POST', 'SETEO.php', true);
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState == 4) {
+            if (xhr.status == 200) {
+                // Manejar la respuesta aquí, por ejemplo, mostrar un mensaje
+                alert(xhr.responseText);
+
+                // Redirigir solo si la respuesta es exitosa (puedes ajustar la lógica según tu necesidad)
+                if (xhr.responseText.trim() === 'OK') {
+                    location.href = 'main.htm';
+                }
+            } else {
+                // Manejar errores de la solicitud
+                alert('Error en la solicitud');
+            }
+        }
+    };
+
+    xhr.send(formData);
+}
+
 
     function GetArduinoInputs() {
         var nocache = '&nocache=' + Math.random() * 1000000;
