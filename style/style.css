@@ -1,7 +1,7 @@
 
     
     body {
-        background-image: url('../img/fondo.jpg');
+        background-image: url('../img/fondo_1.webp');
         background-attachment: fixed; /* Esto asegura que el fondo se mantenga fijo al desplazarse */
         background-position: center top; /* Centra la imagen de fondo */
         background-size: cover; /* Ajusta la imagen de fondo para cubrir todo el contenedor */
@@ -83,11 +83,11 @@
         color: #1b1a1a !important;
         }
       .proyect:hover{
-        animation: movimiento 5s ;
+        animation: movimiento 2s ;
       }
 
       @keyframes movimiento{
-        50%{border-top:10px solid lightblue;}
+        50%{border-top:3px solid lightblue;}
       }
 
      
