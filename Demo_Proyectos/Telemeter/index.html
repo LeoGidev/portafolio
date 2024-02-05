@@ -21,10 +21,10 @@
       
       </head>
     
-    <body>
+      <body onload="GetArduinoInputs()">
         <header>
             <!-- Barra de navegación -->
-    <nav class="navbar navbar-expand-sm navbar-dark fixed-top transparent">
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
       <a class="navbar-brand" href="#">Leo Developer</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -55,4 +55,36 @@
         </ul>
       </div>
     </nav>
+    <div class="conatiner-fluid contenido">
+   
+      <table width="50%" align="center" style="text-align:center;">
+      <tbody>
+        <tr>
+          <td class="title">WestNet</td></tr>
+      <tr>
+        <td class="set">Seteo de Red</td></tr>
+      <tr>
+        <td class="set">
+      <form id="txt_form" name="frmText">
+      <br>IP: 192.<input type="text" placeholder="168" name="form_text" size="1" maxlength="3">
+      .9.<input type="text" placeholder="5" name="form_text1" size="1" maxlength="3">
+      <br>
+      <br>GW: 192.168.9.<input type="text" placeholder="1" name="form_text2" size="1" maxlength="3">
+      </form><br><input type="submit" value="Set" onclick="SendText()"> </td></tr>
+      <tr><td class="set">Datos</td></tr>
+      <tr><td class="set" ;'="">
+      Tension de linea:<span id="TenL">219v</span><br>
+      Corriente de linea:<span id="CorrL">10.5A</span><br>
+      Tension de baterias:<span id="TenB">27.1V</span><br>
+      Corriente de Baterias:<span id="CorrB">20.2A</span><br>
+      Temperatura interna:<span id="TempA">26°C</span><br>
+      Temperatura externa:<span id="TempB">35°C</span><br>
+      </td></tr>
+      <tr><td class="set"><form><input type="submit" value="snmp" name="Snmp"></form></td></tr></tbody></table>
+      </div>
+      
+      
+      </body>
+      <script src="scripts.js"></script>
+      </html>
     
