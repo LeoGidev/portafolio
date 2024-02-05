@@ -1,11 +1,11 @@
 <?php
 // Simulación de valores aleatorios
-$button1 = rand(0, 100);
-$button2 = rand(0, 100);
-$button3 = rand(0, 100);
-$button4 = rand(0, 100);
-$button5 = rand(0, 100);
-$button6 = rand(0, 100);
+$button1 = rand(180, 220);
+$button2 = rand(0, 40);
+$button3 = rand(10, 12);
+$button4 = rand(0, 10);
+$button5 = rand(30, 100);
+$button6 = rand(0, 48);
 
 // Construcción de la respuesta XML
 $responseXML = '<?xml version="1.0" encoding="UTF-8"?>';
