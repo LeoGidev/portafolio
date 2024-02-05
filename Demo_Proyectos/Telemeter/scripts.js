@@ -4,8 +4,15 @@ strText2 = '';
 function SendText() {
     var formData = new FormData(document.getElementById('txt_form'));
     var xhr = new XMLHttpRequest();
+    // Validar el formato de la dirección IPv4
+    var ipv4Pattern = /^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$/;
+    if (!ipv4Pattern.test(formData.value)) {
+        event.preventDefault(); // Evitar que se envíe el formulario
+        ipv4Error.textContent = 'Formato IPv4 inválido';
+    } else {
 
     xhr.open('POST', 'set.php', true);
+    }
 
     xhr.onreadystatechange = function () {
         if (xhr.readyState == 4) {
