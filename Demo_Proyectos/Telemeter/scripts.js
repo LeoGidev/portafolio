@@ -29,11 +29,7 @@ function SendText() {
     xhr.send(formData);
 }
 
-
-
-
-
-    function GetArduinoInputs() {
+ function GetArduinoInputs() {
         var nocache = '&nocache=' + Math.random() * 1000000;
         var request = new XMLHttpRequest();
     

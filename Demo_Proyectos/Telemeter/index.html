@@ -57,25 +57,28 @@
     </nav>
     <div class="conatiner-fluid contenido">
    
-      <table width="50%" align="center" style="text-align:center;">
-      <tbody>
-        <tr>
-          <td class="title">WestNet</td></tr>
-      <tr>
-        <td class="set">Seteo de Red</td></tr>
-      <tr>
-        <td class="set">
-      <form id="txt_form" name="frmText">
-      <br>IP: 
-      <input type="text" placeholder="192" name="octeto1" size="1" maxlength="3">.
-      <input type="text" placeholder="168" name="octeto2" size="1" maxlength="3">.
-      <input type="text" placeholder="168" name="octeto3" size="1" maxlength="3">.
-      <input type="text" placeholder="5" name="octeto4" size="1" maxlength="3">
-      <br>
-      <br id="gw">GW: 192.168.9.<input type="text" placeholder="1" name="gw1" size="1" maxlength="3">
-      </form><br><input type="submit" value="Set" onclick="SendText()"> </td></tr>
-      <tr><td class="set">Datos</td></tr>
-      <tr><td class="set" >
+      <div class="container" style="text-align:center;">
+      
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-6 title">
+            <h1> Telemeter</h1>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-6 set">
+            <p>Seteo de Red</p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+        <div class="col-12 col-md-6 set">
+          <form id="txt_form" name="frmText">
+            IP: <input type="text" placeholder="192.168.1.20" name="ip" size="11" maxlength="11" pattern="\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}" required>
+            GW:<input type="text" placeholder="192.168.1.1" name="gw" size="11" maxlength="11" pattern="\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}" required>
+          </form>
+          <button class="btn btn-success" type="submit" value="Set" onclick="SendText()"> </td></tr>
+
+      <div class="row justify-content-center"><td class="set">Datos</td></tr>
+        <div class="row justify-content-center"><td class="set" >
       Tension de linea:<span id="TenL">...</span>V<br>
       Corriente de linea:<span id="CorrL">...</span>A<br>
       Tension de baterias:<span id="TenB">...</span>V<br>
@@ -83,7 +86,8 @@
       Temperatura interna:<span id="TempA">...</span>°C<br>
       Temperatura externa:<span id="TempB">...</span>°C<br>
       </td></tr>
-      <tr><td class="set"><form><input type="submit" value="snmp" name="Snmp"></form></td></tr></tbody></table>
+      
+        
       </div>
       
       
