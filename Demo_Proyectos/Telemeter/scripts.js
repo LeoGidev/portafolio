@@ -4,28 +4,30 @@ strText2 = '';
 function SendText() {
     var formData = new FormData(document.getElementById('txt_form'));
     var xhr = new XMLHttpRequest();
-    // Validar el formato de la dirección IPv4
+    var mensaje = document.getElementById('mensaje');
     var ipv4Pattern = /^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$/;
-    if (!ipv4Pattern.test(formData.value)) {
+    console.log(formData.get('ip'));
+    if (!ipv4Pattern.test(formData.get('ip')) || !ipv4Pattern.test(formData.get('gw'))) {
         event.preventDefault(); // Evitar que se envíe el formulario
-        ipv4Error.textContent = 'Formato IPv4 inválido';
+        mensaje.textContent = 'Formato IPv4 inválido';
     } else {
-
+    
+    console.log("se envía: ", formData);
     xhr.open('POST', 'set.php', true);
-    }
 
     xhr.onreadystatechange = function () {
         if (xhr.readyState == 4) {
             if (xhr.status == 200) {
                 // Manejar la respuesta aquí, si es necesario
                 var response = JSON.parse(xhr.responseText);
-
-                // Cambiar los placeholders con los valores recibidos
-                document.getElementsByName('octeto1')[0].placeholder = response.octeto1;
-                document.getElementsByName('octeto2')[0].placeholder = response.octeto2;
-                document.getElementsByName('octeto3')[0].placeholder = response.octeto3;
-                document.getElementsByName('octeto4')[0].placeholder = response.octeto4;
-                document.getElementsByName('gw1')[0].placeholder = response.gw1;
+                console.log("se recibe: ", response);
+                console.log(response.ip);
+                console.log(response.gw);
+                // Cambiar las con los valores recibidos
+                document.getElementById('ip').innerHTML = response.ip;
+                document.getElementById('gw').innerHTML = response.gw;
+                mensaje.textContent = 'Ip y Gw cambiados';
+               
             } else {
                 // Manejar errores de la solicitud
                 alert('Error en la solicitud');
@@ -33,7 +35,7 @@ function SendText() {
         }
     };
 
-    xhr.send(formData);
+    xhr.send(formData);}
 }
 
  function GetArduinoInputs() {

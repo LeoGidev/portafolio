@@ -1,18 +1,14 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $octeto1 = $_POST['octeto1'];
-    $octeto2 = $_POST['octeto2'];
-    $octeto3 = $_POST['octeto3'];
-    $octeto4 = $_POST['octeto4'];
-    $gw1 = $_POST['gw1'];
+    $octeto1 = $_POST['ip'];
+    $octeto2 = $_POST['gw'];
+
 
     // Devolver una respuesta con los valores recibidos
     $response = array(
-        'octeto1' => $octeto1,
-        'octeto2' => $octeto2,
-        'octeto3' => $octeto3,
-        'octeto4' => $octeto4,
-        'gw1' => $gw1
+        'ip' => $octeto1,
+        'gw' => $octeto2,
+       
     );
 
     // Devolver la respuesta en formato JSON
