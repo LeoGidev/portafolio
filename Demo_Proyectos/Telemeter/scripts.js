@@ -14,11 +14,11 @@ function SendText() {
                 var response = JSON.parse(xhr.responseText);
 
                 // Cambiar los placeholders con los valores recibidos
-                document.getElementById('octeto1').placeholder = response.octeto1;
-                document.getElementById('octeto2').placeholder = response.octeto2;
-                document.getElementById('octeto3').placeholder = response.octeto3;
-                document.getElementById('octeto4').placeholder = response.octeto4;
-                document.getElementById('gw1').placeholder = response.gw1;
+                document.getElementsByName('octeto1')[0].placeholder = response.octeto1;
+                document.getElementsByName('octeto2')[0].placeholder = response.octeto2;
+                document.getElementsByName('octeto3')[0].placeholder = response.octeto3;
+                document.getElementsByName('octeto4')[0].placeholder = response.octeto4;
+                document.getElementsByName('gw1')[0].placeholder = response.gw1;
             } else {
                 // Manejar errores de la solicitud
                 alert('Error en la solicitud');
@@ -28,6 +28,7 @@ function SendText() {
 
     xhr.send(formData);
 }
+
 
 
 
