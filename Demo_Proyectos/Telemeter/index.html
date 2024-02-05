@@ -57,7 +57,7 @@
     </nav>
     <div class="conatiner-fluid contenido">
    
-      <div class="container" style="text-align:center;">
+      <div class="container mb-3" style="text-align:center;">
       
         <div class="row justify-content-center">
           <div class="col-12 col-md-6 title">
@@ -66,29 +66,50 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-12 col-md-6 set">
-            <p>Seteo de Red</p>
+            <h3>Seteo de Red</h3>
           </div>
         </div>
         <div class="row justify-content-center">
-        <div class="col-12 col-md-6 set">
-          <form id="txt_form" name="frmText">
-            IP: <input type="text" placeholder="192.168.1.20" name="ip" size="11" maxlength="11" pattern="\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}" required>
-            GW:<input type="text" placeholder="192.168.1.1" name="gw" size="11" maxlength="11" pattern="\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}" required>
-          </form>
-          <button class="btn btn-success" type="submit" value="Set" onclick="SendText()"> </td></tr>
+          <div class="col-12 col-md-6 set">
+            <form id="txt_form" name="frmText">
+              IP: <input type="text" placeholder="192.168.1.20" name="ip" size="11" maxlength="11" pattern="\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}" required>
+              GW:<input type="text" placeholder="192.168.1.1" name="gw" size="11" maxlength="11" pattern="\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}" required>
+            </form>
+            <button class="btn btn-success" type="submit" value="Set" onclick="SendText()">Set </button>
+          </div>
+        </div>
 
-      <div class="row justify-content-center"><td class="set">Datos</td></tr>
-        <div class="row justify-content-center"><td class="set" >
-      Tension de linea:<span id="TenL">...</span>V<br>
-      Corriente de linea:<span id="CorrL">...</span>A<br>
-      Tension de baterias:<span id="TenB">...</span>V<br>
-      Corriente de Baterias:<span id="CorrB">...</span>A<br>
-      Temperatura interna:<span id="TempA">...</span>°C<br>
-      Temperatura externa:<span id="TempB">...</span>°C<br>
-      </td></tr>
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-6 set"><h3>Datos</h3></div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-6 set" >
+          <h4>Valores de RED</h4>
+          </div>
+        </div>
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-6 set" >
+          IP:<p id="ip">192.168.1.20</p>
+          GW:<p id="gw">192.168.1.1</p>
+        </div>
+      </div>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-6 set" >
+            <h4>Telemetría</h4>
+          </div></div>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-6 set" >
+            Tension de linea:<span id="TenL">...</span>V<br>
+            Corriente de linea:<span id="CorrL">...</span>A<br>
+            Tension de baterias:<span id="TenB">...</span>V<br>
+            Corriente de Baterias:<span id="CorrB">...</span>A<br>
+            Temperatura interna:<span id="TempA">...</span>°C<br>
+            Temperatura externa:<span id="TempB">...</span>°C<br>
+          </div>
+        </div>
       
         
-      </div>
+    </div>
       
       
       </body>
