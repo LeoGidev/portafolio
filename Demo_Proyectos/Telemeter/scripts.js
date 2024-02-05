@@ -2,30 +2,23 @@ strText = '';
 strText2 = '';
 
 function SendText() {
-    var user = prompt('Escriba el password');
+    var formData = new FormData(document.getElementById('txt_form'));
     var xhr = new XMLHttpRequest();
 
-    // Obtener los valores del formulario
-    var ipValue = document.getElementById('txt_form').form_text.value;
-    var gwValue = document.getElementById('txt_form').form_text2.value;
+    xhr.open('POST', 'set.php', true);
 
-    var formData = new FormData();
-    formData.append('pass', user);
-    formData.append('Nodo', ipValue);
-    formData.append('IP', '192.168.9.' + ipValue);
-    formData.append('GW', '192.168.9.' + gwValue);
-
-    xhr.open('POST', 'SETEO.php', true);
     xhr.onreadystatechange = function () {
         if (xhr.readyState == 4) {
             if (xhr.status == 200) {
-                // Manejar la respuesta aquí, por ejemplo, mostrar un mensaje
-                alert(xhr.responseText);
+                // Manejar la respuesta aquí, si es necesario
+                var response = JSON.parse(xhr.responseText);
 
-                // Redirigir solo si la respuesta es exitosa (puedes ajustar la lógica según tu necesidad)
-                if (xhr.responseText.trim() === 'OK') {
-                    location.href = 'main.htm';
-                }
+                // Cambiar los placeholders con los valores recibidos
+                document.getElementById('octeto1').placeholder = response.octeto1;
+                document.getElementById('octeto2').placeholder = response.octeto2;
+                document.getElementById('octeto3').placeholder = response.octeto3;
+                document.getElementById('octeto4').placeholder = response.octeto4;
+                document.getElementById('gw1').placeholder = response.gw1;
             } else {
                 // Manejar errores de la solicitud
                 alert('Error en la solicitud');
@@ -35,6 +28,8 @@ function SendText() {
 
     xhr.send(formData);
 }
+
+
 
 
     function GetArduinoInputs() {
