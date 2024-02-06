@@ -164,6 +164,15 @@ padding: 5px;
     width:52px;
     cursor: pointer;
   }
+  #menuBtn:active img{
+    animation: gira 2s linear;
+  }
+@keyframes gira {
+  to{
+    transform: rotate(360deg);
+  }
+  
+}
   
   #sideMenu {
     position: fixed;
