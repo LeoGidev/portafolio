@@ -44,7 +44,18 @@ function SendText() {
             if (this.readyState == 4) {
                 if (this.status == 200) {
                     if (this.responseXML != null) {
-                        document.getElementById('TenL').innerHTML = this.responseXML.getElementsByTagName('button1')[0].childNodes[0].nodeValue;
+                        
+                        var tension = this.responseXML.getElementsByTagName('button1')[0].childNodes[0].nodeValue;
+                        var estado = document.getElementById('EstadoLinea');
+                        console.log(tension);
+                        
+                        if(tension < 200){
+                            estado.innerHTML= "Peligro";
+                            estado.className= "btn-danger";
+                        }
+
+                        document.getElementById('TenL').innerHTML = tension;
+
                         document.getElementById('CorrL').innerHTML = this.responseXML.getElementsByTagName('button2')[0].childNodes[0].nodeValue;
                         document.getElementById('TenB').innerHTML = this.responseXML.getElementsByTagName('button3')[0].childNodes[0].nodeValue;
                         document.getElementById('CorrB').innerHTML = this.responseXML.getElementsByTagName('button4')[0].childNodes[0].nodeValue;
@@ -55,8 +66,9 @@ function SendText() {
             }
         };
 
-        var tension = document.getElementById('TenL').textContent;
-        console.log("tension: ", tension);
+        
+       
+       
        
         request.open('GET', 'ArduSimu.php?' + nocache, true);
         request.send(null);
