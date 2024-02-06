@@ -338,11 +338,13 @@ footer{
   #recorte{
     overflow: hidden;
     border-radius: 50%;
+    border: 4px solid #3e3e1436; 
     /*animation: redondear 10s linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;*/
 
   }
+ 
 
   @keyframes redondear {
     to{
