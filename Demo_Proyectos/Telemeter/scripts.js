@@ -50,10 +50,10 @@ function SendText() {
                         console.log(tension);
                         
                         if(tension < 180){
-                            estado.innerHTML= "Peligro";
+                            estado.innerHTML= "🔥";
                             estado.className= "btn-danger";
                         }else if(tension < 200 ){
-                            estado.innerHTML= "Precaución";
+                            estado.innerHTML= "⚠️";
                             estado.className= "btn-warning";
                         }else{
                             estado.innerHTML= "OK";
