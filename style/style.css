@@ -385,3 +385,15 @@ footer{
 
   
   
+  /* Estilo para pantallas pequeñas (menos de 600px de ancho) */
+  @media only screen and (max-width: 600px) {
+    th, td {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    th, td:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+  }
