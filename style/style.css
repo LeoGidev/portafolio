@@ -379,4 +379,28 @@ footer{
       transform: rotateY(360deg);
     }
   }
+  .table{
+    table-layout:auto;
+  }
+
+  .img-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .img-container img {
+    display: block;
+    width: 100px; /* Ancho de las imágenes */
+    height: auto; /* Altura ajustada automáticamente */
+    margin: 0 auto;
+  }
+
+  .img2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Hace que la segunda imagen esté sobre la primera */
+  }
   
