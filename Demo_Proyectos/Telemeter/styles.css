@@ -41,3 +41,17 @@ h4{
     color: white !important;
     font-family: 'Blinker', sans-serif;
 }
+
+.foot{
+    background-color:#3E6BEB; 
+    color:white; 
+    font-weight:bold;
+     font-size:10px; 
+     border-radius:5px;
+    padding:2px;
+    position:fixed;
+      bottom: 0;
+      width: 99%;
+      height: 17px;
+    
+    }
