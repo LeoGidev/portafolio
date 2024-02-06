@@ -1,6 +1,6 @@
 <?php
 // Simulación de valores aleatorios
-$button1 = rand(180, 220);
+$button1 = rand(170, 240);
 $button2 = rand(0, 40);
 $button3 = rand(10, 12);
 $button4 = rand(0, 10);

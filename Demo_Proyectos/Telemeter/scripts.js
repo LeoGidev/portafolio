@@ -12,7 +12,7 @@ function SendText() {
         mensaje.textContent = 'Formato IPv4 inválido';
     } else {
     
-    console.log("se envía: ", formData);
+    
     xhr.open('POST', 'set.php', true);
 
     xhr.onreadystatechange = function () {
@@ -20,9 +20,7 @@ function SendText() {
             if (xhr.status == 200) {
                 // Manejar la respuesta aquí, si es necesario
                 var response = JSON.parse(xhr.responseText);
-                console.log("se recibe: ", response);
-                console.log(response.ip);
-                console.log(response.gw);
+                
                 // Cambiar las con los valores recibidos
                 document.getElementById('ip').innerHTML = response.ip;
                 document.getElementById('gw').innerHTML = response.gw;
@@ -56,7 +54,10 @@ function SendText() {
                 }
             }
         };
-    
+
+        var tension = document.getElementById('TenL').textContent;
+        console.log("tension: ", tension);
+       
         request.open('GET', 'ArduSimu.php?' + nocache, true);
         request.send(null);
         setTimeout(GetArduinoInputs, 5000);
