@@ -38,4 +38,6 @@ h4{
     border-radius: 4px;
     margin: 4px;
     padding: 4px;
+    color: white !important;
+    font-family: 'Blinker', sans-serif;
 }

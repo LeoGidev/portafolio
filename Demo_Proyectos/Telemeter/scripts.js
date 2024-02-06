@@ -49,9 +49,15 @@ function SendText() {
                         var estado = document.getElementById('EstadoLinea');
                         console.log(tension);
                         
-                        if(tension < 200){
+                        if(tension < 180){
                             estado.innerHTML= "Peligro";
                             estado.className= "btn-danger";
+                        }else if(tension < 200 ){
+                            estado.innerHTML= "Precaución";
+                            estado.className= "btn-warning";
+                        }else{
+                            estado.innerHTML= "OK";
+                            estado.className= "btn-success";
                         }
 
                         document.getElementById('TenL').innerHTML = tension;
