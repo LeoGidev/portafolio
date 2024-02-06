@@ -349,3 +349,16 @@ footer{
     }
     
   }
+
+  #letra{
+    animation: giro3d 4s linear;
+    
+    animation-iteration-count: 1;
+
+  }
+  @keyframes giro3d {
+    to{
+      transform: rotateY(360deg);
+    }
+    
+  }
