@@ -355,14 +355,11 @@ footer{
   }
   
   #letra {
-    color:white;
+    
     z-index: 200;
     position: absolute;
     top: 10%;
     left: 40%;
-    font-weight: bold;
-    font-size: 200px;
-    font-family: 'Blinker', sans-serif;
     animation: giro3d 4s linear;
     animation-iteration-count: infinite;
   }
