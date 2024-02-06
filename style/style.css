@@ -355,6 +355,8 @@ footer{
 
   #perfil {
     position: relative;
+    border-top-left-radius: 300px;
+    border-top-right-radius: 300px;
   }
   
   #letra {
