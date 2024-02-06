@@ -41,7 +41,7 @@ h4{
     color: white !important;
     font-family: 'Blinker', sans-serif;
     transition: 2s;
-    
+
 }
 
 .foot{
@@ -55,5 +55,5 @@ h4{
       bottom: 0;
       width: 99%;
       height: 17px;
-    
+    text-align: center;
     }

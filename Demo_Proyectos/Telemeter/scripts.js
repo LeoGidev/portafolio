@@ -44,7 +44,7 @@ function SendText() {
             if (this.readyState == 4) {
                 if (this.status == 200) {
                     if (this.responseXML != null) {
-                        
+                        var mensaje = document.getElementById('mensaje');                        
                         var tension = this.responseXML.getElementsByTagName('button1')[0].childNodes[0].nodeValue;
                         var estado = document.getElementById('EstadoLinea');
                         console.log(tension);
@@ -52,12 +52,15 @@ function SendText() {
                         if(tension < 180){
                             estado.innerHTML= "🔥";
                             estado.className= "btn-danger";
+                            mensaje.innerHTML = "🔥🔥¡¡Peligro!! 🔥🔥, tensión de línea baja o corte eleéctrico!"
                         }else if(tension < 200 ){
                             estado.innerHTML= "⚠️";
                             estado.className= "btn-warning";
+                            mensaje.innerHTML = "⚠️⚠️¡Atención!⚠️⚠️, Tensión por debajo de los valores óptimos!"
                         }else{
                             estado.innerHTML= "OK";
                             estado.className= "btn-success";
+                            mensaje.innerHTML = "😎 Todo bien por ahora!"
                         }
 
                         document.getElementById('TenL').innerHTML = tension;
