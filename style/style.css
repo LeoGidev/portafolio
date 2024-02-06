@@ -350,20 +350,26 @@ footer{
     
   }
 
-  #letra{
-    z-index: 200;
+  #perfil {
     position: relative;
-    top:0;
+  }
+  
+  #letra {
+    color:white;
+    z-index: 200;
+    position: absolute;
+    top: 25%;
+    left: 50%;
     font-weight: bold;
     font-size: 100px;
     font-family: 'Blinker', sans-serif;
     animation: giro3d 4s linear;
     animation-iteration-count: 1;
-
   }
+  
   @keyframes giro3d {
-    to{
+    to {
       transform: rotateY(360deg);
     }
-    
   }
+  
