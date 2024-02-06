@@ -351,8 +351,13 @@ footer{
   }
 
   #letra{
+    z-index: 200;
+    position: relative;
+    top:0;
+    font-weight: bold;
+    font-size: 100px;
+    font-family: 'Blinker', sans-serif;
     animation: giro3d 4s linear;
-    
     animation-iteration-count: 1;
 
   }
