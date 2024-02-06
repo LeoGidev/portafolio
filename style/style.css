@@ -335,11 +335,12 @@ footer{
     transition: color 1s ease, background-color 1s ease;
   }
 
-  #logo{
-    
-    animation: redondear 10s linear;
+  #recorte{
+    overflow: hidden;
+    border-radius: 50%;
+    /*animation: redondear 10s linear;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
+    animation-direction: alternate;*/
 
   }
 
@@ -355,12 +356,17 @@ footer{
   }
   
   #letra {
-    
+    width: 300px;
     z-index: 200;
-    position: absolute;
+    position:absolute;
     top: 10%;
-    left: 40%;
+    left: 20%;
     animation: giro3d 4s linear;
+    animation-iteration-count: infinite;
+  }
+
+  #logo{
+    animation: gira 20s linear;
     animation-iteration-count: infinite;
   }
   
