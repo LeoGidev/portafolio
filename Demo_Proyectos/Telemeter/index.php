@@ -24,37 +24,10 @@
       <body onload="GetArduinoInputs()">
         <header>
             <!-- Barra de navegación -->
-    <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
-      <a class="navbar-brand" href="#">Leo Developer</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Demos
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <h6 class="ml-3"> Proyectos</h6>
-              <a class="dropdown-item" href="../Demo_Proyectos/Reboot/index.html">Device Remote Reboot</a>
-              <a class="dropdown-item" href="https://yplef.000webhostapp.com/" target="_blank">YPLEF web page</a>
-              <div class="dropdown-divider"></div>
-              <h6 class="ml-3">Prácticas</h6>
-              <a class="dropdown-item" href="../../Practicas/Paint/">Simple Paint Web</a>
-              <a class="dropdown-item" href="../../Practicas/CartondeRifa/">Carton de Rifas</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Sobremi">Sobre mí</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#proyectos">Proyectos</a>
-          </li>
-          
-        </ul>
-      </div>
-    </nav>
+<?php
+include '../recursos/barra.php';       
+?>
+ 
     <div class="conatiner-fluid contenido">
    
       <div class="container mb-3" style="text-align:center;">
