@@ -354,13 +354,14 @@ footer{
   }
 
   #perfil {
-    position: relative;
+   
     border-top-left-radius: 300px;
     border-top-right-radius: 300px;
-    margin:0 auto;
+   
   }
+
   
-  #letra {
+  /*#letra {
     width: 300px;
     z-index: 200;
     position:absolute;
@@ -368,13 +369,41 @@ footer{
     left: 20%;
     animation: giro3d 4s linear;
     animation-iteration-count: infinite;
-  }
+  }*/
 
-  #logo{
+  /*#logo{
     animation: gira 20s linear;
     animation-iteration-count: infinite;
+  }*/
+  /* Estilo del contenedor */
+  #recorte {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #ccc;
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
   }
-  
+     /* Estilo de las imágenes */
+     .img-container {
+      position: absolute;
+      top: 0%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .img-container img {
+      /*display: block;*/
+      width: 300px; /* Ancho de las imágenes */
+      /*height: auto; /* Altura ajustada automáticamente */
+      margin: 0 auto;
+    }
+
+    .img2 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1; /* Hace que la segunda imagen esté sobre la primera */
+    }
   @keyframes giro3d {
     to {
       transform: rotateY(360deg);
