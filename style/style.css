@@ -363,6 +363,10 @@ footer{
     animation: gira 20s linear;
     animation-iteration-count: infinite;
   }
+  #luz{
+    animation: gira 1s linear;
+    animation-iteration-count: infinite;
+  }
   /* Estilo del contenedor */
   #recorte {
     overflow: hidden;
