@@ -26,22 +26,9 @@
 <body onload="ValoresAjax()">
    <header>
       <!-- Barra de navegación -->
-<nav class="navbar navbar-expand-sm navbar-dark fixed-top">
-<a class="navbar-brand" href="../../index.html">Leo Developer</a>
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-  <span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse" id="navbarNav">
-  <ul class="navbar-nav ml-auto">
-    <li class="nav-item">
-      <a class="nav-link" href="../../index.html#Sobremi">Sobre mí</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="../../index.html#proyectos">Proyectos</a>
-    </li>
-  </ul>
-</div>
-</nav>
+      <?php
+include '../recursos/barra.php';       
+?>
 </header>
 
    <div class="container portada mt-3">
