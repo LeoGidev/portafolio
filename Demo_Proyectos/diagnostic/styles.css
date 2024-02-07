@@ -1,0 +1,11 @@
+.navbar {
+    background-color: #000000; /* Fondo negro */
+}
+.navbar.fixed .navbar-brand,
+.navbar.fixed .navbar-nav .nav-link {
+    color: #ffffff; /* Letras blancas */
+}
+
+.contenido{
+    margin-top: 100px !important;
+}

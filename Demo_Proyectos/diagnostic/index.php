@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@300;400&family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
 
-
+<link rel="stylesheet" href="styles.css">
   <link rel="icon" href="img/icono.png" type="image/x-icon">
   <link rel="shortcut icon" href="img/icono.png" type="image/x-icon">
   
@@ -58,24 +58,11 @@ function showUser(str) { setInterval(mostrar(),3000);
 <body>
     <header>
         <!-- Barra de navegación -->
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-  <a class="navbar-brand" href="../../index.html">Leo Developer</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="../../index.html#Sobremi">Sobre mí</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="../../index.html#proyectos">Proyectos</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+        <?php
+include '../recursos/barra.php';       
+?>
 </header>
-<div class="container-fluid" >
+<div class="container-fluid mt-3 contenido" >
   <div class="jumbotron ">
     
       <h3>Herramienta de Diagnóstico:</h3><p>Por favor ingrese el nombre del dominio, por ejemplo "www.google.com" para realizar la prueba.</p>
