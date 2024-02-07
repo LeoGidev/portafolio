@@ -357,6 +357,7 @@ footer{
     position: relative;
     border-top-left-radius: 300px;
     border-top-right-radius: 300px;
+    margin:0 auto;
   }
   
   #letra {
