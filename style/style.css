@@ -347,8 +347,8 @@ footer{
 
   #perfil {
    
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
    
   }
 
@@ -367,12 +367,12 @@ footer{
   #recorte {
     overflow: hidden;
     border-radius: 50%;
-    border: 14px solid #3e3e1436; 
     position: relative;
     width: 300px;
     height: 300px;
-    border: 1px solid #ccc;
+    border: 8px solid #ccc;
     margin: 0 auto; /* Centra el contenedor horizontalmente */
+    background: linear-gradient(to bottom, #37352f, #070605);
   }
      /* Estilo de las imágenes */
      .img-container {
