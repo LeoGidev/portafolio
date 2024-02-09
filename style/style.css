@@ -417,9 +417,11 @@ footer{
       display: block;
       width: 100%;
       box-sizing: border-box;
+      text-align: center;
+
     }
 
     th, td:nth-child(even) {
-      background-color: #f2f2f2;
+      /*ackground-color: #f2f2f2;*/
     }
   }
