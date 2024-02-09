@@ -175,6 +175,7 @@ padding: 5px;
 }
   
   #sideMenu {
+    z-index: 900;
     position: fixed;
     top: 250;
     right: -200px;
@@ -422,6 +423,6 @@ footer{
     }
 
     th, td:nth-child(even) {
-      /*ackground-color: #f2f2f2;*/
+      /*background-color: #f2f2f2;*/
     }
   }
