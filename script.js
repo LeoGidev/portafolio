@@ -89,6 +89,8 @@ document.addEventListener('DOMContentLoaded', function () {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         animatedElement.classList.add('show');
+      }else{
+        animatedElement.classList.remove('show');
       }
     });
   });

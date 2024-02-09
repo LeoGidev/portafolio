@@ -428,12 +428,12 @@ footer{
   }
 
   .aparecido{
-    opacity: 0;
-      transform: translateY(80px);
+    opacity: 1;
+      transform: translateX(-100%);
       transition: opacity 1s, transform 3.5s;
   }
   .aparecido.show{
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
 
   }
