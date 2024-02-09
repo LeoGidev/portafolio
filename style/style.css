@@ -429,7 +429,7 @@ footer{
 
   .aparecido{
     opacity: 0;
-      transform: translateY(20px);
+      transform: translateY(80px);
       transition: opacity 1s, transform 3.5s;
   }
   .aparecido.show{
