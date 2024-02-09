@@ -426,3 +426,14 @@ footer{
       background-color: #f2f2f2;
     }*/
   }
+
+  .aparecido{
+    opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 1s, transform 3.5s;
+  }
+  .aparecido.show{
+    opacity: 1;
+    transform: translateY(0);
+
+  }

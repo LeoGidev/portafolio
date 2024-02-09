@@ -81,3 +81,17 @@ document.addEventListener('DOMContentLoaded', function(){
   changeWord();
   
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const animatedElement = document.querySelector('.aparecido');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animatedElement.classList.add('show');
+      }
+    });
+  });
+
+  observer.observe(animatedElement);
+});
