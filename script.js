@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // cuarto observador 
     const otherElementsD = document.querySelectorAll('.invermov');
 
-    const observerCD = new IntersectionObserver((entries) => {
+    const observerD = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           // Realizar otro efecto
