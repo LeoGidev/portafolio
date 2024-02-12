@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const observerB = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        // Realizar otro efecto para la clase .otro-elemento
+        // Realizar otro efecto 
         entry.target.classList.add('show');
       } else {
         entry.target.classList.remove('show');
@@ -142,9 +142,9 @@ document.addEventListener('DOMContentLoaded', function () {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           // Realizar otro efecto
-          entry.target.classList.add('gira');
+          entry.target.classList.add('invshow');
         } else {
-          entry.target.classList.remove('gira');
+          entry.target.classList.remove('invshow');
         }
       });
     });
