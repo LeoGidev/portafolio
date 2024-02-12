@@ -83,17 +83,19 @@ document.addEventListener('DOMContentLoaded', function(){
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-  const animatedElement = document.querySelector('.aparecido');
+  const animatedElements = document.querySelectorAll('.aparecido');
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        animatedElement.classList.add('show');
-      }else{
-        animatedElement.classList.remove('show');
+        entry.target.classList.add('show');
+      } else {
+        entry.target.classList.remove('show');
       }
     });
   });
 
-  observer.observe(animatedElement);
+  animatedElements.forEach(element => {
+    observer.observe(element);
+  });
 });
