@@ -99,3 +99,21 @@ document.addEventListener('DOMContentLoaded', function () {
     observer.observe(element);
   });
 });
+  // Segundo observador para otra clase (por ejemplo, .otro-elemento)
+  const otherElements = document.querySelectorAll('.otro-elemento');
+
+  const observerB = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // Realizar otro efecto para la clase .otro-elemento
+        entry.target.classList.add('otro-efecto');
+      } else {
+        entry.target.classList.remove('otro-efecto');
+      }
+    });
+  });
+
+  otherElements.forEach(element => {
+    observerB.observe(element);
+  });
+});
