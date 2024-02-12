@@ -336,17 +336,7 @@ footer{
     transition: color 1s ease, background-color 1s ease;
   }
 
- 
- 
-
-  @keyframes redondear {
-    to{
-      border-radius: 50%;
-    }
-    
-  }
-
-  #perfil {
+   #perfil {
    
     border-top-left-radius: 9px;
     border-top-right-radius: 9px;
@@ -464,6 +454,14 @@ footer{
   @keyframes gira {
     to{
       transform: rotate(360deg);
+    }
+    
+  }
+
+  
+  @keyframes redondear {
+    to{
+      border-radius: 50%;
     }
     
   }
