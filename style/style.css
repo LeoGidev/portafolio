@@ -430,7 +430,7 @@ footer{
   .corrido{
     
       transform: translateX(-100%);
-      transition: opacity 1s, transform 3.5s;
+      transition:3.5s;
   }
   .corrido.move{
     transform: translateX(0);
@@ -439,9 +439,9 @@ footer{
 
   .aparecido{
     opacity: 0;
-    transition: 1s;
+    transition: 3.5s;
   }
   .aparecido.show{
     opacity: 1;
-    transition: 1s;
+    transition: 2s;
   }
