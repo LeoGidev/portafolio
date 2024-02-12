@@ -391,11 +391,7 @@ footer{
       z-index: 100; /* Hace que la segunda imagen esté sobre la primera */
       
     }
-  @keyframes giro3d {
-    to {
-      transform: rotateY(360deg);
-    }
-  }
+  
   .table{
     table-layout:auto;
   }
@@ -464,4 +460,10 @@ footer{
       border-radius: 50%;
     }
     
+  }
+
+  @keyframes giro3d {
+    to {
+      transform: rotateY(360deg);
+    }
   }
