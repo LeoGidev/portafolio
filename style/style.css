@@ -78,7 +78,7 @@
         font-size: 15;
         }
         .tecn img{
-          animation: giro3d 4s linear;
+          animation: giro3d 9s linear;
           animation-iteration-count: infinite;
           box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.5); /* Sombra en la parte inferior */
 
