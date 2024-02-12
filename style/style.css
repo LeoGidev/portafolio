@@ -427,6 +427,7 @@ footer{
   .aparecido{
     opacity: 0;
     transition: 3.5s;
+    transition-delay: 3s;
   }
   .aparecido.show{
     opacity: 1;
@@ -446,7 +447,8 @@ footer{
 
   .invermov{
     transform: translateX(100%);
-    transition: 1s;
+    transition: 2s;
+    
   }
   .invermov.invshow{
     transform: translateX(0%);
