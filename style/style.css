@@ -77,6 +77,10 @@
         width: 200px;
         font-size: 15;
         }
+        .tecn img{
+          animation: giro3d 4s linear;
+          animation-iteration-count: infinite;
+        }
 
      .proyect{
         background-color:#ffffff !important;
@@ -448,8 +452,8 @@ footer{
 
   .girado{
     transform: rotate(90deg);
-    transform: translateX(100%);
-    transition: transform rotate 3.5s, transform translateX 1s;
+    
+    transition:3.5s;
   }
   .girado.gira{
     transform: rotate(0deg);
