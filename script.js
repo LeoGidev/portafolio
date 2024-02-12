@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const observerC = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          // Realizar otro efecto para la clase .otro-elemento
+          // Realizar otro efecto 
           entry.target.classList.add('gira');
         } else {
           entry.target.classList.remove('gira');
@@ -133,6 +133,24 @@ document.addEventListener('DOMContentLoaded', function () {
   
     otherElementsC.forEach(element => {
       observerC.observe(element);
+    });
+
+    // cuarto observador 
+    const otherElementsD = document.querySelectorAll('.invermov');
+
+    const observerCD = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // Realizar otro efecto
+          entry.target.classList.add('gira');
+        } else {
+          entry.target.classList.remove('gira');
+        }
+      });
+    });
+  
+    otherElementsD.forEach(element => {
+      observerD.observe(element);
     });
 
 });
