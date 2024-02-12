@@ -89,9 +89,12 @@
      .proyect{
         background-color:#ffffff !important;
         color: #1b1a1a !important;
+        overflow: hidden;
+        transition: filter 0.3s ease-in-out;
         }
       .proyect:hover{
-        animation: movimiento 2s ;
+        filter: brightness(1.1);
+        box-shadow: 2px 2px 6px #000000;
       }
 
       
