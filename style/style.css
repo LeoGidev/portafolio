@@ -83,7 +83,8 @@
           box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.5); /* Sombra en la parte inferior */
 
         }
-
+      
+        /*Proyectos*/
      .proyect{
         background-color:#ffffff !important;
         color: #1b1a1a !important;
@@ -92,9 +93,7 @@
         animation: movimiento 2s ;
       }
 
-      @keyframes movimiento{
-        50%{border-top:3px solid lightblue;}
-      }
+      
 
      
 
@@ -173,12 +172,7 @@ padding: 5px;
   #menuBtn:active img{
     animation: gira 2s linear;
   }
-@keyframes gira {
-  to{
-    transform: rotate(360deg);
-  }
-  
-}
+
   
   #sideMenu {
     z-index: 900;
@@ -461,4 +455,15 @@ footer{
     transform: rotate(0deg);
     transform: translateX(0);
     transition: 2s;
+  }
+/*Animaciones*/
+  @keyframes movimiento{
+    50%{border-top:3px solid lightblue;}
+  }
+
+  @keyframes gira {
+    to{
+      transform: rotate(360deg);
+    }
+    
   }
