@@ -433,7 +433,7 @@ footer{
   }
 
   .girado{
-    transform: rotate(90deg);
+    transform: rotateX(90deg);
     
     transition:3.5s;
   }
@@ -441,6 +441,14 @@ footer{
     transform: rotate(0deg);
     transform: translateX(0);
     transition: 2s;
+  }
+
+  .invermov{
+    transform: translateX(100%);
+    transition: 1s;
+  }
+  .invermov.invshow{
+    transform: translateX(0%);
   }
 /*Animaciones*/
   @keyframes movimiento{
