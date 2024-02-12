@@ -445,3 +445,14 @@ footer{
     opacity: 1;
     transition: 2s;
   }
+
+  .girado{
+    transform: rotate(90deg);
+    transform: translateX(100%);
+    transition: transform rotate 3.5s, transform translateX 1s;
+  }
+  .girado.gira{
+    transform: rotate(0deg);
+    transform: translateX(0);
+    transition: 2s;
+  }

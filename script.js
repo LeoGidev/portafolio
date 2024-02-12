@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function () {
     observer.observe(element);
   });
 
-  // Segundo observador para otra clase (por ejemplo, .otro-elemento)
+  // Segundo observador para otra clase
   const otherElements = document.querySelectorAll('.aparecido');
 
   const observerB = new IntersectionObserver((entries) => {
@@ -116,4 +116,23 @@ document.addEventListener('DOMContentLoaded', function () {
   otherElements.forEach(element => {
     observerB.observe(element);
   });
+
+    // tercer observador 
+    const otherElementsC = document.querySelectorAll('.girado');
+
+    const observerC = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // Realizar otro efecto para la clase .otro-elemento
+          entry.target.classList.add('gira');
+        } else {
+          entry.target.classList.remove('gira');
+        }
+      });
+    });
+  
+    otherElementsC.forEach(element => {
+      observerC.observe(element);
+    });
+
 });
