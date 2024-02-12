@@ -5,6 +5,7 @@
         background-attachment: fixed; /* Esto asegura que el fondo se mantenga fijo al desplazarse */
         background-position: center top; /* Centra la imagen de fondo */
         background-size: cover; /* Ajusta la imagen de fondo para cubrir todo el contenedor */
+        overflow-x: hidden;
     }
     
     /* Estilos adicionales */
