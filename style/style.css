@@ -432,7 +432,7 @@ footer{
       transform: translateX(-100%);
       transition: opacity 1s, transform 3.5s;
   }
-  .corrido.movw{
+  .corrido.move{
     transform: translateX(0);
 
   }
