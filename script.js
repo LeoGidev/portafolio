@@ -83,14 +83,14 @@ document.addEventListener('DOMContentLoaded', function(){
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-  const animatedElements = document.querySelectorAll('.aparecido');
+  const animatedElements = document.querySelectorAll('.corrido');
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('show');
+        entry.target.classList.add('move');
       } else {
-        entry.target.classList.remove('show');
+        entry.target.classList.remove('move');
       }
     });
   });
@@ -98,17 +98,17 @@ document.addEventListener('DOMContentLoaded', function () {
   animatedElements.forEach(element => {
     observer.observe(element);
   });
-});
+
   // Segundo observador para otra clase (por ejemplo, .otro-elemento)
-  const otherElements = document.querySelectorAll('.otro-elemento');
+  const otherElements = document.querySelectorAll('.aparecido');
 
   const observerB = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         // Realizar otro efecto para la clase .otro-elemento
-        entry.target.classList.add('otro-efecto');
+        entry.target.classList.add('show');
       } else {
-        entry.target.classList.remove('otro-efecto');
+        entry.target.classList.remove('show');
       }
     });
   });
