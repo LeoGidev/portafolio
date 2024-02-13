@@ -294,14 +294,10 @@ footer{
 
  /*estilo responsive del carrusel */
  .carousel-inner img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 400px !important;
     
+    width: 80% !important;    
     border-radius: 10px;
-    margin-left: 30;
-    margin-right: 30;
+    margin-left:10%;
     margin-bottom: 30;
     box-shadow: 2px 2px 6px #000000;
     
