@@ -294,6 +294,9 @@ footer{
 
  /*estilo responsive del carrusel */
  .carousel-inner img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 400px !important;
     
     border-radius: 10px;
@@ -305,6 +308,9 @@ footer{
   }
   /*Estilo para efecto blanco difimunidado*/
   #cobertorcarro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%; 
     position: absolute;
     top: 0;
