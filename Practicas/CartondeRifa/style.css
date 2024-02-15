@@ -6,10 +6,10 @@ ul {
   #portada{
     position:absolute;
     top: 60px !important;
-    background-color: rgb(110, 106, 245);
+    background-color: rgb(72, 69, 179);
     color: white;
     font-family: 'Ubuntu Mono', monospace;
-    font-size: 20px;
+    font-size: 18px;
     height: 100px;
   }
   #carton{
