@@ -4,8 +4,15 @@ ul {
     margin: 0; /* Elimina el margen predeterminado de la lista */
   }
   #portada{
-    background-color: rgb(93, 93, 93);
+    position:absolute;
+    top: 80px !important;
+    background-color: rgb(110, 106, 245);
     color: white;
     font-family: 'Ubuntu Mono', monospace;
+    font-size: 20px;
     height: 100px;
+  }
+  #carton{
+    position: absolute;
+    top: 400px !important;
   }
