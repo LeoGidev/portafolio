@@ -1,0 +1,19 @@
+body{
+    background-image: url('../recursos/fondo.webp');
+    margin: 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+.contenido{
+    backdrop-filter: blur(10px); /* Ajusta el valor según tu preferencia */
+    background-color: rgba(255, 255, 255, 0.5); /* Agrega un fondo semi-transparente */
+    padding: 20px; /* Agrega espacio alrededor del contenido para que el fondo borroso sea visible */
+    border-radius: 10px;
+    overflow: hidden;
+}
+iframe {
+    max-width: 100%;
+    max-height: 100%;
+}
