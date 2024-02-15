@@ -84,7 +84,8 @@
         .tecn img{
           animation: giro3d 9s linear;
           animation-iteration-count: infinite;
-          box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.5); /* Sombra en la parte inferior */
+          
+          
 
         }
       
@@ -481,9 +482,35 @@ footer{
     }
     
   }
-
   @keyframes giro3d {
-    to {
+    0% {
+      transform: rotateY(0deg);
+      filter: drop-shadow(0px 0px 0px transparent);
+    }
+    
+    25% {
+      transform: rotateY(90deg);
+      filter: drop-shadow(10px 0px 0px black);
+    }
+    
+    50% {
+      transform: rotateY(180deg);
+      filter: drop-shadow(0px 0px 0px transparent);
+    }
+    
+    75% {
+      transform: rotateY(270deg);
+      filter: drop-shadow(-10px 0px 0px black);
+    }
+    
+    100% {
       transform: rotateY(360deg);
+      filter: drop-shadow(0px 0px 0px transparent);
     }
   }
+  
+  /* Aplicar la animación al elemento que deseas */
+  .mi-elemento {
+    animation: giro3d 4s linear infinite;
+  }
+  
