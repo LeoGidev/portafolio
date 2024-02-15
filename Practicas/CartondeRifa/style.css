@@ -5,7 +5,7 @@ ul {
   }
   #portada{
     position:absolute;
-    top: 80px !important;
+    top: 60px !important;
     background-color: rgb(110, 106, 245);
     color: white;
     font-family: 'Ubuntu Mono', monospace;
@@ -13,6 +13,6 @@ ul {
     height: 100px;
   }
   #carton{
-    position: absolute;
-    top: 400px !important;
+    position: relative;
+    top: 180px !important;
   }
