@@ -490,7 +490,7 @@ footer{
     
     25% {
       transform: rotateY(90deg);
-      filter: drop-shadow(10px 0px 0px black);
+      filter: drop-shadow(20px 0px 0px black);
     }
     
     50% {
@@ -500,7 +500,7 @@ footer{
     
     75% {
       transform: rotateY(270deg);
-      filter: drop-shadow(-10px 0px 0px black);
+      filter: drop-shadow(-20px 0px 0px black);
     }
     
     100% {
@@ -509,8 +509,5 @@ footer{
     }
   }
   
-  /* Aplicar la animación al elemento que deseas */
-  .mi-elemento {
-    animation: giro3d 4s linear infinite;
-  }
+  
   
