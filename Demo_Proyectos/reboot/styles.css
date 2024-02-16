@@ -1,6 +1,10 @@
 body {
-    background:#E0E3FF !important; 
-    text-align: center !important;
+      background:#E0E3FF !important; 
+      text-align: center !important;
+      display:grid;
+      justify-content: center;
+      
+  
  }
  .navbar {
   background-color: #000000; /* Fondo negro */
@@ -28,8 +32,12 @@ body {
  
  }
  .portada{
-  margin-top: 100px;
-  border: 10px solid black;
+      margin-top: 100px;
+      margin: 0; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Hacer que el body ocupe el 100% de la altura visible de la ventana */
  }
  
  h1{
