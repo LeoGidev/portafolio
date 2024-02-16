@@ -4,6 +4,7 @@ body {
     display: flex;
     flex-direction: column; /* Añadido para apilar elementos verticalmente */
     align-items: center;
+    background-size: cover;
 }
 
 h6 {
@@ -30,7 +31,7 @@ h6 {
     padding: 20px;
     border-radius: 10px;
     overflow: hidden;
-    margin-top: 80px;
+    margin-top: 69px;
 }
 
 .contenido img {
@@ -41,7 +42,7 @@ h6 {
 .contenido img:hover{
     filter: drop-shadow(1px 1px 2px rgba(255, 255, 255, 0));
     background-color: #d3d3d340;
-    border-radius: 4px;
+    border-radius: 50%;
     padding: 10px;
     transition: 2s;
     border:8px solid #201d2a;
