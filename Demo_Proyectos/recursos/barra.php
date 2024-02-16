@@ -12,8 +12,11 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <h6 class="ml-3"> Proyectos</h6>
-              <a class="dropdown-item" href="../Demo_Proyectos/Reboot/index.html">Device Remote Reboot</a>
+              <a class="dropdown-item" href="../Reboot/">Device Remote Reboot</a>
               <a class="dropdown-item" href="http://yplef.rf.gd/" target="_blank">YPLEF web page</a>
+              <a class="dropdown-item" href="../diagnostic/">Diagnostic</a>
+              <a class="dropdown-item" href="../Telemeter/">Device Telemeter </a>
+              <a class="dropdown-item" href="../CompiApp/">Demo CompiApp(Python)t</a>
               <div class="dropdown-divider"></div>
               <h6 class="ml-3">Prácticas</h6>
               <a class="dropdown-item" href="../../Practicas/Paint/">Simple Paint Web</a>
