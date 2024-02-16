@@ -32,15 +32,15 @@ include '../recursos/barra.php';
 </header>
 
    <div class="container portada">
-      <div class="row justify-content-center">
+      
       <h1 >Device Reboot</h1> 
       <img id="logo" src="../../img/logo.webp"/>
-      </div>
+      
    </div>
 
 
         
-<div class="row justify-content-center mt-3">
+<div class="row justify-content-center ">
        
    <div class="col-12 col-md-3 mb-3">
       <div class="card">

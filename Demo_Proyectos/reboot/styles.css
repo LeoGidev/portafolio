@@ -10,6 +10,7 @@ body {
      border-collapse:separate;
      background-color:white;
      padding:25px;
+     
  }
  
  
@@ -28,6 +29,7 @@ body {
  }
  .portada{
   margin-top: 100px;
+  border: 10px solid black;
  }
  
  h1{
