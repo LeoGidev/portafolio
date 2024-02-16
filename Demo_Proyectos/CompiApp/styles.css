@@ -1,31 +1,51 @@
-body{
+body {
     background-image: url('../recursos/fondo.webp');
-    margin: 0; 
+    margin: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* Añadido para apilar elementos verticalmente */
     align-items: center;
-    height: 100vh; 
 }
+
 h6 {
-    
-    border-bottom: 2px solid #969696;  
+    border-bottom: 2px solid #969696;
     font-family: 'Ubuntu Mono', monospace;
     font-size: 20px;
     color: white;
-      
+    margin-bottom: 10px; /* Añadido un margen inferior */
 }
-.contenido{
-    backdrop-filter: blur(8px); /* Ajusta el valor según tu preferencia */
-    background-color: rgba(255, 255, 255, 0.059); /* Agrega un fondo semi-transparente */
-    padding: 20px; /* Agrega espacio alrededor del contenido para que el fondo borroso sea visible */
+
+.contenido {
+    backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 0.059);
+    padding: 20px;
     border-radius: 10px;
     overflow: hidden;
+    max-height: 100vh; 
+    flex-grow: 1; /* Permitir crecer dinámicamente */
     margin-top: 20px;
 }
-.contenido img{
+.contenido2 {
+    backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 0.059);
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 80px;
+}
+
+.contenido img {
     width: 100px;
-    filter: drop-shadow(1px 1px 2px rgba(255, 255, 255, 0.52));
-    
+    filter: drop-shadow(1px 1px 2px rgba(255, 255, 255, 0.239));
+    transition: 2s;
+}
+.contenido img:hover{
+    filter: drop-shadow(1px 1px 2px rgba(255, 255, 255, 0));
+    background-color: #d3d3d340;
+    border-radius: 4px;
+    padding: 10px;
+    transition: 2s;
+    border:8px solid #201d2a;
+    box-shadow: 1px 1px 1px rgba(55, 55, 55, 0.397);
 }
 iframe {
     max-width: 100%;

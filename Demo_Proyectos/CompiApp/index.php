@@ -26,7 +26,7 @@
 include '../recursos/barra.php';       
 ?>
 </header>
-    <div class="contenido">
+    <div class="contenido2">
     <h6> Compi App </6>
     </div>
     <div class="container contenido">
