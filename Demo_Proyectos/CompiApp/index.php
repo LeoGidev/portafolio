@@ -35,4 +35,5 @@ include '../recursos/barra.php';
     <div class="contenido">
     <a href="https://github.com/LeoGidev/ComparaXLSX" target="_blank"><img src="../../img/GitHub-logo.webp"></a>
         </div>
+        <script src="script.js"></script>
 </body>
