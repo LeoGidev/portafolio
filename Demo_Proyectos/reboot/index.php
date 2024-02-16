@@ -31,7 +31,7 @@ include '../recursos/barra.php';
 ?>
 </header>
 
-   <div class="container portada mt-3">
+   <div class="container portada mt-3 mb-3">
       <div class="row justify-content-center">
       <h1 >Device Reboot</h1> 
       <img id="logo" src="../../img/logo.webp"/>
