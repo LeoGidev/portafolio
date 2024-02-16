@@ -40,7 +40,7 @@ include '../recursos/barra.php';
 
 
         
-<div class="row justify-content-center">
+<div class="row justify-content-center mt-3">
        
    <div class="col-12 col-md-3 mb-3">
       <div class="card">
