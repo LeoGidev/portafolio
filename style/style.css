@@ -72,6 +72,11 @@
         background-color: #fffffffc;
         transition: background-color 1s ease;
     }
+    .referencias{
+      display: flex;
+      justify-content: center; /* Centra horizontalmente */
+      align-items: center;     /* Centra verticalmente */
+    }
     .referencias img{
       width: 60% !important;
     }
