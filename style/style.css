@@ -84,11 +84,11 @@
     }
     .referencias img {
       width: 60% !important;
-      opacity: 0;
       position: absolute;
     }
     
     .animacion1 {
+      opacity: 0;
       animation: carruinvi1 10s linear infinite;
     }
     
@@ -100,10 +100,7 @@
       animation: carruinvi3 10s linear infinite;
     }
     
-    .conteref img:first-child {
-      opacity: 1;
-      animation: carruinvi 10s linear 0s infinite;
-    }
+    
     /*Tecnoligías*/
      .tecn{
         background-color:#e3e3e300 !important;
@@ -542,14 +539,8 @@ footer{
   }
 
   @keyframes carruinvi1 {
-    0%, 100% {
-      opacity: 0;
-    }
-    25% {
+    to {
       opacity: 1;
-    }
-    50%, 75% {
-      opacity: 0;
     }
   }
   
