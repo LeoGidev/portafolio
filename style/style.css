@@ -79,6 +79,8 @@
     }
     .referencias img{
       width: 60% !important;
+      opacity: 0;
+      animation: carruinvi;
     }
     /*Tecnoligías*/
      .tecn{
@@ -514,6 +516,12 @@ footer{
     100% {
       transform: rotateY(360deg);
       filter: drop-shadow(0px 0px 0px transparent);
+    }
+  }
+
+  @keyframes carruinvi{
+    to{
+      opacity: 1;
     }
   }
   
