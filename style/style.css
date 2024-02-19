@@ -72,6 +72,9 @@
         background-color: #fffffffc;
         transition: background-color 1s ease;
     }
+    .referencias img{
+      width: 60% !important;
+    }
     /*Tecnoligías*/
      .tecn{
         background-color:#e3e3e300 !important;
