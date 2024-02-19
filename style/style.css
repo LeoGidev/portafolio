@@ -97,7 +97,7 @@
       top: 50%;
       left: 50%;
       z-index: 100;
-      animation: carruinvi1 10s linear infinite;
+      animation: carruinvi1 14s linear infinite;
     }
     
     .animacion2 {
@@ -105,7 +105,7 @@
       top: 50%;
       left: 50%;
       z-index: 100;
-      animation: carruinvi2 10s linear infinite;
+      animation: carruinvi2 14s linear infinite;
     }
     
     .animacion3 {
@@ -113,7 +113,7 @@
       top: 50%;
       left: 50%;
       z-index: 100;
-      animation: carruinvi3 10s linear infinite;
+      animation: carruinvi3 14s linear infinite;
     }
     
     
@@ -582,7 +582,7 @@ footer{
     0%, 75% {
       opacity: 0;
     }
-    100% {
+    100%, 0%{
       opacity: 1;
     }
   }
