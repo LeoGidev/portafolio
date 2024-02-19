@@ -88,7 +88,19 @@
       position: absolute;
     }
     
-    .referencias img:first-child {
+    .animacion1 {
+      animation: carruinvi1 10s linear infinite;
+    }
+    
+    .animacion2 {
+      animation: carruinvi2 10s linear infinite;
+    }
+    
+    .animacion3 {
+      animation: carruinvi3 10s linear infinite;
+    }
+    
+    .conteref img:first-child {
       opacity: 1;
       animation: carruinvi 10s linear 0s infinite;
     }
@@ -529,18 +541,36 @@ footer{
     }
   }
 
-  @keyframes carruinvi {
-    25% {
+  @keyframes carruinvi1 {
+    0%, 100% {
       opacity: 0;
     }
-    50% {
+    25% {
       opacity: 1;
     }
+    50%, 75% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes carruinvi2 {
+    0%, 100% {
+      opacity: 0;
+    }
+    25%, 50% {
+      opacity: 0;
+    }
     75% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes carruinvi3 {
+    0%, 75% {
       opacity: 0;
     }
     100% {
-      opacity: 0;
+      opacity: 1;
     }
   }
   
