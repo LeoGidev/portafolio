@@ -84,7 +84,8 @@
     }
     .referencias img {
       width: 60% !important;
-      position: absolute;
+      position: absolute !important;
+      top: 50%;
     }
     
     .animacion1 {
@@ -539,8 +540,14 @@ footer{
   }
 
   @keyframes carruinvi1 {
-    to {
+    0%, 100% {
+      opacity: 0;
+    }
+    25% {
       opacity: 1;
+    }
+    50%, 75% {
+      opacity: 0;
     }
   }
   
