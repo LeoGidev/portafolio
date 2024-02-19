@@ -72,15 +72,25 @@
         background-color: #fffffffc;
         transition: background-color 1s ease;
     }
+    /*Refrencias*/
+    .conteref{
+      height: 200px !important;
+      
+    }
     .referencias{
       display: flex;
       justify-content: center; /* Centra horizontalmente */
       align-items: center;     /* Centra verticalmente */
     }
-    .referencias img{
+    .referencias img {
       width: 60% !important;
       opacity: 0;
-      animation: carruinvi;
+      position: absolute;
+    }
+    
+    .referencias img:first-child {
+      opacity: 1;
+      animation: carruinvi 10s linear 0s infinite;
     }
     /*Tecnoligías*/
      .tecn{
@@ -519,9 +529,18 @@ footer{
     }
   }
 
-  @keyframes carruinvi{
-    to{
+  @keyframes carruinvi {
+    25% {
+      opacity: 0;
+    }
+    50% {
       opacity: 1;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
     }
   }
   
