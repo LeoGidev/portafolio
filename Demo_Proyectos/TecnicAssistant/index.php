@@ -26,7 +26,7 @@ include '../recursos/barra.php';
 ?>
 </header>
     <div class="contenido2">
-    <h6> Compi App </6>
+    <h6> Tecnic Assistant</6>
     </div>
     <div class="container contenido">
     <iframe src="https://www.veed.io/embed/153692d9-d779-41f7-84cb-fb1ae7d22c6e" width="744" height="504" frameborder="0" title="Proyecto sin titulo" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
