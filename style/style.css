@@ -555,7 +555,7 @@ footer{
   }
 
   @keyframes carruinvi1 {
-    0%, 25%, 41%, 66%, 100% {
+    0%, 23%, 43%, 66%, 100% {
       opacity: 0;
     }
     33% {
@@ -564,7 +564,7 @@ footer{
    }
   
   @keyframes carruinvi2 {
-    0%, 58%, 74%, 100%{
+    0%, 55%, 75%, 100%{
       opacity: 0;
     }
     66%{
