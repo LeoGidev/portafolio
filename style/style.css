@@ -555,35 +555,30 @@ footer{
   }
 
   @keyframes carruinvi1 {
-    0%, 100% {
+    0%, 25%, 41%, 66%, 100% {
       opacity: 0;
     }
-    25% {
+    33% {
       opacity: 1;
     }
-    50%, 75% {
-      opacity: 0;
-    }
-  }
+   }
   
   @keyframes carruinvi2 {
-    100% {
+    0%, 58%, 74%, 100%{
       opacity: 0;
     }
-    25%, 50% {
-      opacity: 0;
-    }
-    0%, 75% {
+    66%{
       opacity: 1;
     }
+   
   }
   
   @keyframes carruinvi3 {
-    0%, 75% {
-      opacity: 0;
-    }
-    100%, 0%{
+    0%, 100% {
       opacity: 1;
+    }
+    8%, 33%, 66%, 92%{
+      opacity: 0;
     }
   }
   
