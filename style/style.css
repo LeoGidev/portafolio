@@ -567,13 +567,13 @@ footer{
   }
   
   @keyframes carruinvi2 {
-    0%, 100% {
+    100% {
       opacity: 0;
     }
     25%, 50% {
       opacity: 0;
     }
-    75% {
+    0%, 75% {
       opacity: 1;
     }
   }
