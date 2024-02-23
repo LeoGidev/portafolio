@@ -29,7 +29,7 @@ include '../recursos/barra.php';
     <h6> Compi App </6>
     </div>
     <div class="container contenido">
-        <iframe src="https://www.veed.io/embed/d334e8d6-78ab-47e5-82ca-bf3d05bb54ac" width="744" height="504" frameborder="0" title="Proyecto sin titulo" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <iframe src="https://www.veed.io/embed/153692d9-d779-41f7-84cb-fb1ae7d22c6e" width="744" height="504" frameborder="0" title="Proyecto sin titulo" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
     <div class="contenido">
     <a href="https://github.com/LeoGidev/ComparaXLSX" target="_blank"><img src="../../img/GitHub-logo.webp"></a>
