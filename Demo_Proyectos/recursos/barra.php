@@ -16,7 +16,8 @@
               <a class="dropdown-item" href="http://yplef.rf.gd/" target="_blank">YPLEF web page</a>
               <a class="dropdown-item" href="../diagnostic/">Diagnostic</a>
               <a class="dropdown-item" href="../Telemeter/">Device Telemeter </a>
-              <a class="dropdown-item" href="../CompiApp/">Demo CompiApp(Python)</a>
+              <a class="dropdown-item" href="../CompiApp/">CompiApp(Python)</a>
+              <a class="dropdown-item" href="../TecnicAssistant/">Tecnic Assistant(Python)</a>
               <div class="dropdown-divider"></div>
               <h6 class="ml-3">Prácticas</h6>
               <a class="dropdown-item" href="../../Practicas/Paint/">Simple Paint Web</a>
