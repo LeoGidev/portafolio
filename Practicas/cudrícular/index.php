@@ -28,10 +28,27 @@ include '../recursos/barra.php';
     <div class="contenido2">
     <h6> Crea Cuadrículas </6>
     </div>
+    <div class='controles'>
+    <ul>
+            <li>
+              <label for="colorLineas">Color de las líneas:</label>
+              <input class="form-control form-control-color" type="color" id="colorLineas" value="#00ff00" onchange="cambiarColorLineas()">
+            </li>
+            <li>
+              <label for="valor">Imagen:</label>
+              <input class="form-control" type="file" id="imagenFondoInput" accept="image/*" onchange="cargarImagenDeFondo()">
+            </li>
+            <!-- Botón para descargar la imagen -->
+            <li>
+              <button class="btn btn-primary m-3" onclick="descargarImagen()">Descargar Imagen</button>
+            </li>
+          </ul>
+    </div>
     <div class="container contenido">
        <!-- Contenedor del canvas -->
        <canvas id="miCanvas" width="400" height="400" style="border:1px solid #000;" name="tablero"></canvas> 
     </div>
+    
     <div class="contenido">
     <a href="https://github.com/LeoGidev/Cuadriculador" target="_blank"><img src="../../img/GitHub-logo.webp"></a>
         </div>
