@@ -38,9 +38,9 @@ h6 {
     background-color: rgba(255, 255, 255, 0.059);
     padding: 20px;
     border-radius: 10px;
-    overflow: hidden;
-    max-height: 100vh; 
-    flex-grow: 1; /* Permitir crecer dinámicamente */
+    /*overflow: hidden;
+    /*max-height: 100vh; */
+    /*flex-grow: 1; /* Permitir crecer dinámicamente */
     margin-top: 20px;
 }
 .contenido2 {
@@ -65,8 +65,4 @@ h6 {
     transition: 2s;
     border:8px solid #201d2a;
     box-shadow: 1px 1px 1px rgba(55, 55, 55, 0.397);
-}
-iframe {
-    max-width: 100%;
-    max-height: 100%;
 }
