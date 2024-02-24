@@ -22,7 +22,7 @@
               <h6 class="ml-3">Prácticas</h6>
               <a class="dropdown-item" href="../Paint/">Simple Paint Web</a>
               <a class="dropdown-item" href="../CartondeRifa/">Carton de Rifas</a>
-              <a class="dropdown-item" href="../cudaricular/">Cuadricular Imágines</a>
+              <a class="dropdown-item" href="../cuadricular/">Cuadricular Imágenes</a>
             </div>
           </li>
           <li class="nav-item">
