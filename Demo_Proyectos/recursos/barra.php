@@ -11,11 +11,10 @@
               Demos
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <h6 class="ml-3"> Proyectos</h6>
-              
-              <a class="dropdown-item" href="http://tecnop.rf.gd/" target="_blank">Tecnop web page</a>
-              <a class="dropdown-item" href="../Reboot/">Device Remote Reboot</a>
+              <h6 class="ml-3"> Proyectos</h6>              
+              <a class="dropdown-item" href="http://tecnop.rf.gd/" target="_blank">Tecnop web page</a>              
               <a class="dropdown-item" href="http://yplef.rf.gd/" target="_blank">YPLEF web page</a>
+              <a class="dropdown-item" href="../Reboot/">Device Remote Reboot</a>
               <a class="dropdown-item" href="../diagnostic/">Diagnostic</a>
               <a class="dropdown-item" href="../Telemeter/">Device Telemeter </a>
               <a class="dropdown-item" href="../CompiApp/">CompiApp(Python)</a>
