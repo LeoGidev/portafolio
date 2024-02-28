@@ -5,7 +5,7 @@ ul {
 }
 
 body {
-  background-image: url('recursos/fondo.webp');
+  background-image: url('../recursos/fondo.webp');
   margin: 0;
   background-size: cover;
 }
