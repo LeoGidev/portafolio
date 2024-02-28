@@ -259,6 +259,9 @@ padding: 5px;
   .contenido.dark table{
     color:white;
   }
+  .contenido.dark a{
+    color:white;
+  }
   .contenido.dark:hover{
     background-color: #2a2a2ac1;
     transition: background-color 1s ease;
@@ -272,6 +275,9 @@ padding: 5px;
   .contenido.red table{
     color:white;
   }
+  .contenido.red a{
+    color:white;
+  }
   .contenido.red:hover{
     background-color: #ca6f6fd2;
     transition: background-color 1s ease;
@@ -281,12 +287,16 @@ padding: 5px;
     background-color: rgb(67, 82, 200);
     color: #ffffff;
   }
+  
   .contenido.blue:hover{
     background-color: #3e3653e4;
     transition: background-color 1s ease;
 }
 .contenido.blue table{
   color:white;
+}
+.contenido.blue a{
+  color: white;
 }
   
   .contenido.light {
@@ -451,7 +461,12 @@ footer{
   .table{
     table-layout:auto;
   }
-
+td{
+  text-align: center;
+}
+td a{
+  color:#000000
+}
   
   
   /* Estilo para pantallas pequeñas (menos de 600px de ancho) */
