@@ -140,10 +140,10 @@
         background-color:#ffffff !important;
         color: #1b1a1a !important;
         overflow: hidden;
-        transition: filter 0.3s ease-in-out;
+        transition:2s;
         }
       .proyect:hover{
-        filter: brightness(1.1);
+        transition: 2s;
         box-shadow: 2px 2px 6px #000000;
       }
 
@@ -526,12 +526,14 @@ td a{
 
   .girado{
     /*transform: rotateX(90deg);*/
+    transform: rotate(90deg);
     scale:0;
     transition:3.5s;
   }
   .girado.gira{
     /*transform: rotate(0deg);
     transform: translateX(0);*/
+    transform: rotate(0deg);
     scale:1;
     transition: 2s;
   }
