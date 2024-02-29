@@ -23,10 +23,10 @@
     }
     /* Estilo para el efecto hover */
     a:hover {
-    color: rgb(207, 207, 207) !important; /* Color al pasar el cursor */
+    color: rgb(68, 68, 68) !important; /* Color al pasar el cursor */
     transition: color 0.3s ease; /* Transición suave del cambio de color */
     text-decoration: none;
-}
+    }
 
       
     .navbar.transparent .navbar-brand,
@@ -60,6 +60,7 @@
     a{
         text-decoration: none;
     }
+    
     .contenido{
         transition: background-color 1s ease;
        background-color: #ffffff;
@@ -196,9 +197,7 @@ h6 {
     color:white !important;
     transition: color 1s ease, background-color 1s ease;
   }
-  a{
-    text-decoration: none;
-  }
+  
 
  /*opciones de estilo deweb*/
   
@@ -263,7 +262,7 @@ padding: 5px;
     color:white;
   }
   .contenido.dark:hover{
-    background-color: #2a2a2ac1;
+    background-color: #2a2a2aec;
     transition: background-color 1s ease;
 }
 
@@ -327,6 +326,17 @@ footer{
   font-weight: lighter;
   font-family: 'Blinker', monospace;
   background-color: rgb(224, 224, 224);
+}
+footer a{
+  color: #0375ef;
+  font-family:'Ubuntu Mono', monospace ;
+}
+footer img{
+  transition: 2s;
+}
+footer img:hover{
+  filter: drop-shadow(0px 0px 10px rgb(75, 75, 245));
+  transition: 2s;
 }
 #findeweb{
   height: 80px;
@@ -407,9 +417,16 @@ footer{
 
    #perfil {
    
-    border-top-left-radius: 9px;
+    border-bottom-right-radius: 9px;
     border-top-right-radius: 9px;
+    box-shadow: 1px 1px 3px black;
+    padding: 20px;
+    margin: 10px;
    
+  }
+
+  #sobremi{
+    margin: 10px;
   }
 
   
