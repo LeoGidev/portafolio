@@ -14,6 +14,7 @@
               <h6 class="ml-3"> Proyectos</h6>              
               <a class="dropdown-item" href="http://tecnop.rf.gd/" target="_blank">Tecnop web page</a>              
               <a class="dropdown-item" href="http://yplef.rf.gd/" target="_blank">YPLEF web page</a>
+              <a class="dropdown-item" href="../Maps/">Maps monitor</a>
               <a class="dropdown-item" href="../Reboot/">Device Remote Reboot</a>
               <a class="dropdown-item" href="../diagnostic/">Diagnostic</a>
               <a class="dropdown-item" href="../Telemeter/">Device Telemeter </a>
