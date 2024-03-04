@@ -1,0 +1,40 @@
+body{
+    background-image: url('img/fondo.webp');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.principal{
+    margin-top: 40px;
+}
+h4{
+    font-family: "Economica", sans-serif;;
+}
+.formulario{
+    background-color: rgba(255, 255, 255, 0.878);
+    box-shadow: 2px 2px 2px black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+
+}
+.explicacion{
+    background-color: rgba(255, 255, 255, 0.878);
+    box-shadow: 2px 2px 2px black;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: "Economica", sans-serif;
+}
+ul li{
+    background-color: rgb(228, 227, 255);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 2px;
+    list-style-type: none;
+    font-size: 14px;
+}
+#map { 
+     
+    height: 600px !important;
+    width: 100% !important;
+ }
