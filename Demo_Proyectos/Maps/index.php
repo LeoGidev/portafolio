@@ -21,6 +21,12 @@
      
      </head>
       <body>
+      <header>
+      <!-- Barra de navegación -->
+      <?php
+include '../recursos/barra.php';       
+?>
+</header>
         <main>
         <div class="container-fluid principal">
             <div class="row">
