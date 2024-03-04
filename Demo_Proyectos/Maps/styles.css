@@ -4,8 +4,12 @@ body{
     background-size: cover;
     background-attachment: fixed;
 }
-.principal{
-    margin-top: 40px;
+.navbar {
+    background-color: #000000; 
+  }
+main{
+
+    margin-top: 80px;
 }
 h4{
     font-family: "Economica", sans-serif;;
@@ -25,7 +29,7 @@ h4{
     padding: 20px;
     font-family: "Economica", sans-serif;
 }
-ul li{
+main ul li{
     background-color: rgb(228, 227, 255);
     padding: 10px;
     border-radius: 10px;
