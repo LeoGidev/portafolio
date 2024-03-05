@@ -19,6 +19,7 @@
               <a class="dropdown-item" href="../diagnostic/">Diagnostic</a>
               <a class="dropdown-item" href="../../Demo_Proyectos/Telemeter/">Device Telemeter </a>
               <a class="dropdown-item" href="../../Demo_Proyectos/CompiApp/">CompiApp(Python)</a>
+              <a class="dropdown-item" href="../../Demo_Proyectos/SeleniumApp/">SeleniumApp(Python)</a>
               <a class="dropdown-item" href="../../Demo_Proyectos/TecnicAssistant/">Tecnic Assistant(Python)</a>
               <a class="dropdown-item" href="../../Demo_Proyectos/TagsApp/">TagsApp(Python)</a>
               <div class="dropdown-divider"></div>
