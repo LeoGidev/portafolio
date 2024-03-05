@@ -33,7 +33,7 @@ include '../recursos/barra.php';
     <iframe src="https://www.veed.io/embed/3ddc89d6-ef7e-4b93-88ee-b923bad977f6" width="744" height="504" frameborder="0" title="SeleniumApp" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
     <div class="contenido">
-    <a href="https://github.com/LeoGidev/CalcuadorMascaraRed" target="_blank"><img src="../../img/GitHub-logo.webp"></a>
+    <a href="https://github.com/LeoGidev/seleniumAppDemo" target="_blank"><img src="../../img/GitHub-logo.webp"></a>
         </div>
         <script src="script.js"></script>
 </body>
