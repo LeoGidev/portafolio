@@ -6,7 +6,8 @@ ul {
   #portada{
     position:absolute;
     top: 60px !important;
-    background-color: rgb(72, 69, 179);
+    backdrop-filter: blur(10px);
+    
     color: white;
     font-family: 'Ubuntu Mono', monospace;
     font-size: 18px;
@@ -15,6 +16,15 @@ ul {
   #carton{
     position: relative;
     top: 180px !important;
+    width: 100%;
+    
+  }
+  .col-12{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Ubuntu Mono', monospace;
   }
 
   body {
@@ -23,6 +33,6 @@ ul {
     background-size: cover;
   }
 
-  .nav{
+  nav{
     background-color: black !important;
   }
