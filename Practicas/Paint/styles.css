@@ -1,0 +1,27 @@
+ul {
+    list-style-type: none; /* Elimina el estilo predeterminado de las viñetas */
+    padding: 0; /* Elimina el espacio interior predeterminado de la lista */
+    margin: 0; /* Elimina el margen predeterminado de la lista */
+  }
+
+  .col-12{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Ubuntu Mono', monospace;
+  }
+
+  body {
+    background-image: url('../recursos/fondo.webp');
+    margin: 0;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  nav{
+    background-color: black !important;
+  }
+  .lienzo{
+    
+  }

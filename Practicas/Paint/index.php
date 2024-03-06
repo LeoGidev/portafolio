@@ -28,7 +28,7 @@ include '../recursos/barra.php';
     ;">
       <div class="row">
         <div class="col-12 col-lg-9 col-xl-9">
-          <div onmousedown="draw(event)" onmousemove="draw(event)" onmouseup="stopDrawing()">
+          <div class="lienzo" onmousedown="draw(event)" onmousemove="draw(event)" onmouseup="stopDrawing()">
             <canvas id="myCanvas" width="800" height="500" style="border:1px solid #d3d3d3;">
               Tu navegador no soporta canvas.
             </canvas>
