@@ -3,7 +3,8 @@
     <head>
     <title>Crea talonarios de rifas</title>
       <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
       <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
@@ -24,22 +25,10 @@
 
 <body>
   <header>
-  <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark">
-    <a class="navbar-brand" href="../../index.html">Leo Developer</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="../../index.html#Sobremi">Sobre mí</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../../index.html#proyectos">Proyectos</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+        <!-- Barra de navegación -->
+        <?php
+include '../recursos/barra.php';       
+?>
   </header>
 
   <div class="container-fluid">
