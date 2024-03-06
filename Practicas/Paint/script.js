@@ -4,6 +4,11 @@ var drawingTool = ""; // Variable para almacenar la herramienta seleccionada
 var arcColor = "black"; // Color inicial del arco
 
 var oldtool = "";
+var lineThickness = 1; // Grosor inicial de la línea
+
+function setLineThickness(thickness) {
+  lineThickness = thickness;
+}
 
 function setDrawingTool(tool) {
   drawingTool = tool;
@@ -35,10 +40,11 @@ function draw(event) {
         ctx.beginPath();
       }
   
-      ctx2.arc(xi, yi, 1, 0.5, (Math.PI / 180) * 360, true);
-      ctx2.strokeStyle = arcColor;
-      ctx2.stroke();
-      oldtool = "linea";
+      ctx2.arc(xi, yi, lineThickness, 0.5, (Math.PI / 180) * 360, true);
+    ctx2.lineWidth = lineThickness;
+    ctx2.strokeStyle = arcColor;
+    ctx2.stroke();
+    oldtool = "linea";
   
     } else if (drawingTool === "lapiz" && event.type === "mousedown") {
       if (oldtool != "lapiz") {
@@ -46,6 +52,7 @@ function draw(event) {
       }
   
       ctx.arc(xi, yi, 1, 0.5, (Math.PI / 180) * 360, true);
+      ctx.lineWidth = 1;
       ctx.strokeStyle = arcColor;
       ctx.stroke();
       oldtool = "lapiz";
@@ -54,7 +61,7 @@ function draw(event) {
       if (oldtool != "lapiz") {
         ctx.beginPath();
       }
-  
+      
       ctx.arc(xi, yi, 1, 0.5, (Math.PI / 180) * 360, true);
       ctx.strokeStyle = arcColor;
       ctx.stroke();
