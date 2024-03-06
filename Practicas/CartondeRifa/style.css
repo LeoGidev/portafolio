@@ -16,3 +16,9 @@ ul {
     position: relative;
     top: 180px !important;
   }
+
+  body {
+    background-image: url('../recursos/fondo.webp');
+    margin: 0;
+    background-size: cover;
+  }
