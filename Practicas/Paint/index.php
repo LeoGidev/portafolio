@@ -38,6 +38,8 @@ include '../recursos/barra.php';
           <input class="form-control" type="range" id="lineThickness" min="1" max="10" value="1" onchange="setLineThickness(this.value)">
           <button class="form-control" onclick="setDrawingTool('lapiz')">Lapiz</button>
           <input class="form-control form-control-color" type="color" id="colorPicker" onchange="setArcColor(this.value)">
+          <button class="form-control" onclick="setDrawingTool('curva')">Curva</button>
+
           <button class="form-control" onclick="clearCanvas()">Limpiar pizarra</button>
           <div class="visor" id="mousePositions"></div>
         </div>
