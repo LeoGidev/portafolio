@@ -1,7 +1,8 @@
 var xi;
 var yi;
-var lastX; // Nueva variable para almacenar la posición anterior en X
-var lastY; // Nueva variable para almacenar la posición anterior en Y
+var startX; // Nuevo, para almacenar la posición de inicio en X
+var startY; // Nuevo, para almacenar la posición de inicio en Y
+var drawingLine = false; // Nuevo, para rastrear si se está dibujando una línea
 
 var drawingTool = ""; // Variable para almacenar la herramienta seleccionada
 var arcColor = "black"; // Color inicial del arco
@@ -23,63 +24,69 @@ function setArcColor(color) {
 }
 
 function draw(event) {
-  var canvas = document.getElementById("myCanvas");
-  var rect = canvas.getBoundingClientRect();
-
-  xi = event.clientX - rect.left;
-  yi = event.clientY - rect.top;
-
-  // Escala las coordenadas si el tamaño del canvas ha cambiado
-  xi = xi * (canvas.width / rect.width);
-  yi = yi * (canvas.height / rect.height);
-
-  var mousePositions = document.getElementById('mousePositions');
-  mousePositions.innerHTML = 'X coords: ' + xi + ', Y coords: ' + yi;
-
-  var ctx = canvas.getContext("2d");
-
-  if (drawingTool === "linea" && lastX !== undefined && lastY !== undefined) {
-    if (event.type === "mousemove" && event.buttons === 1) {
-      // Dibuja una línea al siguiente punto al mover el mouse con el botón presionado
-      ctx.beginPath();
-      ctx.moveTo(lastX, lastY); // Establece el punto inicial del trazo
-      ctx.lineTo(xi, yi); // Dibuja la línea hasta el punto actual del mouse
-      ctx.lineWidth = lineThickness;
-      ctx.strokeStyle = arcColor;
-      ctx.stroke();
-      lastX = xi;
-      lastY = yi;
+    var canvas = document.getElementById("myCanvas");
+    var rect = canvas.getBoundingClientRect();
+  
+    xi = event.clientX - rect.left;
+    yi = event.clientY - rect.top;
+  
+    // Escala las coordenadas si el tamaño del canvas ha cambiado
+    xi = xi * (canvas.width / rect.width);
+    yi = yi * (canvas.height / rect.height);
+  
+    var mousePositions = document.getElementById('mousePositions');
+    mousePositions.innerHTML = 'X coords: ' + xi + ', Y coords: ' + yi;
+  
+    var ctx2 = canvas.getContext("2d");
+  
+    if (drawingTool === "linea") {
+      if (event.type === "mousedown") {
+        if (!drawingLine) {
+          // Establece el punto de inicio al primer clic
+          startX = xi;
+          startY = yi;
+          drawingLine = true;
+        } else {
+          // Dibuja la línea desde el punto inicial hasta el nuevo punto al segundo clic
+          ctx2.beginPath();
+          ctx2.moveTo(startX, startY);
+          ctx2.lineTo(xi, yi);
+          ctx2.lineWidth = lineThickness;
+          ctx2.strokeStyle = arcColor;
+          ctx2.stroke();
+          // Reinicia las coordenadas iniciales para la siguiente línea
+          startX = xi;
+          startY = yi;
+        }
+      }
+    } else if (drawingTool === "lapiz" && event.type === "mousedown") {
+      if (oldtool != "lapiz") {
+        ctx2.beginPath();
+      }
+  
+      ctx2.arc(xi, yi, 1, 0.5, (Math.PI / 180) * 360, true);
+      ctx2.lineWidth = 1;
+      ctx2.strokeStyle = arcColor;
+      ctx2.stroke();
+      oldtool = "lapiz";
+    } else if (drawingTool === "lapiz" && event.type === "mousemove" && event.buttons === 1) {
+      if (oldtool != "lapiz") {
+        ctx2.beginPath();
+      }
+  
+      ctx2.arc(xi, yi, 1, 0.5, (Math.PI / 180) * 360, true);
+      ctx2.strokeStyle = arcColor;
+      ctx2.stroke();
+      oldtool = "lapiz";
     }
-  } else if (drawingTool === "lapiz" && event.type === "mousedown") {
-    if (oldtool != "lapiz") {
-      ctx.beginPath();
-    }
-
-    ctx.arc(xi, yi, 1, 0.5, (Math.PI / 180) * 360, true);
-    ctx.lineWidth = 1;
-    ctx.strokeStyle = arcColor;
-    ctx.stroke();
-    oldtool = "lapiz";
-
-  } else if (drawingTool === "lapiz" && event.type === "mousemove" && event.buttons === 1) {
-    if (oldtool != "lapiz") {
-      ctx.beginPath();
-    }
-
-    ctx.arc(xi, yi, 1, 0.5, (Math.PI / 180) * 360, true);
-    ctx.strokeStyle = arcColor;
-    ctx.stroke();
-    oldtool = "lapiz";
   }
-
-  lastX = xi; // Actualiza la posición anterior en X
-  lastY = yi; // Actualiza la posición anterior en Y
-}
+  
+  
 
 function clearCanvas() {
   var canvas = document.getElementById("myCanvas");
   var ctx = canvas.getContext("2d");
-  ctx.clearRect(0, 0, canvas.width, canvas.height); // Limpia el canvas completo
+  ctx.clearRect(0, 0, canvas.width, canvas.height); // Limpia el canvas solo al presionar el botón "Limpiar pizarra"
   oldtool = "pizarralimpia";
 }
 
@@ -90,3 +97,6 @@ function stopDrawing() {
 
   // Lo que sucede al soltar el botón del mouse
 }
+
+
+
