@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@300;400&family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
   
 </head>
 
@@ -42,6 +43,10 @@ include '../recursos/barra.php';
         </div>
       </div>
     </div>
+
+    <script src='script.js'>
+  
+  </script>
   
 </body>
 
