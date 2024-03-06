@@ -14,47 +14,50 @@ function setArcColor(color) {
 }
 
 function draw(event) {
-   
-  xi = event.clientX - 15;
-  yi = event.clientY - 100;
-  var mousePositions = document.getElementById('mousePositions');
-  mousePositions.innerHTML = 'X coords: ' + xi + ', Y coords: ' + yi;
-  
-  var canvas = document.getElementById("myCanvas");
-  var ctx = canvas.getContext("2d");
-  var ctx2 = canvas.getContext("2d");
-
-  if (drawingTool === "linea" && event.type === "mousedown") {
-    console.log(oldtool);
-    if (oldtool != "linea" ){
-       
-        ctx.beginPath();//Si antes usamos otra herramienta o cambiamos de color se comienza una nueva linea, si no, se continúa
-    }
+    var canvas = document.getElementById("myCanvas");
+    var rect = canvas.getBoundingClientRect();
     
-    ctx2.arc(xi, yi, 1, 0.5, (Math.PI / 180) * 360, true);
-    ctx2.strokeStyle = arcColor; // Establecer el color del trazo
-    ctx2.stroke();
-    oldtool = "linea";
-
-  } else if (drawingTool === "lapiz" && event.type === "mousedown") {
-    if (oldtool != "lapiz"){
-       ctx.beginPath();///Si antes usamos otra herramienta o cambiamos de color se comienza una nueva linea, si no, se continúa
-   }
-    ctx.arc(xi, yi, 1, 0.5, (Math.PI / 180) * 360, true);
-    ctx.strokeStyle = arcColor; // Establecer el color del trazo
-    ctx.stroke();
-    oldtool = "lapiz";
-  } else if (drawingTool === "lapiz" && event.type === "mousemove" && event.buttons === 1) {
-    if (oldtool != "lapiz"){
-       
-    ctx.beginPath();///Si antes usamos otra herramienta o cambiamos de color se comienza una nueva linea, si no, se continúa
+    xi = event.clientX - rect.left;
+    yi = event.clientY - rect.top;
+    
+    var mousePositions = document.getElementById('mousePositions');
+    mousePositions.innerHTML = 'X coords: ' + xi + ', Y coords: ' + yi;
+  
+    var ctx = canvas.getContext("2d");
+    var ctx2 = canvas.getContext("2d");
+  
+    if (drawingTool === "linea" && event.type === "mousedown") {
+      if (oldtool != "linea") {
+        ctx.beginPath();
+      }
+  
+      ctx2.arc(xi, yi, 1, 0.5, (Math.PI / 180) * 360, true);
+      ctx2.strokeStyle = arcColor;
+      ctx2.stroke();
+      oldtool = "linea";
+  
+    } else if (drawingTool === "lapiz" && event.type === "mousedown") {
+      if (oldtool != "lapiz") {
+        ctx.beginPath();
+      }
+  
+      ctx.arc(xi, yi, 1, 0.5, (Math.PI / 180) * 360, true);
+      ctx.strokeStyle = arcColor;
+      ctx.stroke();
+      oldtool = "lapiz";
+  
+    } else if (drawingTool === "lapiz" && event.type === "mousemove" && event.buttons === 1) {
+      if (oldtool != "lapiz") {
+        ctx.beginPath();
+      }
+  
+      ctx.arc(xi, yi, 1, 0.5, (Math.PI / 180) * 360, true);
+      ctx.strokeStyle = arcColor;
+      ctx.stroke();
+      oldtool = "lapiz";
     }
-    ctx.arc(xi, yi, 1, 0.5, (Math.PI / 180) * 360, true);
-    ctx.strokeStyle = arcColor; // Establecer el color del trazo
-    ctx.stroke();
-    oldtool="lapiz";
   }
-}
+  
 
 function clearCanvas() {
   var canvas = document.getElementById("myCanvas");
