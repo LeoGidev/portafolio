@@ -22,3 +22,7 @@ ul {
     margin: 0;
     background-size: cover;
   }
+
+  .nav{
+    background-color: black !important;
+  }
