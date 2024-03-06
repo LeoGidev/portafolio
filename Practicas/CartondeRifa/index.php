@@ -41,7 +41,7 @@ include '../recursos/barra.php';
       <div class="col-12 col-xl-6">
         <!-- Contenedor del canvas -->
         
-          <canvas id="miCanvas" width="400" height="900" style="border:1px solid #000;" name="tablero"></canvas>
+          <canvas id="miCanvas" width="450" height="900" style="border:1px solid #000;" name="tablero"></canvas>
        
       </div>
       <div class="col-12 col-xl-6 mt-3">
