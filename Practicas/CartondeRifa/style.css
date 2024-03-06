@@ -31,6 +31,7 @@ ul {
     background-image: url('../recursos/fondo.webp');
     margin: 0;
     background-size: cover;
+    background-attachment: fixed;
   }
 
   nav{
