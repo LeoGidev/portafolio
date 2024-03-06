@@ -33,3 +33,8 @@ ul {
       max-width: 400px; /* Puedes ajustar el valor máximo según tus necesidades */
     }
   }
+
+  .visor{
+    backdrop-filter: blur(12px);
+    padding: 10px;
+  }
