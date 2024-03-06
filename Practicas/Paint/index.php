@@ -24,8 +24,7 @@
 include '../recursos/barra.php';       
 ?>
     </header>
-    <div class="container-fluid" style="margin: 100px auto;
-    ;">
+    <div class="container-fluid" style="margin: 100px auto;">
       <div class="row">
         <div class="col-12 col-lg-9 col-xl-9">
           <div class="lienzo" onmousedown="draw(event)" onmousemove="draw(event)" onmouseup="stopDrawing()">
@@ -39,7 +38,7 @@ include '../recursos/barra.php';
           <button class="form-control" onclick="setDrawingTool('lapiz')">Lapiz</button>
           <input class="form-control form-control-color" type="color" id="colorPicker" onchange="setArcColor(this.value)">
           <button class="form-control" onclick="clearCanvas()">Limpiar pizarra</button>
-          <div id="mousePositions"></div>
+          <div class="visor" id="mousePositions"></div>
         </div>
       </div>
     </div>

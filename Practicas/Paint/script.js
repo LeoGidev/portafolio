@@ -16,10 +16,14 @@ function setArcColor(color) {
 function draw(event) {
     var canvas = document.getElementById("myCanvas");
     var rect = canvas.getBoundingClientRect();
-    
+  
     xi = event.clientX - rect.left;
     yi = event.clientY - rect.top;
-    
+  
+    // Escala las coordenadas si el tamaño del canvas ha cambiado
+    xi = xi * (canvas.width / rect.width);
+    yi = yi * (canvas.height / rect.height);
+  
     var mousePositions = document.getElementById('mousePositions');
     mousePositions.innerHTML = 'X coords: ' + xi + ', Y coords: ' + yi;
   
@@ -57,6 +61,7 @@ function draw(event) {
       oldtool = "lapiz";
     }
   }
+  
   
 
 function clearCanvas() {
