@@ -35,6 +35,7 @@ include '../recursos/barra.php';
         </div>
         <div class="col-12 col-md-3 list-group">
           <button class="form-control" onclick="setDrawingTool('linea')">Linea</button>
+          <input class="form-control" type="range" id="lineThickness" min="1" max="10" value="1" onchange="setLineThickness(this.value)">
           <button class="form-control" onclick="setDrawingTool('lapiz')">Lapiz</button>
           <input class="form-control form-control-color" type="color" id="colorPicker" onchange="setArcColor(this.value)">
           <button class="form-control" onclick="clearCanvas()">Limpiar pizarra</button>
