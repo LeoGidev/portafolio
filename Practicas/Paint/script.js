@@ -58,6 +58,7 @@ function draw(event) {
       }
     }
   } else if (drawingTool === "lapiz" && event.type === "mousedown") {
+    drawingLine = true;//hace que cuando presionas lapiz la próxima linea empiece en un punto nuevo
     if (oldtool != "lapiz") {
       ctx2.beginPath();
     }
