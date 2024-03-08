@@ -20,6 +20,7 @@
               <a class="dropdown-item" href="../Telemeter/">Device Telemeter </a>
               <a class="dropdown-item" href="../CompiApp/">CompiApp(Python)</a>
               <a class="dropdown-item" href="../SeleniumApp">SeleniumApp(Python)</a>
+              <a class="dropdown-item" href="../velociraptorApp/">Velociraptor App(Python)</a>
               <a class="dropdown-item" href="../TecnicAssistant/">Tecnic Assistant(Python)</a>
               <a class="dropdown-item" href="../TagsApp/">TagsApp(Python)</a>
               <div class="dropdown-divider"></div>
