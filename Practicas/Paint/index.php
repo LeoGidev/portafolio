@@ -39,7 +39,7 @@ include '../recursos/barra.php';
           <button class="form-control" onclick="setDrawingTool('lapiz')">Lapiz</button>
           <input class="form-control form-control-color" type="color" id="colorPicker" onchange="setArcColor(this.value)">
           <button class="form-control" onclick="setDrawingTool('curva')">Curva</button>
-
+          <button class="form-control" onclick="setDrawingTool('circulo')">Circulo</button>
           <button class="form-control" onclick="clearCanvas()">Limpiar pizarra</button>
           <div class="visor" id="mousePositions"></div>
         </div>
