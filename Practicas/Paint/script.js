@@ -6,6 +6,9 @@ var drawingLine = false;
 var drawingCurve = false; // Nuevo, para rastrear si se está dibujando una curva
 var controlPoint1; // Nuevo, para almacenar el primer punto de control
 var controlPoint2; // Nuevo, para almacenar el segundo punto de control
+var controlPoint3;
+var centerC;
+var radioC;
 
 var drawingTool = "";
 var arcColor = "black";
@@ -43,10 +46,12 @@ function draw(event) {
   if (drawingTool === "linea") {
     if (event.type === "mousedown") {
       if (!drawingLine) {
+        
         startX = xi;
         startY = yi;
         drawingLine = true;
       } else {
+        
         ctx2.beginPath();
         ctx2.moveTo(startX, startY);
         ctx2.lineTo(xi, yi);
@@ -58,7 +63,7 @@ function draw(event) {
       }
     }
   } else if (drawingTool === "lapiz" && event.type === "mousedown") {
-    drawingLine = true;//hace que cuando presionas lapiz la próxima linea empiece en un punto nuevo
+    drawingLine = false;//hace que cuando presionas lapiz la próxima linea empiece en un punto nuevo
     if (oldtool != "lapiz") {
       ctx2.beginPath();
     }
@@ -70,6 +75,7 @@ function draw(event) {
     oldtool = "lapiz";
   } else if (drawingTool === "lapiz" && event.type === "mousemove" && event.buttons === 1) {
     if (oldtool != "lapiz") {
+      drawingLine = false;
       ctx2.beginPath();
     }
 
@@ -82,15 +88,22 @@ function draw(event) {
       if (!drawingCurve) {
         controlPoint1 = { x: xi, y: yi };
         drawingCurve = true;
+        console.log('El primer punto: x=', xi,' y= ', yi)
+        console.log('controlpoint1:', controlPoint1)
       } else if (!controlPoint2) {
         controlPoint2 = { x: xi, y: yi };
+        console.log('El segundo punto punto: x=', xi,' y= ', yi)
+        console.log('controlpoint2:', controlPoint2)
+      }
+      else if(!controlPoint3){
+        controlPoint3 = { x: xi, y: yi };
         // Dibuja la curva al tercer clic
         ctx2.beginPath();
-        ctx2.moveTo(startX, startY);
+        ctx2.moveTo(controlPoint1.x, controlPoint1.y);
         ctx2.bezierCurveTo(
           controlPoint1.x, controlPoint1.y,
           controlPoint2.x, controlPoint2.y,
-          xi, yi
+          controlPoint3.x, controlPoint3.y
         );
         ctx2.lineWidth = lineThickness;
         ctx2.strokeStyle = arcColor;
@@ -98,10 +111,35 @@ function draw(event) {
         // Reinicia las variables para la siguiente curva
         controlPoint1 = null;
         controlPoint2 = null;
+        controlPoint3 = null;
         drawingCurve = false;
       }
     }
+  }else if (drawingTool === "circulo") {
+    if (event.type === 'mousedown'){
+      if(!centerC){
+        centerC = {x: xi, y: yi};
+      }else{
+        if(centerC.x > xi){
+          var catx=centerC.x + xi;
+        }else{
+          var catx=centerC.x - xi;
+        }
+        if(centerC.y > yi){
+          var caty=centerC.y + yi;
+        }else{
+          var caty=centerC.y - yi
+        }
+        radioC = Math.sqrt( ((catx)**2)+((caty)**2) );
+        ctx2.beginPath();
+        ctx2.arc(centerC.x, centerC.y, radius, 0, 2 * Math.PI);
+        ctx2.stroke();
+        ctx2.closePath();
+      }
+      console.log('hola');
+    }
   }
+
 }
 
 function clearCanvas() {
