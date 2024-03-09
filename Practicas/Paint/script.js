@@ -84,6 +84,7 @@ function draw(event) {
     ctx2.stroke();
     oldtool = "lapiz";
   } else if (drawingTool === "curva") {
+    drawingLine = false;
     if (event.type === "mousedown") {
       if (!drawingCurve) {
         controlPoint1 = { x: xi, y: yi };
@@ -116,25 +117,24 @@ function draw(event) {
       }
     }
   }else if (drawingTool === "circulo") {
+    drawingLine = false;
     if (event.type === 'mousedown'){
       if(!centerC){
         centerC = {x: xi, y: yi};
       }else{
-        if(centerC.x > xi){
-          var catx=centerC.x + xi;
-        }else{
+        
+          
           var catx=centerC.x - xi;
-        }
-        if(centerC.y > yi){
-          var caty=centerC.y + yi;
-        }else{
+        
           var caty=centerC.y - yi
-        }
+        
         radioC = Math.sqrt( ((catx)**2)+((caty)**2) );
         ctx2.beginPath();
-        ctx2.arc(centerC.x, centerC.y, radius, 0, 2 * Math.PI);
+        ctx2.arc(centerC.x, centerC.y, radioC, 0, 2 * Math.PI);
         ctx2.stroke();
         ctx2.closePath();
+        centerC=null;
+        radioC=null;
       }
       console.log('hola');
     }
