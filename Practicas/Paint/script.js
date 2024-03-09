@@ -10,6 +10,8 @@ var controlPoint3;
 var centerC;
 var radioC;
 
+
+
 var drawingTool = "";
 var arcColor = "black";
 var oldtool = "";
@@ -154,6 +156,23 @@ function stopDrawing() {
     oldtool = "stop";
   }
 }
+
+// Función para descargar la imagen
+function descargarImagen() {
+  var canvas = document.getElementById('myCanvas');
+
+  // Verificar si el elemento canvas está presente
+  if (!canvas) {
+    console.error('No se encontró el elemento canvas');
+    return;
+  }
+
+  var enlaceDescarga = document.createElement('a');
+  enlaceDescarga.href = canvas.toDataURL('image/png');
+  enlaceDescarga.download = 'image.png';
+  enlaceDescarga.click();
+}
+
 
 
 

@@ -41,6 +41,7 @@ include '../recursos/barra.php';
           <button class="form-control" onclick="setDrawingTool('curva')">Curva</button>
           <button class="form-control" onclick="setDrawingTool('circulo')">Circulo</button>
           <button class="form-control" onclick="clearCanvas()">Limpiar pizarra</button>
+          <button class="btn btn-primary m-3" onclick="descargarImagen()">Descargar Imagen</button>
           <div class="visor" id="mousePositions"></div>
         </div>
       </div>
