@@ -3,9 +3,10 @@ body {
     margin: 0;
     background-size: cover;
   }
-  
+
 .contenedor{
-    margin-top: 50%;
+    border:10px solid white;
+    margin-top: 300px;
     display: flex;
     justify-content: center;
     align-items: center; 
@@ -17,7 +18,7 @@ body {
 }
 .tras{
     position:absolute;
-    left: 50%;
+    /*left: 50%;
     /*border: 2px solid green;*/
     transition: 1s;
 }
