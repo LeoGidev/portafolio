@@ -28,10 +28,10 @@ include '../recursos/barra.php';
 <div class='container'>
   <div class='row justify-content-center'>
     <div class="col-12 contenido2">
-    <h4> Selector de Redes </h4>
+    <h6> Selector de Redes </h6>
     </div>
   </div>
-    <div class="info invermov">
+    <div class="info invermov container-fluid">
         <div class="col-12 container-fluid info-banner ml-3 mr-3" id="B1"><table><tr><td colspan="2"><h2>Banner 1</h2></td> <tr><td><img src="img/auto1.webp" alt="automovil"></td><td><p>Descripción del banner 1</p></td></tr></table></div>
         <div class="col-12 container-fluid info-banner ml-3 mr-3" id="B2"><table><tr><td colspan="2"><h2>Banner 2</h2></td> <tr><td><img src="img/auto2.webp" alt="automovil"></td><td><p>Descripción del banner 2</p></td></tr></table></div>
         <div class="col-12 container-fluid info-banner ml-3 mr-3" id="B3"><table><tr><td colspan="2"><h2>Banner 3</h2></td> <tr><td><img src="img/auto3.webp" alt="automovil"></td><td><p>Descripción del banner 3</p></td></tr></table></div>
