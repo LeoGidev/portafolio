@@ -41,7 +41,7 @@ include '../recursos/barra.php';
             <div class="tras red5"><img src="red5.png" alt="youtube"></div>
         </div>
         <div class="contenido">
-    <a href="https://github.com/LeoGidev/VelocityPublic" target="_blank"><img src="../../img/GitHub-logo.webp"></a>
+    <a href="https://github.com/LeoGidev/selector-redes-" target="_blank"><img src="../../img/GitHub-logo.webp"></a>
         </div>
         <script src="script.js"></script>
 </body>
