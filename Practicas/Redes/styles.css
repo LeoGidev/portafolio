@@ -2,6 +2,7 @@ body {
     background-image: url('../recursos/fondo.webp');
     margin: 0;
     background-size: cover;
+    background-attachment: fixed;
   }
 
 .contenedor{
@@ -16,10 +17,14 @@ body {
     width: 100px;
     cursor: pointer;
 }
+/* Consulta de medios para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .contenedor img {
+        width: 80px;
+    }
+}
 .tras{
     position:absolute;
-    /*left: 50%;
-    /*border: 2px solid green;*/
     transition: 1s;
 }
 .im1{
@@ -65,29 +70,29 @@ body {
 }
 .red1.ver{
     scale: 1;
-    transform: rotate(72deg) translate(200px) rotate(-72deg);
+    transform: rotate(72deg) translate(200%) rotate(-72deg);
     transition: 1s;
 }
 .red2.ver{
     scale: 1;
-    transform: rotate(144deg) translate(200px) rotate(-144deg);
+    transform: rotate(144deg) translate(200%) rotate(-144deg);
     
     transition: 1s;
 }
 .red3.ver{
     scale: 1;
-    transform: rotate(216deg) translate(200px) rotate(-216deg);
+    transform: rotate(216deg) translate(200%) rotate(-216deg);
     transition: 1s;
 
 }
 .red4.ver{
     scale: 1;
-    transform: rotate(288deg) translate(200px) rotate(-288deg);
+    transform: rotate(288deg) translate(200%) rotate(-288deg);
     transition: 1s;
 }
 
 .red5.ver{
     scale: 1;
-    transform: rotate(360deg) translate(200px) rotate(-360deg);
+    transform: rotate(360deg) translate(200%) rotate(-360deg);
     transition: 1s;
 }
