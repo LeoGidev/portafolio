@@ -28,6 +28,8 @@
               <a class="dropdown-item" href="../Paint/">Simple Paint Web</a>
               <a class="dropdown-item" href="../CartondeRifa/">Carton de Rifas</a>
               <a class="dropdown-item" href="../cuadricular/">Cuadricular Imágenes</a>
+              <a class="dropdown-item" href="../bannergiratorio/">Banner giratorio</a>
+              <a class="dropdown-item" href="../Redes/">Selector de Redes mágico</a>
             </div>
           </li>
           <li class="nav-item">
