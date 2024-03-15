@@ -34,7 +34,7 @@ include '../recursos/barra.php';
     
   <div class="container contenedor">
             <div class="tras im1"><img src="im1.png" alt="redes" onclick="mostrar()"></div>
-            <div class=" tras red1"><img src="red1.png" alt="facebook"></div>
+            <div class="tras red1"><img src="red1.png" alt="facebook"></div>
             <div class="tras red2"><img src="red2.png" alt="instagram"></div>
             <div class="tras red3"><img src="red3.png" alt="twitter"></div>
             <div class="tras red4"><img src="red4.png" alt="tiktok"></div>
