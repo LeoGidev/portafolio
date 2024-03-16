@@ -28,7 +28,7 @@ include '../recursos/barra.php';
 <div class='container'>
   <div class='row justify-content-center'>
     <div class="col-12 contenido2">
-    <h6> Selector de Redes </h6>
+    <h6> Banner Giratorio </h6>
     </div>
   </div>
     <div class="info invermov container-fluid">
