@@ -11,6 +11,8 @@ ul {
     background-attachment: fixed;
     display: flex;
     justify-content: center;
+    height: 100vh;
+    margin: 0;
   }
   .controles{
     color:white;
