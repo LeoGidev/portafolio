@@ -6,7 +6,6 @@ ul {
   
   body {
     background-image: url('../recursos/fondo.webp');
-    margin: 0;
     background-size: cover;
     background-attachment: fixed;
     display: flex;
@@ -30,9 +29,7 @@ ul {
     background-color: rgba(255, 255, 255, 0.059);
     padding: 20px;
     border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
     
     flex-grow: 1; /* Permitir crecer dinámicamente */
     margin-top: 20px;
@@ -60,3 +57,43 @@ ul {
     border:8px solid #201d2a;
     box-shadow: 1px 1px 1px rgba(55, 55, 55, 0.397);
   }
+
+  .calculator {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .screen {
+    width: calc(100% - 10px);
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 24px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+  
+  button {
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #e0e0e0;
+  }
+  
+  button:hover {
+    background-color: #d0d0d0;
+  }
+  
+  button:active {
+    background-color: #c0c0c0;
+  }
+  

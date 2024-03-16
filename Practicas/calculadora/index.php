@@ -56,7 +56,7 @@ include '../recursos/barra.php';
   </div>
     
     <div class="contenido container">
-    <a href="https://github.com/LeoGidev/Cuadriculador" target="_blank"><img src="../../img/GitHub-logo.webp"></a>
+    <a href="https://github.com/LeoGidev/CalculadoraWeb" target="_blank"><img src="../../img/GitHub-logo.webp"></a>
     </div>
 
 </div>
