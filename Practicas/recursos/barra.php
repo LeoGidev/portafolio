@@ -30,13 +30,14 @@
               <a class="dropdown-item" href="../cuadricular/">Cuadricular Imágenes</a>
               <a class="dropdown-item" href="../bannergiratorio/">Banner giratorio</a>
               <a class="dropdown-item" href="../Redes/">Selector de Redes mágico</a>
+              <a class="dropdown-item" href="../calculadora/">Calculadora</a>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#Sobremi">Sobre mí</a>
+            <a class="nav-link" href="../../index.html#Sobremi">Sobre mí</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#proyectos">Proyectos</a>
+            <a class="nav-link" href="../../index.html#proyectos">Proyectos</a>
           </li>
           
         </ul>
