@@ -33,6 +33,12 @@ function cambiarColorLineas() {
   dibujarCuadricula();
 }
 
+function cambiarCantLineas() {
+  var cant = document.getElementById("setcant").value;
+  document.getElementById("cantLineas").innerText = cant;
+  cantidadlineasH = cant;
+}
+
 function dibujarCuadricula() {
   // Dibujar la cuadrícula 
   for (var i = 0; i < cantidadlineasH; i++) {

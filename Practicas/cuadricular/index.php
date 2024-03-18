@@ -46,11 +46,11 @@ include '../recursos/barra.php';
               <button class="btn btn-primary m-3" onclick="descargarImagen()">Descargar Imagen</button>
             </li>
             <li>
-              <button type="range" class="btn btn-primary m-3" onclick="cambiarCantidadLineasHorizontal()">Cambiar Cantidad de Líneas Horizontal</button>
+            <label for="cantidadHorizontal">Cantidad de líneas:</label>
+              <input type="range" id="cantidad" min="1" max="20" value="3" onchange="cambiarCantLineas()">
+            <span id="cantLineas">3</span>
             </li>
-            <li>
-              <button class="btn btn-primary m-3" onclick="cambiarCantidadLineasVertical()">Cambiar Cantidad de Líneas Vertical</button>
-            </li>
+            
 
           </ul>
     </div>
