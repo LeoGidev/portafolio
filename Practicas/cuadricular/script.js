@@ -120,3 +120,4 @@ function cargarImagenDeFondo() {
     imagenFondo.src = URL.createObjectURL(archivo);
   }
 }
+
