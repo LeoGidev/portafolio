@@ -40,12 +40,12 @@ include '../recursos/barra.php';
             <li class='m-3'>
             <label for="cantidadHorizontal">Cantidad de líneas:</label>
               <input type="range" id="setcant" min="3" max="20" value="5" onchange="cambiarCantLineas()">
-            <span id="cantLineas">3</span>
+            <span id="cantLineas">5</span>
             </li>
             <li class='m-3'>
             <label for="cantidadHorizontal">Grosor:</label>
-              <input type="range" id="setgro" min="3" max="20" value="5" onchange="Grosor()">
-            <span id="grosorLineas">3</span>
+              <input type="range" id="setgro" min="1" max="20" value="1" onchange="Grosor()">
+            <span id="grosorLineas">1</span>
             </li>
             <li>
               <label for="valor">Imagen:</label>

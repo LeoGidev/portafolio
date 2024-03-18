@@ -5,6 +5,8 @@ var ancholinea = 2;
 var cantidadlineasH = 3;
 var imagen = new Image();
 var en = 0;
+var transparencia = 0.5;
+ 
 
 
 // Esperar a que la imagen de fondo se cargue antes de dibujar
@@ -43,8 +45,14 @@ function Grosor() {
   var gro = document.getElementById("setgro").value;
   document.getElementById("grosorLineas").innerText = gro;
   ancholinea = parseInt(gro);
-
+  cargarImagenDeFondo();
   
+}
+
+function Grosor() {
+  var gro = document.getElementById("setgro").value;
+  document.getElementById("grosorLineas").innerText = gro;
+  ancholinea = parseInt(gro);
   cargarImagenDeFondo();
   
 }
@@ -52,6 +60,7 @@ function Grosor() {
 function dibujarCuadricula() {
   
   var en=0;
+  contexto.globalAlpha = transparencia;
   // Dibujar la cuadrícula 
   for (var i = 0; i < cantidadlineasH; i++) {
     
