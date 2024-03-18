@@ -53,6 +53,7 @@ function transparent() {
   var tra = document.getElementById("tra").value;
   document.getElementById("transpLineas").innerText = tra;
   transparencia = parseInt(tra);
+  console.log('transparencia: ', transparencia)
   cargarImagenDeFondo();
   
 }
@@ -60,6 +61,7 @@ function transparent() {
 function dibujarCuadricula() {
   
   var en=0;
+  console.log(transparencia);
   contexto.globalAlpha = transparencia;
   // Dibujar la cuadrícula 
   for (var i = 0; i < cantidadlineasH; i++) {
