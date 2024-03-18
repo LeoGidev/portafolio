@@ -19,9 +19,9 @@ imagen.onload = function () {
 };
 
 function limpiar(){
-  console.log('Se limpia canvas');
+  //console.log('Se limpia canvas');
   contexto.clearRect(0, 0, canvas.width, canvas.height);
-  console.log('canvas limpio');
+  //console.log('canvas limpio');
   
 }
 
@@ -35,7 +35,7 @@ function cambiarCantLineas() {
   var cant = document.getElementById("setcant").value;
   document.getElementById("cantLineas").innerText = cant;
   cantidadlineasH = parseInt(cant);
-   console.log('lineas=', cantidadlineasH);
+   //console.log('lineas=', cantidadlineasH);
   
   cargarImagenDeFondo();
   
@@ -52,8 +52,8 @@ function Grosor() {
 function transparent() {
   var tra = document.getElementById("tra").value;
   document.getElementById("transpLineas").innerText = tra;
-  transparencia = parseInt(tra);
-  console.log('transparencia: ', transparencia)
+  transparencia = tra;
+  //console.log('transparencia: ', transparencia)
   cargarImagenDeFondo();
   
 }
@@ -61,7 +61,7 @@ function transparent() {
 function dibujarCuadricula() {
   
   var en=0;
-  console.log(transparencia);
+  //console.log(transparencia);
   contexto.globalAlpha = transparencia;
   // Dibujar la cuadrícula 
   for (var i = 0; i < cantidadlineasH; i++) {
@@ -75,18 +75,18 @@ function dibujarCuadricula() {
       contexto.strokeStyle = colorLineas;
       
       contexto.moveTo(0,y);
-      //console.log(x);
+      ////console.log(x);
       contexto.lineTo(x,y);
-      //console.log(y);
+      ////console.log(y);
       contexto.stroke();
       //contexto.strokeRect(x, y, 100, 100);
-      console.log('linea H numero: ', i , "dibujada",'x=', x ,'y= ', y );
+      //console.log('linea H numero: ', i , "dibujada",'x=', x ,'y= ', y );
     
   }
-  console.log("en=", en, 'canvas=', canvas.width);
+  //console.log("en=", en, 'canvas=', canvas.width);
    // Dibujar la cuadrícula y los números
    for (var i = 0; en < canvas.width; i++) {
-    console.log('hola');
+    //console.log('hola');
 
     
     var x = (canvas.height/(cantidadlineasH-1))*i;//se podría usar el width
@@ -100,13 +100,13 @@ function dibujarCuadricula() {
     contexto.strokeStyle = colorLineas;
     
     contexto.moveTo(x,0);
-    //console.log(x);
+    ////console.log(x);
     contexto.lineTo(x,y);
-    //console.log(y);
+    ////console.log(y);
     contexto.stroke();
     //contexto.strokeRect(x, y, 100, 100);
 
-    console.log('linea V numero: ', i , "dibujada", 'x= ', x, 'yf=', y);
+    //console.log('linea V numero: ', i , "dibujada", 'x= ', x, 'yf=', y);
 }
 }
 
@@ -127,7 +127,7 @@ function cargarImagenDeFondo() {
     imagenFondo.onload = function () {
         var ancho = imagenFondo.width;
         var alto = imagenFondo.height;
-        console.log(ancho, alto);
+        //console.log(ancho, alto);
         if(alto > ancho){
             
             canvas.width=400;
@@ -143,11 +143,11 @@ function cargarImagenDeFondo() {
        canvas.width=400;
        canvas.height=400;
         factor=ancho/alto;
-        console.log('ancho/alto:', ancho, '/', alto, '=', ancho/alto);
+        //console.log('ancho/alto:', ancho, '/', alto, '=', ancho/alto);
         var nuevoAncho = canvas.width * factor;
         var nuevoAlto = canvas.height;
         
-        console.log('Nuevo ancho: ', nuevoAncho, 'Nuevo alto: ', nuevoAlto);
+        //console.log('Nuevo ancho: ', nuevoAncho, 'Nuevo alto: ', nuevoAlto);
         canvas.width = nuevoAncho;
         canvas.height= nuevoAlto;
         contexto.drawImage(imagenFondo, 0, 0, canvas.width, canvas.height);
