@@ -4,6 +4,7 @@ var colorLineas = '#00ff00';
 var ancholinea = 2;
 var cantidadlineasH = 3;
 var imagen = new Image();
+var en = 0;
 
 
 // Esperar a que la imagen de fondo se cargue antes de dibujar
@@ -41,7 +42,7 @@ function cambiarCantLineas() {
 
 function dibujarCuadricula() {
   
-  
+  var en=0;
   // Dibujar la cuadrícula 
   for (var i = 0; i < cantidadlineasH; i++) {
     
@@ -62,13 +63,15 @@ function dibujarCuadricula() {
       console.log('linea H numero: ', i , "dibujada",'x=', x ,'y= ', y );
     
   }
+  console.log("en=", en, 'canvas=', canvas.width);
    // Dibujar la cuadrícula y los números
-   for (var i = 0; x < canvas.width; i++) {
+   for (var i = 0; en < canvas.width; i++) {
     console.log('hola');
 
     
     var x = (canvas.height/(cantidadlineasH-1))*i;//se podría usar el width
     // para que no se pase del alto pero se usa el height para que todos los cuadros queden iguales y se mas práctico para el dibujante
+    var en=x;
     var y = (canvas.height);
     
 
