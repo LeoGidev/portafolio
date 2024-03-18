@@ -1,11 +1,11 @@
 var canvas = document.getElementById('miCanvas');
 var contexto = canvas.getContext('2d');
 var colorLineas = '#00ff00';
-var ancholinea = 2;
-var cantidadlineasH = 3;
+var ancholinea = 1;
+var cantidadlineasH = 5;
 var imagen = new Image();
 var en = 0;
-var transparencia = 0.5;
+var transparencia = 1;
  
 
 
@@ -49,10 +49,10 @@ function Grosor() {
   
 }
 
-function Grosor() {
-  var gro = document.getElementById("setgro").value;
-  document.getElementById("grosorLineas").innerText = gro;
-  ancholinea = parseInt(gro);
+function transparent() {
+  var tra = document.getElementById("tra").value;
+  document.getElementById("transpLineas").innerText = tra;
+  transparencia = parseInt(tra);
   cargarImagenDeFondo();
   
 }
