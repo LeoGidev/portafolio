@@ -63,9 +63,12 @@ function dibujarCuadricula() {
     
   }
    // Dibujar la cuadrícula y los números
-   for (var i = 0; i < cantidadlineasH; i++) {
+   for (var i = 0; x < canvas.width; i++) {
+    console.log('hola');
+
     
-    var x = (canvas.width/(cantidadlineasH-1))*i;
+    var x = (canvas.height/(cantidadlineasH-1))*i;//se podría usar el width
+    // para que no se pase del alto pero se usa el height para que todos los cuadros queden iguales y se mas práctico para el dibujante
     var y = (canvas.height);
     
 
