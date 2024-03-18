@@ -45,6 +45,13 @@ include '../recursos/barra.php';
             <li>
               <button class="btn btn-primary m-3" onclick="descargarImagen()">Descargar Imagen</button>
             </li>
+            <li>
+              <button class="btn btn-primary m-3" onclick="cambiarCantidadLineasHorizontal()">Cambiar Cantidad de Líneas Horizontal</button>
+            </li>
+            <li>
+              <button class="btn btn-primary m-3" onclick="cambiarCantidadLineasVertical()">Cambiar Cantidad de Líneas Vertical</button>
+            </li>
+
           </ul>
     </div>
     <div class="container contenido">
