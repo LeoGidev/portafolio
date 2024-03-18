@@ -34,9 +34,18 @@ function cambiarCantLineas() {
   document.getElementById("cantLineas").innerText = cant;
   cantidadlineasH = parseInt(cant);
    console.log('lineas=', cantidadlineasH);
-  limpiar();
-  ///dibujarCuadricula();
-   
+  
+  cargarImagenDeFondo();
+  
+}
+
+function Grosor() {
+  var gro = document.getElementById("setgro").value;
+  document.getElementById("grosorLineas").innerText = gro;
+  ancholinea = parseInt(gro);
+
+  
+  cargarImagenDeFondo();
   
 }
 

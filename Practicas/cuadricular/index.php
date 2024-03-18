@@ -37,10 +37,15 @@ include '../recursos/barra.php';
               <label for="colorLineas">Color de las líneas:</label>
               <input class="form-control form-control-color" type="color" id="colorLineas" value="#00ff00" onchange="cambiarColorLineas()">
             </li>
-            <li>
+            <li class='m-3'>
             <label for="cantidadHorizontal">Cantidad de líneas:</label>
               <input type="range" id="setcant" min="3" max="20" value="5" onchange="cambiarCantLineas()">
             <span id="cantLineas">3</span>
+            </li>
+            <li class='m-3'>
+            <label for="cantidadHorizontal">Grosor:</label>
+              <input type="range" id="setgro" min="3" max="20" value="5" onchange="Grosor()">
+            <span id="grosorLineas">3</span>
             </li>
             <li>
               <label for="valor">Imagen:</label>
