@@ -1,14 +1,11 @@
 var canvas = document.getElementById('miCanvas');
 var contexto = canvas.getContext('2d');
 
-//var tamanoCuadro = 200;
-//var cuadrosPorLado = 3;
-//var tamañoTotal = tamanoCuadro * cuadrosPorLado;
-//var portada = 0;
 
-var colorFondo = '#ffffff';
+
+
 var colorLineas = '#00ff00';
-var colorNumeros = '#000000';
+
 var ancholinea = 2;
 
 var cantidadlineasH = 3;
@@ -27,6 +24,12 @@ imagen.onload = function () {
   dibujarCuadricula();
 };
 
+function limpiar(){
+  console.log('Se limpia canvas');
+  contexto.clearRect(0, 0, canvas.width, canvas.height);
+  console.log('canvas limpio');
+}
+
 function cambiarColorLineas() {
   colorLineas = document.getElementById('colorLineas').value;
   // Dibuja la cuadrícula al cambiar el color de las líneas
@@ -36,13 +39,16 @@ function cambiarColorLineas() {
 function cambiarCantLineas() {
   var cant = document.getElementById("setcant").value;
   document.getElementById("cantLineas").innerText = cant;
-  cantidadlineasH = cant;
-  console.log('lineas=', cantidadlineasH);
-  dibujarCuadricula();
+  cantidadlineasH = parseInt(cant);
+   console.log('lineas=', cantidadlineasH);
+  limpiar();
+  //dibujarCuadricula();
 }
 
 function dibujarCuadricula() {
-  contexto.clearRect(0, 0, canvas.width, canvas.height);
+  
+  // Dibuja la imagen de fondo
+  //contexto.drawImage(imagen, 0, 0, canvas.width, canvas.height);
   // Dibujar la cuadrícula 
   for (var i = 0; i < cantidadlineasH; i++) {
     
