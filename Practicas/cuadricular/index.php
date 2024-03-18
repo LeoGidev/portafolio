@@ -38,21 +38,23 @@ include '../recursos/barra.php';
               <input class="form-control form-control-color" type="color" id="colorLineas" value="#00ff00" onchange="cambiarColorLineas()">
             </li>
             <li>
+            <label for="cantidadHorizontal">Cantidad de líneas:</label>
+              <input type="range" id="setcant" min="3" max="20" value="5" onchange="cambiarCantLineas()">
+            <span id="cantLineas">3</span>
+            </li>
+            <li>
               <label for="valor">Imagen:</label>
               <input class="form-control" type="file" id="imagenFondoInput" accept="image/*" onchange="cargarImagenDeFondo()">
             </li>
-            <!-- Botón para descargar la imagen -->
+            
             <li>
               <button class="btn btn-primary m-3" onclick="descargarImagen()">Descargar Imagen</button>
             </li>
-            <li>
-            <label for="cantidadHorizontal">Cantidad de líneas:</label>
-              <input type="range" id="setcant" min="2" max="20" value="3" onchange="cambiarCantLineas()">
-            <span id="cantLineas">3</span>
-            </li>
+            
             
 
           </ul>
+          
     </div>
     <div class="container contenido">
        <!-- Contenedor del canvas -->

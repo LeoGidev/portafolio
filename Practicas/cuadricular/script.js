@@ -1,19 +1,10 @@
 var canvas = document.getElementById('miCanvas');
 var contexto = canvas.getContext('2d');
-
-
-
-
 var colorLineas = '#00ff00';
-
 var ancholinea = 2;
-
 var cantidadlineasH = 3;
-
-
-
 var imagen = new Image();
-imagen.src = 'rifa.png';
+
 
 // Esperar a que la imagen de fondo se cargue antes de dibujar
 imagen.onload = function () {
@@ -28,6 +19,7 @@ function limpiar(){
   console.log('Se limpia canvas');
   contexto.clearRect(0, 0, canvas.width, canvas.height);
   console.log('canvas limpio');
+  
 }
 
 function cambiarColorLineas() {
@@ -42,13 +34,14 @@ function cambiarCantLineas() {
   cantidadlineasH = parseInt(cant);
    console.log('lineas=', cantidadlineasH);
   limpiar();
-  //dibujarCuadricula();
+  ///dibujarCuadricula();
+   
+  
 }
 
 function dibujarCuadricula() {
   
-  // Dibuja la imagen de fondo
-  //contexto.drawImage(imagen, 0, 0, canvas.width, canvas.height);
+  
   // Dibujar la cuadrícula 
   for (var i = 0; i < cantidadlineasH; i++) {
     
@@ -66,7 +59,7 @@ function dibujarCuadricula() {
       //console.log(y);
       contexto.stroke();
       //contexto.strokeRect(x, y, 100, 100);
-      console.log('linea H numero: ', i , "dibujada");
+      console.log('linea H numero: ', i , "dibujada",'x=', x ,'y= ', y );
     
   }
    // Dibujar la cuadrícula y los números
@@ -87,7 +80,7 @@ function dibujarCuadricula() {
     contexto.stroke();
     //contexto.strokeRect(x, y, 100, 100);
 
-    console.log('linea V numero: ', i , "dibujada");
+    console.log('linea V numero: ', i , "dibujada", 'x= ', x, 'yf=', y);
 }
 }
 
