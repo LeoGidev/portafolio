@@ -11,8 +11,8 @@ var colorLineas = '#00ff00';
 var colorNumeros = '#000000';
 var ancholinea = 2;
 
-var cantidadlineasH = 5;
-var cantidadlineasV = 5;
+var cantidadlineasH = 3;
+
 
 
 var imagen = new Image();
@@ -37,14 +37,17 @@ function cambiarCantLineas() {
   var cant = document.getElementById("setcant").value;
   document.getElementById("cantLineas").innerText = cant;
   cantidadlineasH = cant;
+  console.log('lineas=', cantidadlineasH);
+  dibujarCuadricula();
 }
 
 function dibujarCuadricula() {
+  contexto.clearRect(0, 0, canvas.width, canvas.height);
   // Dibujar la cuadrícula 
   for (var i = 0; i < cantidadlineasH; i++) {
     
       var x = canvas.width;
-      var y = (canvas.height/4)*i;
+      var y = (canvas.height/(cantidadlineasH-1))*i;
       
 
       // Dibujar el cuadro en el canvas con el nuevo color de líneas
@@ -57,12 +60,13 @@ function dibujarCuadricula() {
       //console.log(y);
       contexto.stroke();
       //contexto.strokeRect(x, y, 100, 100);
+      console.log('linea H numero: ', i , "dibujada");
     
   }
    // Dibujar la cuadrícula y los números
-   for (var i = 0; i < 5; i++) {
+   for (var i = 0; i < cantidadlineasH; i++) {
     
-    var x = (canvas.width/4)*i;
+    var x = (canvas.width/(cantidadlineasH-1))*i;
     var y = (canvas.height);
     
 
@@ -76,7 +80,8 @@ function dibujarCuadricula() {
     //console.log(y);
     contexto.stroke();
     //contexto.strokeRect(x, y, 100, 100);
-  
+
+    console.log('linea V numero: ', i , "dibujada");
 }
 }
 

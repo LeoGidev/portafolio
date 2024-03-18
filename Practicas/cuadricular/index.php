@@ -47,7 +47,7 @@ include '../recursos/barra.php';
             </li>
             <li>
             <label for="cantidadHorizontal">Cantidad de líneas:</label>
-              <input type="range" id="cantidad" min="1" max="20" value="3" onchange="cambiarCantLineas()">
+              <input type="range" id="setcant" min="1" max="20" value="3" onchange="cambiarCantLineas()">
             <span id="cantLineas">3</span>
             </li>
             
