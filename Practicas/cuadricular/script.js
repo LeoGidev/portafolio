@@ -1,15 +1,18 @@
 var canvas = document.getElementById('miCanvas');
 var contexto = canvas.getContext('2d');
 
-var tamanoCuadro = 200;
-var cuadrosPorLado = 3;
-var tamañoTotal = tamanoCuadro * cuadrosPorLado;
+//var tamanoCuadro = 200;
+//var cuadrosPorLado = 3;
+//var tamañoTotal = tamanoCuadro * cuadrosPorLado;
 //var portada = 0;
 
 var colorFondo = '#ffffff';
 var colorLineas = '#00ff00';
 var colorNumeros = '#000000';
 var ancholinea = 2;
+
+var cantidadlineasH = 5;
+var cantidadlineasV = 5;
 
 
 var imagen = new Image();
@@ -31,8 +34,8 @@ function cambiarColorLineas() {
 }
 
 function dibujarCuadricula() {
-  // Dibujar la cuadrícula y los números
-  for (var i = 0; i < 5; i++) {
+  // Dibujar la cuadrícula 
+  for (var i = 0; i < cantidadlineasH; i++) {
     
       var x = canvas.width;
       var y = (canvas.height/4)*i;
