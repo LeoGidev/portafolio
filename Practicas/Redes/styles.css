@@ -6,7 +6,9 @@ body {
     align-items: center;
     background-size: cover;
 }
-
+nav{
+    background-color: black;
+}
 h6 {
     border-bottom: 2px solid #969696;
     font-family: 'Ubuntu Mono', monospace;
@@ -21,7 +23,6 @@ h6 {
     background-color: rgba(255, 255, 255, 0.059);
     padding: 20px;
     border-radius: 10px;
-    overflow: hidden;
     margin-top: 69px;
     color: white;
 }
@@ -49,7 +50,7 @@ h6 {
     background-color: rgba(255, 255, 255, 0.059);
     padding: 20px;
     border-radius: 10px;
-    width: 500px;
+    /*width: 500px;*/
     flex-grow: 1; /* Permitir crecer dinámicamente */
     margin-top: 20px;
 }
@@ -58,12 +59,12 @@ h6 {
     display: flex;
     justify-content: center;
     align-items: center;
-    backdrop-filter: blur(8px);
-    background-color: rgba(255, 255, 255, 0.059);
+    
+    
     padding: 20px;
     border-radius: 10px;
     height: 500px; 
-    width: 500px;
+    
     flex-grow: 1; /* Permitir crecer dinámicamente */
     margin-top: 20px;
 }
@@ -81,6 +82,7 @@ h6 {
 .tras{
     position:absolute;
     transition: 1s;
+    filter: drop-shadow(0px 0px 3px blue);
 }
 .im1{
     z-index: 10;
@@ -95,6 +97,9 @@ h6 {
     scale: 0;
     transform: rotate(90deg);
     transition: 1s;
+}
+.red1:hover{
+    scale:0.1;
 }
 .red2{
     scale: 0;

@@ -26,13 +26,13 @@ include '../recursos/barra.php';
 ?>
 </header>
 <div class='container'>
-  <div class='row justify-content-center'>
-    <div class="col-12 contenido2">
+  
+    <div class="container-fluid contenido2">
     <h4> Selector de Redes </h4>
     </div>
-  </div>
+  
     
-  <div class="container contenedor">
+  <div class="container contenedor col-12">
             <div class="tras im1"><img src="im1.png" alt="redes" onclick="mostrar()"></div>
             <div class="tras red1"><img src="red1.png" alt="facebook"></div>
             <div class="tras red2"><img src="red2.png" alt="instagram"></div>
