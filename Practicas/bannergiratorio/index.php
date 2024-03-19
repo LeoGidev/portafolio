@@ -37,7 +37,7 @@ include '../recursos/barra.php';
         <div class="col-12 container-fluid info-banner ml-3 mr-3" id="B3"><table><tr><td colspan="2"><h2>Banner 3</h2></td> <tr><td><img src="img/auto3.webp" alt="automovil"></td><td><p>Descripción del banner 3</p></td></tr></table></div>
         <div class="col-12 container-fluid info-banner ml-3 mr-3" id="B4"><table><tr><td colspan="2"><h2>Banner 4</h2></td> <tr><td><img src="img/auto4.webp" alt="automovil"></td><td><p>Descripción del banner 4</p></td></tr></table></div>
       </div>
-      <div class="contenido">
+      <div class="container contenido">
     <a href="https://github.com/LeoGidev/banner-giratorio" target="_blank"><img src="../../img/GitHub-logo.webp"></a>
         </div>
         <script src="script.js"></script>
