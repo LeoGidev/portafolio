@@ -98,9 +98,7 @@ h6 {
     transform: rotate(90deg);
     transition: 1s;
 }
-.red1:hover{
-    scale:0.1;
-}
+
 .red2{
     scale: 0;
     transform: rotate(90deg);
@@ -133,11 +131,19 @@ h6 {
     transform: rotate(72deg) translate(200%) rotate(-72deg);
     transition: 1s;
 }
+.red1.ver:hover{
+    scale:0.98;
+    filter: drop-shadow(0px 0px 10px rgb(0, 255, 0));
+}
 .red2.ver{
     scale: 1;
     transform: rotate(144deg) translate(200%) rotate(-144deg);
     
     transition: 1s;
+}
+.red2.ver:hover{
+    scale:0.98;
+    filter: drop-shadow(0px 0px 10px rgb(0, 255, 0));
 }
 .red3.ver{
     scale: 1;
@@ -145,14 +151,26 @@ h6 {
     transition: 1s;
 
 }
+.red3.ver:hover{
+    scale:0.98;
+    filter: drop-shadow(0px 0px 10px rgb(0, 255, 0));
+}
 .red4.ver{
     scale: 1;
     transform: rotate(288deg) translate(200%) rotate(-288deg);
     transition: 1s;
+}
+.red4.ver:hover{
+    scale:0.98;
+    filter: drop-shadow(0px 0px 10px rgb(0, 255, 0));
 }
 
 .red5.ver{
     scale: 1;
     transform: rotate(360deg) translate(200%) rotate(-360deg);
     transition: 1s;
+}
+.red5.ver:hover{
+    scale:0.98;
+    filter: drop-shadow(0px 0px 10px rgb(0, 255, 0));
 }
