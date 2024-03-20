@@ -8,9 +8,58 @@ ul {
     background-image: url('../recursos/fondo.webp');
     margin: 0;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
   }
-  .controles{
-    color:white;
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  canvas {
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .calendar {
+    border: 2px solid black;
+    padding: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  
+  .calendar h2 {
+    margin-top: 0;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table th,
+  table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .today {
+    background-color: rgb(14, 75, 94);
+    color: white;
+  }
+  
+  .sunday {
+    color: red;
+  }
+  
+  .saturday {
+    color: blue;
   }
   h4 {
     border-bottom: 2px solid #969696;
