@@ -28,22 +28,26 @@ include '../recursos/barra.php';
 <div class='container'>
   <div class='row justify-content-center'>
     <div class="col-12 contenido2">
-    <h4> Reloj y calendario </h4>
+        <h4> Reloj y calendario </h4>
     </div>
   </div>
-    <div class='col-12 controles container'>
-          
-          </ul>
-          
+    
+   
+    <div class="contenedor contenido">
+        <canvas id="clock" width="200" height="200"></canvas>
+  
+        <div class="calendar">
+            <h2>Calendario</h2>
+            <div id="calendar"></div>
+        </div>
     </div>
-    <div class="container contenido">
-      
-    </div>
+</div>
+
     
     <div class="contenido container">
     <a href="https://github.com/LeoGidev/Cuadriculador" target="_blank"><img src="../../img/GitHub-logo.webp"></a>
     </div>
 
-</div>
+
         <script src="script.js"></script>
 </body>
