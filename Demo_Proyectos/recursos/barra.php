@@ -31,6 +31,7 @@
               <a class="dropdown-item" href="../../Practicas/bannergiratorio/">Banner Giratorio</a>
               <a class="dropdown-item" href="../../Practicas/redes/">Selector de Redes Mágico</a>
               <a class="dropdown-item" href="../../Practicas/calculadora/">Calculadora</a>
+              <a class="dropdown-item" href="../../Practicas/Reloj/">Reloj</a>
             </div>
           </li>
           <li class="nav-item">
