@@ -27,7 +27,7 @@
     flex-direction: column;
     align-items: center;
     margin-top: 20px; /* Centra verticalmente el contenido en la parte inferior */
-    border: 1px solid green;
+    
     
   }
   
@@ -73,8 +73,7 @@
   .score{
     display: flex;
     justify-content: center;
-    border: 1px solid white;
-    /*width: 100%;*/
+    
   
   }
   table{
@@ -96,12 +95,12 @@
     font-weight: bolder;
     }
   .valor{
-    margin: 10px;
+    margin: 20px;
     background-color: rgb(43, 49, 43);
     padding-left: 20px;
     padding-right: 20px;
    
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
   
   }
   .modal {
