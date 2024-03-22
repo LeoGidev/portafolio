@@ -33,8 +33,8 @@ include '../recursos/barra.php';
   </div>
     
    
-  <div class="contenedor">
-    <div class="score conatiner">
+  <div class="contenedor container-fluid">
+    <div class="score container">
         <table>
             <tr>
                 <td>Puntaje:</td>
