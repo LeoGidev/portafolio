@@ -7,6 +7,9 @@
     font-style: normal;
   
   }
+  nav{
+    background-color: #000;
+  }
   body {
     background-image: url('../recursos/fondo.webp');
     display: flex;
