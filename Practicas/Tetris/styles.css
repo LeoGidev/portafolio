@@ -8,6 +8,7 @@
   
   }
   body {
+    background-image: url('../recursos/fondo.webp');
     display: flex;
     justify-content: center;
     height: 100vh;
