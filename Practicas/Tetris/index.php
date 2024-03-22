@@ -34,7 +34,7 @@ include '../recursos/barra.php';
     
    
   <div class="contenedor">
-    <div class="score">
+    <div class="score conatiner">
         <table>
             <tr>
                 <td>Puntaje:</td>
