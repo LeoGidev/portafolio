@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let score = 0;
   let lastDirection = 'right';
 
-  let gameSpeed = 100;
+  let gameSpeed = 500;
   let gameInterval;
 
   function generateFood() {
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function gameOver() {
     stopGame();
-    alert(`Game Over! Your score is ${score}`);
+    alert(`Game Over! Tu puntaje es: ${score}`);
     document.location.reload();
   }
 
@@ -102,12 +102,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  canvas.addEventListener('touchstart', handleTouchStart, false);
-  canvas.addEventListener('touchmove', handleTouchMove, false);
-
-  let xDown = null;
-  let yDown = null;
-
   function handleTouchStart(event) {
     const firstTouch = event.touches[0];
     xDown = firstTouch.clientX;
@@ -143,5 +137,34 @@ document.addEventListener('DOMContentLoaded', () => {
     yDown = null;
   }
 
+  let xDown = null;
+  let yDown = null;
+
+  canvas.addEventListener('touchstart', handleTouchStart, false);
+  canvas.addEventListener('touchmove', handleTouchMove, false);
+
+  document.addEventListener('keydown', event => {
+    const keyPressed = event.key;
+
+    if (keyPressed === 'ArrowUp' && lastDirection !== 'down') {
+      dx = 0;
+      dy = -1;
+      lastDirection = 'up';
+    } else if (keyPressed === 'ArrowDown' && lastDirection !== 'up') {
+      dx = 0;
+      dy = 1;
+      lastDirection = 'down';
+    } else if (keyPressed === 'ArrowLeft' && lastDirection !== 'right') {
+      dx = -1;
+      dy = 0;
+      lastDirection = 'left';
+    } else if (keyPressed === 'ArrowRight' && lastDirection !== 'left') {
+      dx = 1;
+      dy = 0;
+      lastDirection = 'right';
+    }
+  });
+
   startGame();
 });
+
