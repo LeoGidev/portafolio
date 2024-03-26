@@ -34,6 +34,7 @@ include '../recursos/barra.php';
     
    
   <div class="contenedor container-fluid">
+  <button id="startButton">Start</button>
   <canvas id="gameCanvas" width="400" height="400"></canvas>
 </div>
 
