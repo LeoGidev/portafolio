@@ -27,6 +27,7 @@
               <h6 class="ml-3">Prácticas</h6>
               <a class="dropdown-item" href="../Tetris/">Tetris Web</a>
               <a class="dropdown-item" href="../Paint/">Simple Paint Web</a>
+              <a class="dropdown-item" href="../Gusanito/">Gusanito Web</a>
               <a class="dropdown-item" href="../CartondeRifa/">Carton de Rifas</a>
               <a class="dropdown-item" href="../cuadricular/">Cuadricular Imágenes</a>
               <a class="dropdown-item" href="../bannergiratorio/">Banner giratorio</a>
