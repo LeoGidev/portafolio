@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
     function gameOver() {
       stopGame();
-      alert(`Game Over! Your score is ${score}`);
+      alert(`Game Over. Tu puntaje es: ${score}`);
       document.location.reload();
     }
   
