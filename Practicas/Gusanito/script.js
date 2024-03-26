@@ -12,8 +12,10 @@ document.addEventListener('DOMContentLoaded', () => {
   let score = 0;
   let lastDirection = 'right';
 
-  let gameSpeed = 500;
+  let gameSpeed = 100;
   let gameInterval;
+
+  let gameStarted = false;
 
   function generateFood() {
     return {
@@ -65,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function gameOver() {
     stopGame();
-    alert(`Game Over! Tu puntaje es: ${score}`);
+    alert(`Game Over! Your score is ${score}`);
     document.location.reload();
   }
 
@@ -144,6 +146,8 @@ document.addEventListener('DOMContentLoaded', () => {
   canvas.addEventListener('touchmove', handleTouchMove, false);
 
   document.addEventListener('keydown', event => {
+    if (!gameStarted) return; // Si el juego no ha comenzado, no responder a las teclas
+
     const keyPressed = event.key;
 
     if (keyPressed === 'ArrowUp' && lastDirection !== 'down') {
@@ -165,6 +169,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  startGame();
+  document.getElementById('startButton').addEventListener('click', () => {
+    gameStarted = true;
+    startGame();
+  });
 });
-
