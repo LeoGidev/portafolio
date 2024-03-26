@@ -16,7 +16,7 @@
               <a class="dropdown-item" href="http://yplef.rf.gd/" target="_blank">YPLEF web page</a>
               <a class="dropdown-item" href="../../Demo_Proyectos/Maps/">Maps monitor</a>
               <a class="dropdown-item" href="../../Demo_Proyectos/Reboot/">Device Remote Reboot</a>
-              <a class="dropdown-item" href="../diagnostic/">Diagnostic</a>
+              <a class="dropdown-item" href="../../Demo_Proyectos/diagnostic/">Diagnostic</a>
               <a class="dropdown-item" href="../../Demo_Proyectos/Telemeter/">Device Telemeter </a>
               <a class="dropdown-item" href="../../Demo_Proyectos/CompiApp/">CompiApp(Python)</a>
               <a class="dropdown-item" href="../../Demo_Proyectos/SeleniumApp/">SeleniumApp(Python)</a>
