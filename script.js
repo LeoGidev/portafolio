@@ -17,12 +17,7 @@ $(window).scroll(function() {
   var scroll = $(window).scrollTop();
   $('#portada').css('background-position', 'center ' + (-scroll/5) + 'px');
 });
-//enviar whatsapp
-function enviarWhatsApp() {
-  var telefono = '+542615008072'; 
-  var mensaje = encodeURIComponent('Hola, quiero contactarte.'); // Mensaje predefinido
-  window.open('https://api.whatsapp.com/send?phone=' + telefono + '&text=' + mensaje, '_blank');
-}
+
 //Cambia los estilos
 document.getElementById('menuBtn').addEventListener('click', function() {
   document.getElementById('sideMenu').classList.toggle('show');
