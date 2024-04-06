@@ -30,8 +30,10 @@ include '../recursos/barra.php';
     <h6> Velociraptor App </6>
     </div>
     <div class="container contenido">
-    <iframe src="https://www.veed.io/embed/075a2fdf-b56c-4597-9ef8-5de8d834bbe5" width="744" height="504" frameborder="0" title="velociraptor" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
-    <div class="contenido">
+    <video width="640" height="360" controls>
+  <source src="valociraptor.mp4" type="video/mp4">
+  Tu navegador no soporta el elemento de video.
+</video><div class="contenido">
     <a href="https://github.com/LeoGidev/VelocityPublic" target="_blank"><img src="../../img/GitHub-logo.webp"></a>
         </div>
         <script src="script.js"></script>
