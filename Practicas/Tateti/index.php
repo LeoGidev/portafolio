@@ -28,7 +28,7 @@ include '../recursos/barra.php';
 <div class='container'>
   <div class='row justify-content-center'>
     <div class="col-12 contenido2">
-        <h4> Juego del gusanito </h4>
+        <h4> Ta Te Ti! </h4>
     </div>
   </div>
     
