@@ -30,8 +30,10 @@ include '../recursos/barra.php';
     <h6> Compi App </6>
     </div>
     <div class="container contenido">
-        <iframe src="https://www.veed.io/embed/d334e8d6-78ab-47e5-82ca-bf3d05bb54ac" width="744" height="504" frameborder="0" title="Proyecto sin titulo" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
+    <video width="640" height="360" controls>
+  <source src="CompiApp.mp4" type="video/mp4">
+  Tu navegador no soporta el elemento de video.
+</video></div>
     <div class="contenido">
     <a href="https://github.com/LeoGidev/CalcuadorMascaraRed" target="_blank"><img src="../../img/GitHub-logo.webp"></a>
         </div>
