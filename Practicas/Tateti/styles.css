@@ -10,22 +10,7 @@ body {
     color:white;
     overflow: hidden; /* Evitar desplazamiento */
   }
-  #startButton{
-    padding: 10px;
-    background-color: rgb(36, 36, 228);
-    border: 2px solid white;
-    border-radius: 10px;
-    margin: 20px;
-    color: white;
-    transition: 1s;
   
-  }
-  #startButton:hover{
-    background-color: rgb(255, 255, 255);
-    border: 2px solid rgb(51, 51, 195);
-    color: rgb(40, 40, 218);
-    transition: 1s;
-  }
   canvas {
     border: 1px solid #000;
     background-color: white;
