@@ -12,10 +12,19 @@ body {
   }
   
   canvas {
-    border: 1px solid #000;
-    background-color: white;
-    max-width: 100%;
-  }
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(233, 230, 207);
+    box-shadow: 3px 3px 4px black;
+    cursor: pointer;
+    transition: 2s;
+}
+canvas:hover{
+    transition: 2z;
+    filter: drop-shadow(0px 0px 30px blue);
+}
   nav{
     background-color: #000;
   }
