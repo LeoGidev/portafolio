@@ -43,7 +43,7 @@ include '../recursos/barra.php';
 
     
     <div class="contenido3 container">
-    <a href="https://github.com/LeoGidev/Gusanito" target="_blank"><img src="../../img/GitHub-logo.webp"></a>
+    <a href="https://github.com/LeoGidev/TaTeTI" target="_blank"><img src="../../img/GitHub-logo.webp"></a>
     </div>
 
 
