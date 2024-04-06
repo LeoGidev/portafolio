@@ -30,8 +30,10 @@ include '../recursos/barra.php';
     <h6> Selenium App</6>
     </div>
     <div class="container contenido">
-    <iframe src="https://www.veed.io/embed/3ddc89d6-ef7e-4b93-88ee-b923bad977f6" width="744" height="504" frameborder="0" title="SeleniumApp" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
+    <video width="640" height="360" controls>
+  <source src="SeleniumApp.mp4" type="video/mp4">
+  Tu navegador no soporta el elemento de video.
+</video></div>
     <div class="contenido">
     <a href="https://github.com/LeoGidev/seleniumAppDemo" target="_blank"><img src="../../img/GitHub-logo.webp"></a>
         </div>
