@@ -29,11 +29,9 @@ include '../recursos/barra.php';
     <div class="contenido2">
     <h6> Selenium App</6>
     </div>
-    <div class="container contenido">
-    <video width="640" height="360" controls>
-  <source src="SeleniumApp.mp4" type="video/mp4">
-  Tu navegador no soporta el elemento de video.
-</video></div>
+    <div class="container-fluid contenido">
+    <iframe src="https://drive.google.com/file/d/1lHD329DEfQPS7-suv7DGPkzoLK_0nLee/preview" width="100%" height="400" allow="autoplay"></iframe>
+    </div>
     <div class="contenido">
     <a href="https://github.com/LeoGidev/seleniumAppDemo" target="_blank"><img src="../../img/GitHub-logo.webp"></a>
         </div>

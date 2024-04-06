@@ -28,13 +28,12 @@ include '../recursos/barra.php';
     <div class="contenido2">
     <h6> Tecnic Assistant</6>
     </div>
-    <div class="container contenido">
-    <video width="640" height="360" controls>
-  <source src="Tecnic Assistant.mp4" type="video/mp4">
-  Tu navegador no soporta el elemento de video.
-</video></div>
+    
+    <div class="container-fluid contenido">
+    <iframe src="https://drive.google.com/file/d/1w8kH8aS9BwQy-u-cX4vh_IecM91vLfe4/preview" width="100%" height="400" allow="autoplay"></iframe>
+    </div>
     <div class="contenido">
-    <a href="https://github.com/LeoGidev/ComparaXLSX" target="_blank"><img src="../../img/GitHub-logo.webp"></a>
+    <a href="https://github.com/LeoGidev/CalcuadorMascaraRed" target="_blank"><img src="../../img/GitHub-logo.webp"></a>
         </div>
         <script src="script.js"></script>
 </body>

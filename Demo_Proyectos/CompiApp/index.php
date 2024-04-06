@@ -31,7 +31,7 @@ include '../recursos/barra.php';
     </div>
     <div class="container-fluid  contenido">
     
-      <iframe src="https://drive.google.com/file/d/1JyBb0D9wYm9pK1DJvf8nHnBrS9FrCe1x/preview" width="100%" height="360" allow="autoplay"></iframe>
+      <iframe src="https://drive.google.com/file/d/1JyBb0D9wYm9pK1DJvf8nHnBrS9FrCe1x/preview" width="100%" height="400" allow="autoplay"></iframe>
 </div>
     <div class="contenido">
     <a href="https://github.com/LeoGidev/CalcuadorMascaraRed" target="_blank"><img src="../../img/GitHub-logo.webp"></a>

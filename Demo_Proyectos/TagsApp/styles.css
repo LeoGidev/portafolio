@@ -24,6 +24,7 @@ h6 {
     max-height: 100vh; 
     flex-grow: 1; /* Permitir crecer dinámicamente */
     margin-top: 20px;
+    width: 100vw;
 }
 .contenido2 {
     backdrop-filter: blur(8px);

@@ -29,11 +29,10 @@ include '../recursos/barra.php';
     <div class="contenido2">
     <h6> Velociraptor App </6>
     </div>
-    <div class="container contenido">
-    <video width="640" height="360" controls>
-  <source src="velociraptor.mp4" type="video/mp4">
-  Tu navegador no soporta el elemento de video.
-</video><div class="contenido">
+    <div class="container-fluid contenido">
+    <iframe src="https://drive.google.com/file/d/11s6eFKrJ9pLKLtStEkpgakn26CPQt5LZ/preview" width="100%" height="400" allow="autoplay"></iframe>
+    </div>
+    <div class="contenido">
     <a href="https://github.com/LeoGidev/VelocityPublic" target="_blank"><img src="../../img/GitHub-logo.webp"></a>
         </div>
         <script src="script.js"></script>
