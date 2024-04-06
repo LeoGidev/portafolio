@@ -31,7 +31,7 @@ include '../recursos/barra.php';
     </div>
     <div class="container contenido">
     <video width="640" height="360" controls>
-  <source src="valociraptor.mp4" type="video/mp4">
+  <source src="velociraptor.mp4" type="video/mp4">
   Tu navegador no soporta el elemento de video.
 </video><div class="contenido">
     <a href="https://github.com/LeoGidev/VelocityPublic" target="_blank"><img src="../../img/GitHub-logo.webp"></a>
