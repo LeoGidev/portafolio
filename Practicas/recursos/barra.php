@@ -12,6 +12,7 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <h6 class="ml-3"> Proyectos</h6>
+              <a class="dropdown-item" href="https://gored.rf.gd/" target="_blank">Gored web page</a>
               <a class="dropdown-item" href="http://tecnop.rf.gd/" target="_blank">Tecnop web page</a>
               <a class="dropdown-item" href="http://yplef.rf.gd/" target="_blank">YPLEF web page</a>
               <a class="dropdown-item" href="../../Demo_Proyectos/Maps/">Maps monitor</a>
