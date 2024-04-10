@@ -125,7 +125,7 @@
       top: 50%;
       left: 50%;
       z-index: 100;
-      animation: carroenter 14s linear infinite;
+      animation: carroenter 10s linear infinite;
       animation-delay: 15s;
     }
     
