@@ -121,7 +121,7 @@
       z-index: 100;
       opacity: 0;
       animation: carroenter 40s linear infinite;
-      animation-delay: 30s;
+      animation-delay: 20s;
     }
 
     .animacion4 {
@@ -131,7 +131,7 @@
       z-index: 100;
       opacity: 0;
       animation: carroenter 40s linear infinite;
-      animation-delay: 40s;
+      animation-delay: 30s;
     }
     
     
