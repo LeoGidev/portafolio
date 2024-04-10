@@ -98,7 +98,8 @@
       top: 50%;
       left: 50%;
       z-index: 100;
-      animation: carruinvi1 14s linear infinite;
+      animation: carroenter 10ss linear infinite;
+      
     }
     
     .animacion2 {
@@ -107,6 +108,7 @@
       left: 50%;
       z-index: 100;
       animation: carruinvi2 14s linear infinite;
+      animation-delay: 5s;
     }
     
     .animacion3 {
@@ -115,6 +117,16 @@
       left: 50%;
       z-index: 100;
       animation: carruinvi3 14s linear infinite;
+      animation-delay: 10s;
+    }
+
+    .animacion4 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 100;
+      animation: carruinvi3 14s linear infinite;
+      animation-delay: 15s;
     }
     
     
@@ -499,9 +511,7 @@ td a{
 
     }
 
-    /*th, td:nth-child(even) {
-      background-color: #f2f2f2;
-    }*/
+    
   }
 
   .corrido{
