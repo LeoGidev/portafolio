@@ -592,11 +592,11 @@ td a{
     }
   }
 
-  @keyframes carruinvi1 {
-    0%, 17%, 49%, 66%, 100% {
+  @keyframes carroenter {
+    0%, 25% {
       opacity: 0;
     }
-    33% {
+    30%, 50% {
       opacity: 1;
     }
    }
