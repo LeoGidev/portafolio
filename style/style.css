@@ -601,24 +601,8 @@ td a{
     }
    }
   
-  @keyframes carruinvi2 {
-    0%, 50%, 82%, 100%{
-      opacity: 0;
-    }
-    66%{
-      opacity: 1;
-    }
-   
-  }
+ 
   
-  @keyframes carruinvi3 {
-    0%, 100% {
-      opacity: 1;
-    }
-    16%, 33%, 66%, 83%{
-      opacity: 0;
-    }
-  }
   
   
   
