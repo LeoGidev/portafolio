@@ -607,13 +607,13 @@ td a{
   }
 
   @keyframes carroenter {
-    0%, 25% {
+    0%{
       opacity: 0;
     }
-    30%, 50% {
+    25%, 50% {
       opacity: 1;
     }
-    55%, 100%{
+    75%, 100%{
       opacity: 0;
     }
    }
