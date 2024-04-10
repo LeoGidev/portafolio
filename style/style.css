@@ -99,7 +99,7 @@
       left: 50%;
       z-index: 100;
       opacity: 0;
-      animation: carroenter 60s linear infinite;
+      animation: carroenter 40s linear infinite;
       animation-delay: 0s;
       
     }
@@ -110,7 +110,7 @@
       left: 50%;
       z-index: 100;
       opacity: 0;
-      animation: carroenter 60s linear infinite;
+      animation: carroenter 40s linear infinite;
       animation-delay: 10s;
     }
     
@@ -120,7 +120,7 @@
       left: 50%;
       z-index: 100;
       opacity: 0;
-      animation: carroenter 10s linear infinite;
+      animation: carroenter 40s linear infinite;
       animation-delay: 30s;
     }
 
@@ -130,7 +130,7 @@
       left: 50%;
       z-index: 100;
       opacity: 0;
-      animation: carroenter 10s linear infinite;
+      animation: carroenter 40s linear infinite;
       animation-delay: 40s;
     }
     
