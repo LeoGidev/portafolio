@@ -450,7 +450,7 @@ footer img:hover{
   #letra {
     
     animation: giro3d 4s linear;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 2;
   }
 
   #logo{
