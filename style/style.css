@@ -540,14 +540,13 @@ td a{
   }
 
   .girado{
-    /*transform: rotateX(90deg);*/
+    
     transform: rotate(90deg);
     scale:0;
     transition:3.5s;
   }
   .girado.gira{
-    /*transform: rotate(0deg);
-    transform: translateX(0);*/
+    
     transform: rotate(0deg);
     scale:1;
     transition: 2s;
