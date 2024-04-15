@@ -6,11 +6,11 @@ document.addEventListener("DOMContentLoaded", function() {
     let SCREEN_WIDTH, SCREEN_HEIGHT;
 
     // Velocidad de la pelota
-    const BALL_SPEED = 2;
+    const BALL_SPEED = 1;
 
     // Dimensiones de la paleta
     const PADDLE_WIDTH = 100;
-    const PADDLE_HEIGHT = 20;
+    const PADDLE_HEIGHT = 10;
 
     // Dimensiones de los bloques
     const BLOCK_WIDTH = 60;
@@ -29,8 +29,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Función para inicializar el juego
     function initializeGame() {
-        SCREEN_WIDTH = window.innerWidth;
-        SCREEN_HEIGHT = window.innerHeight;
+        SCREEN_WIDTH = window.innerWidth -(window.innerWidth / 4);
+        SCREEN_HEIGHT = window.innerHeight/2;
         canvas.width = SCREEN_WIDTH;
         canvas.height = SCREEN_HEIGHT;
 
@@ -165,6 +165,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Iniciar el juego
     interval = setInterval(draw, 10);
 
+     //detectamos si alguien presiona reiniciar
     document.getElementById('restartButton').addEventListener('click', () => {
         document.location.reload();
     });
