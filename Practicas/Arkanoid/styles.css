@@ -24,18 +24,27 @@
   .contenedor {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-top: 20px; /* Centra verticalmente el contenido en la parte inferior */
-    border: 3px solid white;
-    
-    
+    margin-top: 20px; /* Centra verticalmente el contenido en la parte inferior */  
+        
   }
   
   
   #restartButton{
-    background-color: rgb(38, 27, 91);
+    background-color: rgb(71, 53, 160);
     color: white;
     border: 2px solid white;
+    margin: 20px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  #restartButton:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(46, 52, 163);
+    border: 2px solid rgb(33, 44, 168);
+    transition: 1s;
+   
   }
  
   
