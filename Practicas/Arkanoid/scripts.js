@@ -165,6 +165,10 @@ document.addEventListener("DOMContentLoaded", function() {
     // Iniciar el juego
     interval = setInterval(draw, 10);
 
+    document.getElementById('restartButton').addEventListener('click', () => {
+        document.location.reload();
+    });
+
     // Manejar eventos de mouse y táctiles
     if ('ontouchstart' in window) {
         canvas.addEventListener("touchmove", function(event) {
