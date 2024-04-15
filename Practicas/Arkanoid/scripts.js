@@ -1,0 +1,169 @@
+document.addEventListener("DOMContentLoaded", function() {
+    const canvas = document.getElementById("arkanoidCanvas");
+    const ctx = canvas.getContext("2d");
+
+    // Dimensiones de la pantalla
+    const SCREEN_WIDTH = canvas.width;
+    const SCREEN_HEIGHT = canvas.height;
+
+    // Velocidad de la pelota
+    const BALL_SPEED = 2;
+
+    // Dimensiones de la paleta
+    const PADDLE_WIDTH = 100;
+    const PADDLE_HEIGHT = 20;
+
+    // Dimensiones de los bloques
+    const BLOCK_WIDTH = 60;
+    const BLOCK_HEIGHT = 30;
+    const BLOCK_ROWS = 5;
+    const BLOCK_COLUMNS = 12;
+
+    // Colores
+    const GRIS = "#252525";
+    const RED = "#F00";
+    const BLUE = "#00F";
+    const Color = ["#FF00FF", "#0000FF", "#C8C800", "#05ff11", "#7a2b79"];  // Lista de colores
+
+    let paddle = {
+        x: (SCREEN_WIDTH - PADDLE_WIDTH) / 2,
+        y: SCREEN_HEIGHT - PADDLE_HEIGHT - 10,
+        width: PADDLE_WIDTH,
+        height: PADDLE_HEIGHT
+    };
+
+    let ball = {
+        x: SCREEN_WIDTH / 2,
+        y: SCREEN_HEIGHT / 2,
+        dx: BALL_SPEED * (Math.random() < 0.5 ? -1 : 1),
+        dy: BALL_SPEED * (Math.random() < 0.5 ? -1 : 1),
+        size: 10
+    };
+
+    let blocks = [];
+    for (let row = 0; row < BLOCK_ROWS; row++) {
+        for (let column = 0; column < BLOCK_COLUMNS; column++) {
+            blocks.push({
+                x: BLOCK_WIDTH * column + 5,
+                y: BLOCK_HEIGHT * row + 50,
+                width: BLOCK_WIDTH,
+                height: BLOCK_HEIGHT,
+                color: Color[Math.floor(Math.random() * Color.length)]
+            });
+        }
+    }
+
+    let score = 0;
+
+    function drawPaddle() {
+        ctx.fillStyle = RED;
+        ctx.fillRect(paddle.x, paddle.y, paddle.width, paddle.height);
+    }
+
+    function drawBall() {
+        ctx.fillStyle = GRIS;
+        ctx.beginPath();
+        ctx.arc(ball.x, ball.y, ball.size, 0, Math.PI * 2);
+        ctx.fill();
+    }
+
+    function drawBlocks() {
+        blocks.forEach(function(block) {
+            ctx.fillStyle = block.color;
+            ctx.fillRect(block.x, block.y, block.width, block.height);
+        });
+    }
+
+    function drawScore() {
+        ctx.fillStyle = GRIS;
+        ctx.font = "24px Arial";
+        ctx.fillText("Score: " + score, SCREEN_WIDTH - 150, 30);
+    }
+
+    function drawGameOver() {
+        ctx.fillStyle = GRIS;
+        ctx.font = "50px Arial";
+        ctx.fillText("Game Over", SCREEN_WIDTH / 2 - 150, SCREEN_HEIGHT / 2 - 50);
+        ctx.font = "24px Arial";
+        ctx.fillText("Press R to restart", SCREEN_WIDTH / 2 - 120, SCREEN_HEIGHT / 2 + 50);
+    }
+
+    function collisionDetection() {
+        blocks.forEach(function(block, index) {
+            if (ball.x + ball.size > block.x &&
+                ball.x - ball.size < block.x + block.width &&
+                ball.y + ball.size > block.y &&
+                ball.y - ball.size < block.y + block.height) {
+                ball.dy = -ball.dy;
+                blocks.splice(index, 1);
+                score += 10;
+                if (score >= 600) {
+                    alert("¡Has ganado!");
+                    document.location.reload();
+                }
+            }
+        });
+    }
+
+    function update() {
+        ball.x += ball.dx;
+        ball.y += ball.dy;
+
+        if (ball.x - ball.size < 0 || ball.x + ball.size > SCREEN_WIDTH) {
+            ball.dx = -ball.dx;
+        }
+
+        if (ball.y - ball.size < 0) {
+            ball.dy = -ball.dy;
+        }
+
+        if (ball.y + ball.size > SCREEN_HEIGHT) {
+            gameOver();
+        }
+
+        if (ball.x > paddle.x && ball.x < paddle.x + paddle.width && ball.y + ball.size > paddle.y) {
+            ball.dy = -ball.dy;
+        }
+
+        collisionDetection();
+    }
+
+    function gameOver() {
+        clearInterval(interval);
+        drawGameOver();
+        document.addEventListener("keydown", function(event) {
+            if (event.key === "r") {
+                document.location.reload();
+            }
+        });
+    }
+
+    function draw() {
+        ctx.clearRect(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+        drawPaddle();
+        drawBall();
+        drawBlocks();
+        drawScore();
+        update();
+    }
+
+    let interval = setInterval(draw, 10);
+
+    // Manejar eventos de mouse y táctiles
+    if ('ontouchstart' in window) {
+        canvas.addEventListener("touchmove", function(event) {
+            let touch = event.touches[0];
+            let relativeX = touch.clientX - canvas.offsetLeft;
+            if (relativeX > 0 && relativeX < SCREEN_WIDTH) {
+                paddle.x = relativeX - paddle.width / 2;
+            }
+        });
+    } else {
+        canvas.addEventListener("mousemove", function(event) {
+            let relativeX = event.clientX - canvas.offsetLeft;
+            if (relativeX > 0 && relativeX < SCREEN_WIDTH) {
+                paddle.x = relativeX - paddle.width / 2;
+            }
+        });
+    }
+});
