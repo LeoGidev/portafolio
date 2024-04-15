@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
     const BLOCK_ROWS = 4;
     const BLOCK_COLUMNS = 10;
-    const BLOCK_WIDTH = (window.innerWidth - (window.innerWidth/4))/BLOCK_COLUMNS;
+    const BLOCK_WIDTH = (window.innerWidth - (window.innerWidth/4))/BLOCK_COLUMNS;//dimensionamos los bloques de acuerdo a la pantalla
     const BLOCK_HEIGHT = 30;
 
     // Colores
@@ -101,6 +101,8 @@ document.addEventListener("DOMContentLoaded", function() {
         ctx.fillText("Presione r para reiniciar", SCREEN_WIDTH / 2 - 120, SCREEN_HEIGHT / 2 + 50);
     }
 
+  
+
     function collisionDetection() {
         blocks.forEach(function(block, index) {
             if (ball.x + ball.size > block.x &&
@@ -110,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 ball.dy = -ball.dy;
                 blocks.splice(index, 1);
                 score += 10;
-                if (score >= 600) {
+                if (score >= 399) {
                     alert("¡Has ganado!");
                     document.location.reload();
                 }
@@ -137,6 +139,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (ball.x > paddle.x && ball.x < paddle.x + paddle.width && ball.y + ball.size > paddle.y) {
             ball.dy = -ball.dy;
         }
+        
 
         collisionDetection();
     }
@@ -150,6 +153,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     }
+   
 
     function draw() {
         ctx.clearRect(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
