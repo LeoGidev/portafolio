@@ -32,7 +32,11 @@
   }
   
   
-  
+  #restartButton{
+    background-color: rgb(38, 27, 91);
+    color: white;
+    border: 2px solid white;
+  }
  
   
 
