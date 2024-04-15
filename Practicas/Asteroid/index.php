@@ -34,38 +34,15 @@ include '../recursos/barra.php';
     
    
   <div class="contenedor container-fluid">
-    <div class="score container">
-        <table>
-            <tr>
-                <td>Puntaje:</td>
-                <td><span class="valor" id="scoring">000</span></td>
-            </tr>
-            <tr>
-                <td>Nivel:</td>
-                <td><span class="valor" id="nivel">Manco</span></td>
-            </tr>
-        </table>
-    </div>
     
-    <canvas id="tetris" width="240" height="400"></canvas>
     
-    <div id="controls">
-        <button class="direccion" id="move-left">◄</button>
-        <button class="direccion" id="rotate">Giro</button>
-        <button class="direccion" id="move-right">►</button>
-        
-    </div>
+  <canvas id="gameCanvas" width="800" height="600"></canvas>
+    
+    
+    
 </div>
 
 
-<div id="Felicidades" class="modal">
-  <div class="modal-contenido">
-    <span class="cerrar" onclick="cerrarAlerta()">&times;</span>
-    <div class="mensaje"> <h2> ¡¡Felicidades!!</h2><p>Acabas de llegar al puntaje máximo 😃</p>
-    <p>Ya vete a trabajar 🙄</p></div>
-    <div id="animacionPapelillos" class="papelillos"></div>
-  </div>
-</div>
 
     
     <div class="contenido3 container">
