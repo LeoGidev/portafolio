@@ -13,10 +13,11 @@ document.addEventListener("DOMContentLoaded", function() {
     const PADDLE_HEIGHT = 10;
 
     // Dimensiones de los bloques
-    const BLOCK_WIDTH = 60;
+    
+    const BLOCK_ROWS = 4;
+    const BLOCK_COLUMNS = 10;
+    const BLOCK_WIDTH = (window.innerWidth - (window.innerWidth/4))/BLOCK_COLUMNS;
     const BLOCK_HEIGHT = 30;
-    const BLOCK_ROWS = 5;
-    const BLOCK_COLUMNS = 12;
 
     // Colores
     const GRIS = "#252525";
@@ -97,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function() {
         ctx.font = "50px Arial";
         ctx.fillText("Game Over", SCREEN_WIDTH / 2 - 150, SCREEN_HEIGHT / 2 - 50);
         ctx.font = "24px Arial";
-        ctx.fillText("Press R to restart", SCREEN_WIDTH / 2 - 120, SCREEN_HEIGHT / 2 + 50);
+        ctx.fillText("Presione r para reiniciar", SCREEN_WIDTH / 2 - 120, SCREEN_HEIGHT / 2 + 50);
     }
 
     function collisionDetection() {
