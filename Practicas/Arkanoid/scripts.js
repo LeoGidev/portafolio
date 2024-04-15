@@ -3,8 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const ctx = canvas.getContext("2d");
 
     // Dimensiones de la pantalla
-    const SCREEN_WIDTH = canvas.width;
-    const SCREEN_HEIGHT = canvas.height;
+    let SCREEN_WIDTH, SCREEN_HEIGHT;
 
     // Velocidad de la pelota
     const BALL_SPEED = 2;
@@ -25,35 +24,48 @@ document.addEventListener("DOMContentLoaded", function() {
     const BLUE = "#00F";
     const Color = ["#FF00FF", "#0000FF", "#C8C800", "#05ff11", "#7a2b79"];  // Lista de colores
 
-    let paddle = {
-        x: (SCREEN_WIDTH - PADDLE_WIDTH) / 2,
-        y: SCREEN_HEIGHT - PADDLE_HEIGHT - 10,
-        width: PADDLE_WIDTH,
-        height: PADDLE_HEIGHT
-    };
+    // Variables del juego
+    let paddle, ball, blocks, score, interval;
 
-    let ball = {
-        x: SCREEN_WIDTH / 2,
-        y: SCREEN_HEIGHT / 2,
-        dx: BALL_SPEED * (Math.random() < 0.5 ? -1 : 1),
-        dy: BALL_SPEED * (Math.random() < 0.5 ? -1 : 1),
-        size: 10
-    };
+    // Función para inicializar el juego
+    function initializeGame() {
+        SCREEN_WIDTH = window.innerWidth;
+        SCREEN_HEIGHT = window.innerHeight;
+        canvas.width = SCREEN_WIDTH;
+        canvas.height = SCREEN_HEIGHT;
 
-    let blocks = [];
-    for (let row = 0; row < BLOCK_ROWS; row++) {
-        for (let column = 0; column < BLOCK_COLUMNS; column++) {
-            blocks.push({
-                x: BLOCK_WIDTH * column + 5,
-                y: BLOCK_HEIGHT * row + 50,
-                width: BLOCK_WIDTH,
-                height: BLOCK_HEIGHT,
-                color: Color[Math.floor(Math.random() * Color.length)]
-            });
+        paddle = {
+            x: (SCREEN_WIDTH - PADDLE_WIDTH) / 2,
+            y: SCREEN_HEIGHT - PADDLE_HEIGHT - 10,
+            width: PADDLE_WIDTH,
+            height: PADDLE_HEIGHT
+        };
+
+        ball = {
+            x: SCREEN_WIDTH / 2,
+            y: SCREEN_HEIGHT / 2,
+            dx: BALL_SPEED * (Math.random() < 0.5 ? -1 : 1),
+            dy: BALL_SPEED * (Math.random() < 0.5 ? -1 : 1),
+            size: 10
+        };
+
+        blocks = [];
+        for (let row = 0; row < BLOCK_ROWS; row++) {
+            for (let column = 0; column < BLOCK_COLUMNS; column++) {
+                blocks.push({
+                    x: BLOCK_WIDTH * column + 5,
+                    y: BLOCK_HEIGHT * row + 50,
+                    width: BLOCK_WIDTH,
+                    height: BLOCK_HEIGHT,
+                    color: Color[Math.floor(Math.random() * Color.length)]
+                });
+            }
         }
+
+        score = 0;
     }
 
-    let score = 0;
+    // Funciones del juego
 
     function drawPaddle() {
         ctx.fillStyle = RED;
@@ -147,7 +159,11 @@ document.addEventListener("DOMContentLoaded", function() {
         update();
     }
 
-    let interval = setInterval(draw, 10);
+    // Llamamos a initializeGame() para configurar el juego inicialmente
+    initializeGame();
+
+    // Iniciar el juego
+    interval = setInterval(draw, 10);
 
     // Manejar eventos de mouse y táctiles
     if ('ontouchstart' in window) {

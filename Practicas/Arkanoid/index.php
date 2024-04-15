@@ -18,37 +18,27 @@
   <link rel="shortcut icon" href="img/icono.png" type="image/x-icon">
   </head>
 
-<body>
+  <body>
     <header>
         <!-- Barra de navegación -->
-        <?php
-include '../recursos/barra.php';       
-?>
-</header>
-<div class='container'>
-  <div class='row justify-content-center'>
-    <div class="col-12 contenido2">
-        <h4> Arkanoid </h4>
+        <?php include '../recursos/barra.php'; ?>
+    </header>
+    <div class='container'>
+        <div class='row justify-content-center'>
+            <div class="col-12 contenido2">
+                <h4>Arkanoid</h4>
+            </div>
+        </div>
+        <div class="contenedor container-fluid">
+            <canvas id="arkanoidCanvas"></canvas>
+        </div>
+        <div class="botones container">
+            <button id="startButton">Iniciar Juego</button>
+            <button id="restartButton">Reiniciar Juego</button>
+        </div>
+        <div class="contenido3 container">
+            <a href="https://github.com/LeoGidev/Arkanoid" target="_blank"><img src="../../img/GitHub-logo.webp"></a>
+        </div>
     </div>
-  </div>
-    
-   
-  <div class="contenedor container-fluid">
-    
-    
-  <canvas id="arkanoidCanvas" width="800" height="600"></canvas>
-    
-    
-    
-</div>
-
-
-
-    
-    <div class="contenido3 container">
-    <a href="https://github.com/LeoGidev/Arkanoid" target="_blank"><img src="../../img/GitHub-logo.webp"></a>
-    </div>
-
-
-        <script src="scripts.js"></script>
+    <script src="scripts.js"></script>
 </body>
