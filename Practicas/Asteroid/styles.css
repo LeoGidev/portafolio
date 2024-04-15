@@ -22,8 +22,9 @@
   }
   
   canvas {
-    border: 1px solid #000;
-  }
+    border: 1px solid black;
+    background-color: #000;
+}
   
   .contenedor {
     display: flex;
