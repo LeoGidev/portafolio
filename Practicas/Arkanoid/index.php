@@ -50,5 +50,5 @@ include '../recursos/barra.php';
     </div>
 
 
-        <script src="script.js"></script>
+        <script src="scripts.js"></script>
 </body>
