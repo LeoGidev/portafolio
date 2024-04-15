@@ -1,12 +1,4 @@
 
-@font-face {
-    font-family: 'digital-7regular';
-    src: url('digital-7-webfont.woff2') format('woff2'),
-         url('digital-7-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-  
-  }
   nav{
     background-color: #000;
   }

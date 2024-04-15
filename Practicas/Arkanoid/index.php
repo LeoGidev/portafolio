@@ -33,8 +33,8 @@
             <canvas id="arkanoidCanvas"></canvas>
         </div>
         <div class="botones container">
-            <button id="startButton">Iniciar Juego</button>
-            <button id="restartButton">Reiniciar Juego</button>
+            
+            <button id="restartButton" onclick="gameOver()">Reiniciar</button>
         </div>
         <div class="contenido3 container">
             <a href="https://github.com/LeoGidev/Arkanoid" target="_blank"><img src="../../img/GitHub-logo.webp"></a>
