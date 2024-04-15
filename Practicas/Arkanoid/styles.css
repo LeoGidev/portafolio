@@ -26,6 +26,7 @@
     display: block;
     margin: 0 auto;
     box-shadow: 0px 0px 3px black;
+    border:2px solid red;
 }
   
   .contenedor {
@@ -33,6 +34,7 @@
     flex-direction: column;
     align-items: center;
     margin-top: 20px; /* Centra verticalmente el contenido en la parte inferior */
+    border: 3px solid white;
     
     
   }
@@ -53,7 +55,6 @@
   }
   .contenido3 {
     backdrop-filter: blur(8px);
-    /*background-color: rgb(253, 253, 253);*/
     padding: 20px;
     border-radius: 10px;
     display: flex;
