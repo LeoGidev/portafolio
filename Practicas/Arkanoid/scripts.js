@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Función para inicializar el juego
     function initializeGame() {
-        SCREEN_WIDTH = window.innerWidth -(window.innerWidth / 4);
+        SCREEN_WIDTH = window.innerWidth - (window.innerWidth / 4);
         SCREEN_HEIGHT = window.innerHeight/2;
         canvas.width = SCREEN_WIDTH;
         canvas.height = SCREEN_HEIGHT;
