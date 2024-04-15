@@ -8,7 +8,7 @@ const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
 
 // Ajustar el ancho del canvas según el ancho de la pantalla del dispositivo
-if (window.innerWidth < 800) { 
+if (window.innerWidth < 800) { // Puedes ajustar el valor 800 según tus necesidades
     canvas.width = window.innerWidth;
 } else {
     canvas.width = 800; // Ancho predeterminado en caso de ser un dispositivo con una pantalla más grande
@@ -256,3 +256,4 @@ function gameLoop() {
 // Inicializar el juego
 resetGame();
 gameLoop();
+
