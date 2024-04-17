@@ -454,9 +454,9 @@ footer img:hover{
   }
 
   #logo{
-    scale: 1.2;
-    animation: gira 12s linear;
-    animation-iteration-count: infinite;
+    scale: 1.5;
+    /*animation: gira 1s linear;
+    animation-iteration-count: infinite;*/
   }
   #luz{
     animation: gira 1s linear;
