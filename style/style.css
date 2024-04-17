@@ -448,9 +448,9 @@ footer img:hover{
 
   
   #letra {
-    
+    scale: 0.5;
     animation: giro3d 4s linear;
-    animation-iteration-count: 2;
+    animation-iteration-count: 1;
   }
 
   #logo{
