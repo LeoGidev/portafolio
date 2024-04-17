@@ -26,6 +26,7 @@
               <a class="dropdown-item" href="../../Demo_Proyectos/TagsApp/">TagsApp(Python)</a>
               <div class="dropdown-divider"></div>
               <h6 class="ml-3">Prácticas</h6>
+              <a class="dropdown-item" href="../Arkanoid/">Arkanoid Web</a>
               <a class="dropdown-item" href="../Asteroid/">Asteroid Web</a>
               <a class="dropdown-item" href="../Tetris/">Tetris Web</a>
               <a class="dropdown-item" href="../Tateti/">TA-TE-TI Web</a>
