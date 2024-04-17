@@ -454,7 +454,8 @@ footer img:hover{
   }
 
   #logo{
-    animation: gira 20s linear;
+    scale: 1.2;
+    animation: gira 12s linear;
     animation-iteration-count: infinite;
   }
   #luz{
@@ -470,7 +471,7 @@ footer img:hover{
     height: 200px;
     border: 8px solid #ccc;
     margin: 0 auto; /* Centra el contenedor horizontalmente */
-    background: linear-gradient(to bottom, #37352f, #070605);
+    background: linear-gradient(to bottom, #f9db81, #ff972e);
   }
      /* Estilo de las imágenes */
      .img-container {
