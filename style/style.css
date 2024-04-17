@@ -37,13 +37,17 @@
         color: #ffffff; /* Letras blancas */
     }
     #portada{
+      height: 100vh;
+      background-image:url('../img/portada.webp');
+        background-attachment: fixed; 
+        background-size: contain;
+         background-position: center top;
       overflow: hidden;
-      
       color: rgba(14, 255, 255, 0.152);
       
   }
     #cubridor{
-        height: 200px; 
+        height: 100vh; 
         position: absolute;
         top: 0;
         left: 0;
