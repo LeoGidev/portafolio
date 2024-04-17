@@ -13,11 +13,7 @@
     
     /* Estilos adicionales */
     .navbar.transparent {
-        
-       
         background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)) !important;
-          
-          
         border-bottom: none;
         box-shadow: none;
     }
