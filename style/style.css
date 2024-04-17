@@ -36,6 +36,7 @@
     .navbar.fixed .navbar-nav .nav-link {
         color: #ffffff; /* Letras blancas */
     }
+    /*portada*/
     #portada{
       height: 100vh;
       background-image:url('../img/portada.webp');
