@@ -44,17 +44,33 @@
         background-size: contain;
          background-position: center top;
       overflow: hidden;
+      position: relative;
      
       
   }
+    /* Estilo de las imágenes */
+    .code-container {
+      border:10px solid white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
 
-  .code {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 200; /* Hace que la segunda imagen esté sobre la primera */
-    
-  }
+    .code-container img {
+      display: block;
+      width: 200px; /* Ancho de las imágenes */
+      height: auto; /* Altura ajustada automáticamente */
+      margin: 0 auto;
+    }
+
+    .code {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 100; /* Hace que la segunda imagen esté sobre la primera */
+      
+    }
     #cubridor{
         height: 100vh; 
         position: absolute;
