@@ -52,7 +52,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    z-index: 100; /* Hace que la segunda imagen esté sobre la primera */
+    z-index: 200; /* Hace que la segunda imagen esté sobre la primera */
     
   }
     #cubridor{
