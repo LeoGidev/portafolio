@@ -60,19 +60,18 @@
     }
 
     .code-container img {
+      border: 3px solid red;
       display: block;
-      width: 200px; /* Ancho de las imágenes */
+      width: 33vh; /* Ancho de las imágenes */
       height: auto; /* Altura ajustada automáticamente */
       margin: 0 auto;
-    }
-
-    .code {
       position: absolute;
       top: 50%;
       left: 50%;
-      z-index: 100; /* Hace que la segunda imagen esté sobre la primera */
-      
+      transform: translate(-50%, -50%);
     }
+
+    
     #cubridor{
         height: 100vh; 
         position: absolute;
