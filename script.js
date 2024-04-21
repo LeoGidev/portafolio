@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
           // Ajusta el tiempo para la próxima palabra
           if (currentIndex === 0) {
-              setTimeout(changeWord, 2000); // Si es la primera palabra, espera 2 segundos
+              setTimeout(changeWord, 8000); // Si es la primera palabra, espera 2 segundos
           } else {
               setTimeout(changeWord, 100); // Para las otras palabras, espera 100 milisegundos
           }
