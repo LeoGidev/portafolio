@@ -355,12 +355,14 @@ padding: 5px;
 }
 /*estilos de las palabras animadas de portada*/
 #word-animation {
-  font-size: 48px;
+  font-size: 10vw;
+  letter-spacing: 3vw;
   font-weight: bolder;
+  font-family: 'Ubuntu Mono', monospace;
   text-align: center;
   color: rgb(255, 255, 255);
   position: absolute;
-  top: 100;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 1; /* Inicialmente oculto */
