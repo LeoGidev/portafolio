@@ -48,6 +48,12 @@
      
       
   }
+  /* Media query para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  #portada {
+      background-size: cover; /* Cambia el tamaño del fondo a cover en pantallas pequeñas */
+  }
+}
     /* Estilo de las imágenes */
     .code-container {
       border:10px solid white;
