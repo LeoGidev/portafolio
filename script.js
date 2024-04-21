@@ -47,7 +47,7 @@ options.forEach(option => {
 
 //efecto letras
 document.addEventListener('DOMContentLoaded', function(){
-  var words = ['DEVELOPER', 'D', 'DE', 'DEV', 'DEVE', 'DEVEL', 'DEVELO', 'DEVELOP', 'DEVELOPE', 'DEVELOPER'];
+  var words = ['LEO DEVELOPER', 'D', 'DE', 'DEV', 'DEVE', 'DEVEL', 'DEVELO', 'DEVELOP', 'DEVELOPE', 'DEVELOPER'];
   var currentIndex = 0;
   var wordAnimation = document.getElementById('word-animation');
 
