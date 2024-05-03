@@ -13,6 +13,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@300;400&family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<link rel="icon" href="../../img/ico.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="../../img/ico.ico" type="image/x-icon">
   
 </head>
 
