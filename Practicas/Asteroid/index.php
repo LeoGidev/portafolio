@@ -10,12 +10,12 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://kit.fontawesome.com/314f7a8189.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Blinker:wght@300;400&family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@300;400&family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="img/icono.png" type="image/x-icon">
-  <link rel="shortcut icon" href="img/icono.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="../../img/ico.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="../../img/ico.ico" type="image/x-icon">
   </head>
 
 <body>
