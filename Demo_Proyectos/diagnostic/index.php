@@ -15,7 +15,7 @@
 
 <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="../../img/ico.ico" type="image/x-icon">
-  <link rel="shortcut icon" href="img/icono.png" type="image/x-icon">
+  <link rel="shortcut icon" href="../../img/ico.ico" type="image/x-icon">
   
   
 
