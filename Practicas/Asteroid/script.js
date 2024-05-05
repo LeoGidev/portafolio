@@ -17,7 +17,18 @@ if (window.innerWidth < 900) {
 
 // Clase para la nave del jugador
 class Player {
+   
     constructor() {
+        if (window.innerWidth < 900) { 
+        this.width = 50;
+        this.height = 50;
+        this.x = canvas.width / 2 - this.width / 2;
+        this.y = canvas.height - this.height;
+        this.speed = 5;
+        this.lives = 3;
+        this.image = new Image();
+        this.image.src = "img/nave.png";
+    }else{
         this.width = 100;
         this.height = 100;
         this.x = canvas.width / 2 - this.width / 2;
@@ -26,8 +37,9 @@ class Player {
         this.lives = 3;
         this.image = new Image();
         this.image.src = "img/nave.png";
-    }
 
+    }
+    }
     draw() {
         ctx.drawImage(this.image, this.x, this.y, this.width, this.height);
     }
