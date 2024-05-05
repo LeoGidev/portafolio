@@ -131,14 +131,11 @@ window.addEventListener("keydown", function (event) {
     }
 });
 //función para manejar botones
-document.getElementById('move-left').addEventListener('click', () => {
-    piece.x--;
-    if (collision(piece.x, piece.y, piece.shape)) {
-        piece.x++;
-    }
+document.getElementById('movleft').addEventListener('click', () => {
+    player.move("left");
 });
 
-document.getElementById('move-right').addEventListener('click', () => {
+document.getElementById('movright').addEventListener('click', () => {
     piece.x++;
     if (collision(piece.x, piece.y, piece.shape)) {
         piece.x--;
