@@ -24,7 +24,7 @@ class Player {
         this.height = 50;
         this.x = canvas.width / 2 - this.width / 2;
         this.y = canvas.height - this.height;
-        this.speed = 5;
+        this.speed = 10;
         this.lives = 3;
         this.image = new Image();
         this.image.src = "img/nave.png";
