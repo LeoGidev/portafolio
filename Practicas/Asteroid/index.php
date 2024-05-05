@@ -42,6 +42,10 @@ include '../recursos/barra.php';
     
 </div>
 
+<div class="contenido2 controles">
+  <button class="izq"></button>
+</div>
+
 
 
     
