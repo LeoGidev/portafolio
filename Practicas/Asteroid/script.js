@@ -136,17 +136,11 @@ document.getElementById('movleft').addEventListener('click', () => {
 });
 
 document.getElementById('movright').addEventListener('click', () => {
-    piece.x++;
-    if (collision(piece.x, piece.y, piece.shape)) {
-        piece.x--;
-    }
+    player.move("right");
 });
 
 document.getElementById('rotate').addEventListener('click', () => {
-    const rotated = rotate(piece.shape);
-    if (!collision(piece.x, piece.y, rotated)) {
-        piece.shape = rotated;
-    }
+    bullets.push(new Bullet(player.x + player.width / 2 - 2, player.y));
 });
 
 // Función para manejar eventos táctiles en dispositivos móviles y tabletas
