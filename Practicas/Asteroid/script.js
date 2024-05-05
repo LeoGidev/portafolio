@@ -56,7 +56,18 @@ class Player {
 
 // Clase para los enemigos
 class Enemy {
+    
     constructor() {
+        if (window.innerWidth < 900) { 
+            this.width = 40;
+        this.height = 40;
+        this.x = Math.random() * (canvas.width - this.width);
+        this.y = Math.random() * -100;
+        this.speed = Math.random() * 2 + 1;
+        this.image = new Image();
+        this.image.src = Math.random() < 0.5 ? "img/asteroide1.png" : "img/asteroide2.png";
+
+        }else{
         this.width = 50;
         this.height = 50;
         this.x = Math.random() * (canvas.width - this.width);
@@ -65,7 +76,7 @@ class Enemy {
         this.image = new Image();
         this.image.src = Math.random() < 0.5 ? "img/asteroide1.png" : "img/asteroide2.png";
     }
-
+}
     draw() {
         ctx.drawImage(this.image, this.x, this.y, this.width, this.height);
     }
