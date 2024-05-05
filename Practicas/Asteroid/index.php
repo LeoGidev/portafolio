@@ -45,7 +45,7 @@ include '../recursos/barra.php';
 <div class="contenido2 controles">
   <button class="izq"></button>
   <button class="shoot"></button>
-  <button></button>
+  <button class="der"></button>
 </div>
 
 
