@@ -139,7 +139,7 @@ document.getElementById('movright').addEventListener('click', () => {
     player.move("right");
 });
 
-document.getElementById('rotate').addEventListener('click', () => {
+document.getElementById('sho').addEventListener('click', () => {
     bullets.push(new Bullet(player.x + player.width / 2 - 2, player.y));
 });
 
