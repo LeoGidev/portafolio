@@ -130,25 +130,46 @@ window.addEventListener("keydown", function (event) {
         resetGame();
     }
 });
-
-// Función para manejar eventos táctiles en dispositivos móviles y tabletas
-canvas.addEventListener("touchstart", function(event) {
-    // Obtener las coordenadas del toque
-    const touchX = event.touches[0].clientX;
-    const touchY = event.touches[0].clientY;
-
-    // Calcular la posición relativa del canvas
-    const canvasRect = canvas.getBoundingClientRect();
-    const canvasX = touchX - canvasRect.left;
-    const canvasY = touchY - canvasRect.top;
-
-    // Determinar si el toque está a la izquierda o a la derecha del jugador
-    if (canvasX < player.x + player.width / 2) {
-        player.move("left");
-    } else {
-        player.move("right");
+//función para manejar botones
+document.getElementById('move-left').addEventListener('click', () => {
+    piece.x--;
+    if (collision(piece.x, piece.y, piece.shape)) {
+        piece.x++;
     }
 });
+
+document.getElementById('move-right').addEventListener('click', () => {
+    piece.x++;
+    if (collision(piece.x, piece.y, piece.shape)) {
+        piece.x--;
+    }
+});
+
+document.getElementById('rotate').addEventListener('click', () => {
+    const rotated = rotate(piece.shape);
+    if (!collision(piece.x, piece.y, rotated)) {
+        piece.shape = rotated;
+    }
+});
+
+// Función para manejar eventos táctiles en dispositivos móviles y tabletas
+//canvas.addEventListener("touchstart", function(event) {
+    // Obtener las coordenadas del toque
+    //const touchX = event.touches[0].clientX;
+    //const touchY = event.touches[0].clientY;
+
+    // Calcular la posición relativa del canvas
+    //const canvasRect = canvas.getBoundingClientRect();
+    //const canvasX = touchX - canvasRect.left;
+    //const canvasY = touchY - canvasRect.top;
+
+    // Determinar si el toque está a la izquierda o a la derecha del jugador
+    //if (canvasX < player.x + player.width / 2) {
+      //  player.move("left");
+    //} else {
+        //player.move("right");
+    //}
+//});
 
 // Función para manejar el final del toque en dispositivos móviles y tabletas
 canvas.addEventListener("touchend", function(event) {
