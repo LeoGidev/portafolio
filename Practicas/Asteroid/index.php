@@ -36,7 +36,7 @@ include '../recursos/barra.php';
   <div class="contenedor container-fluid">
     
     
-  <canvas id="gameCanvas" width="800" height="600"></canvas>
+  <canvas id="gameCanvas"></canvas>
     
     
     
