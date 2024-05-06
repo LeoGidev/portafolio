@@ -184,7 +184,6 @@
   }
   .contenido3 {
     backdrop-filter: blur(8px);
-    /*background-color: rgb(253, 253, 253);*/
     padding: 20px;
     border-radius: 10px;
     display: flex;
