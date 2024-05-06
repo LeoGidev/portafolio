@@ -92,3 +92,9 @@
     border-bottom-right-radius: 10px ;
 
    }
+
+   .controles button:hover,
+   .controles button:active{
+    border:2px solid white;
+    scale:0.99;
+   }
