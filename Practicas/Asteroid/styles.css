@@ -96,5 +96,6 @@
    .controles button:hover,
    .controles button:active{
     border:2px solid white;
-    scale:0.99;
+    scale:0.9;
+    font-size:18;
    }
