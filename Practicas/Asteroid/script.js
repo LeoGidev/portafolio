@@ -277,9 +277,9 @@ function gamewin(){
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         ctx.fillStyle = RED;
         if(window.innerWidth < 900){
-            ctx.font="30px Arial";
-            ctx.fillText("¡¡HAS GANADO!!", canvas.width / 2, canvas.height / 2 - 24);
-            ctx.fillText("Presione R para reiniciar", canvas.width / 2, canvas.height / 2 + 24);
+            ctx.font="28px Arial";
+            ctx.fillText("¡¡HAS GANADO!!", canvas.width / 6, canvas.height / 2 - 24);
+            ctx.fillText("Recarga la página para reiniciar", canvas.width / 4, canvas.height / 2 + 24);
         }else{
         ctx.font = "48px Arial";
         ctx.fillText("¡¡HAS GANADO!!", canvas.width / 2 - 150, canvas.height / 2 - 24);
