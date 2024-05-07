@@ -274,20 +274,25 @@ function gameOver() {
 
 function gamewin(){
     if(enemies.length < 1){
-        var texto = "¡¡HAS GANADO!!";
-        var texto1 = "Recarga la página para reinciar";
-        var anchoTexto = ctx.measureText(texto).width;
-        var anchoTexto1 = ctx.measureText(texto1).width;
+        
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         ctx.fillStyle = RED;
         if(window.innerWidth < 900){
+            var texto = "¡¡HAS GANADO!!";
+            var texto1 = "Recarga la página para reinciar";
+            var anchoTexto = ctx.measureText(texto).width;
+            var anchoTexto1 = ctx.measureText(texto1).width;
             ctx.font="20px Arial";
             ctx.fillText(texto, canvas.width / 2- anchoTexto/2, canvas.height / 2 - 28);
-            ctx.fillText(texto1, (canvas.width / 2) - (anchoTexto1/2), canvas.height / 2 + 24);
+            ctx.fillText(texto1, canvas.width / 2 - anchoTexto1/2, canvas.height / 2 + 24);
         }else{
+            var texto = "¡¡HAS GANADO!!";
+            var texto1 = "Presiona R para reiniciar";
+            var anchoTexto = ctx.measureText(texto).width;
+            var anchoTexto1 = ctx.measureText(texto1).width;
         ctx.font = "48px Arial";
-        ctx.fillText("¡¡HAS GANADO!!", canvas.width / 2 - 150, canvas.height / 2 - 24);
-        ctx.fillText("Presione R para reiniciar", canvas.width / 2 - 260, canvas.height / 2 + 24);
+        ctx.fillText(texto, canvas.width / 2- anchoTexto/2, canvas.height / 2 - 28);
+            ctx.fillText(texto1, canvas.width / 2 - anchoTexto1/2, canvas.height / 2 + 24);
         }
         
 
