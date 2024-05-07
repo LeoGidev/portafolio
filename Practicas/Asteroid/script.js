@@ -276,7 +276,11 @@ function gamewin(){
     if(enemies.length < 1){
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         ctx.fillStyle = RED;
+        if(window.innerWidth < 900){
+            ctx.font="10px Arial";
+        }else{
         ctx.font = "48px Arial";
+        }
         ctx.fillText("¡¡HAS GANADO!!", canvas.width / 2 - 150, canvas.height / 2 - 24);
         ctx.fillText("Presione R para reiniciar", canvas.width / 2 - 260, canvas.height / 2 + 24);
 
