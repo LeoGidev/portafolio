@@ -54,6 +54,15 @@
     flex-grow: 1; /* Permitir crecer dinámicamente */
     margin-top: 20px;
   }
+
+  .contenido4 {
+    backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 0.059);
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 0px;
+  }
   
   .contenido3 img {
     width: 100px;
