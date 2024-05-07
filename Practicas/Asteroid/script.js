@@ -11,6 +11,7 @@ const ctx = canvas.getContext("2d");
 if (window.innerWidth < 900) { 
     canvas.width = window.innerWidth - (window.innerWidth/4);
     var controls = document.getElementById("controles");
+    controls.removeAttribute("hidden");
 } else {
     canvas.width = 800; // Ancho predeterminado en caso de ser un dispositivo con una pantalla más grande
 }
