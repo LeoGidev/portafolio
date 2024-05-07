@@ -42,7 +42,7 @@ include '../recursos/barra.php';
     
 </div>
 
-<div class="contenido2 controles">
+<div id = "controls" class="contenido2 controles">
   <button class="izq" id="movleft">◄</button>
   <button class="shoot" id="sho">֍</button>
   <button class="der" id="movright">►</button>
