@@ -284,8 +284,8 @@ function gamewin(){
             var anchoTexto1 = ctx.measureText(texto1).width;
             console.log("canvas:", canvas.width, "texto:", anchoTexto1, "punto:", (canvas.width-anchoTexto1)/2);
             ctx.font="20px Arial";
-            ctx.fillText(texto, (canvas.width/2) - (anchoTexto/2), canvas.height / 2 - 28);
-            ctx.fillText(texto1, (canvas.width/2) - (anchoTexto1/2), canvas.height / 2 + 24);
+            ctx.fillText(texto, ((canvas.width/2) - (anchoTexto/2))+(10), canvas.height / 2 - 28);
+            ctx.fillText(texto1, (canvas.width/2) - (anchoTexto1/2)+10, canvas.height / 2 + 24);
         }else{
             var texto = "¡¡HAS GANADO!!";
             var texto1 = "Presiona R para reiniciar";
