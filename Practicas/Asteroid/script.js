@@ -288,11 +288,12 @@ function gamewin(){
             ctx.fillText(texto, (canvas.width/2) - (anchoTexto/2), canvas.height / 2 - 28);
             ctx.fillText(texto1, (canvas.width/2) - (anchoTexto1/2), canvas.height / 2 + 24);
         }else{
+            ctx.font = "48px Arial";
             var texto = "¡¡HAS GANADO!!";
             var texto1 = "Presiona R para reiniciar";
             var anchoTexto = ctx.measureText(texto).width;
             var anchoTexto1 = ctx.measureText(texto1).width;
-        ctx.font = "48px Arial";
+       
         ctx.fillText(texto, canvas.width / 2- anchoTexto/2, canvas.height / 2 - 28);
             ctx.fillText(texto1, canvas.width / 2 - anchoTexto1/2, canvas.height / 2 + 24);
         }
