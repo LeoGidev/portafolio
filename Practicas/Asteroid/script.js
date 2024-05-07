@@ -278,10 +278,10 @@ function gamewin(){
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         ctx.fillStyle = RED;
         if(window.innerWidth < 900){
-            ctx.font="20px Arial";
+            ctx.font="20px Arial";//es importante ponerlo antes de que se mida el ancho del texto
             var texto = "¡¡HAS GANADO!!";
             var texto1 = "Recarga la página para reinciar";
-            var anchoTexto = ctx.measureText(texto).width;
+            var anchoTexto = ctx.measureText(texto).width;//se mide el ancho de texto
             var anchoTexto1 = ctx.measureText(texto1).width;
             console.log("canvas:", canvas.width, "texto:", anchoTexto1, "punto:", (canvas.width-anchoTexto1)/2);
             
