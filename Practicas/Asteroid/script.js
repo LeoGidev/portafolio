@@ -282,6 +282,7 @@ function gamewin(){
             var texto1 = "Recarga la página para reinciar";
             var anchoTexto = ctx.measureText(texto).width;
             var anchoTexto1 = ctx.measureText(texto1).width;
+            console.log("canvas:", canvas.width, "texto:", anchoTexto1, "punto:", canvas.width/2-anchoTexto1/2);
             ctx.font="20px Arial";
             ctx.fillText(texto, canvas.width / 2- anchoTexto/2, canvas.height / 2 - 28);
             ctx.fillText(texto1, canvas.width / 2 - anchoTexto1/2, canvas.height / 2 + 24);
