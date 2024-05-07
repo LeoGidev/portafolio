@@ -10,7 +10,7 @@ const ctx = canvas.getContext("2d");
 // Ajustar el ancho del canvas según el ancho de la pantalla del dispositivo
 if (window.innerWidth < 900) { 
     canvas.width = window.innerWidth - (window.innerWidth/4);
-    var controls = document.getElementById("controles");
+    var controls = document.getElementById("controls");
     controls.removeAttribute("hidden");
 } else {
     canvas.width = 800; // Ancho predeterminado en caso de ser un dispositivo con una pantalla más grande
