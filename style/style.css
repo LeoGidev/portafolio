@@ -652,7 +652,7 @@ td a{
    }
   
   .dropdown-menu {
-   max-height: 300vh; 
+   max-height: 80vh; 
    overflow-y: auto;
  }
  
