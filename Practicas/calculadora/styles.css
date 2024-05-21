@@ -96,4 +96,7 @@ ul {
   button:active {
     background-color: #c0c0c0;
   }
-  
+  .dropdown-menu {
+    max-height: 80vh; 
+    overflow-y: auto;
+  }
