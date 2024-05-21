@@ -76,4 +76,9 @@ nav{
   border:8px solid #201d2a;
   box-shadow: 1px 1px 1px rgba(55, 55, 55, 0.397);
 }
+
+.dropdown-menu {
+  max-height: 80vh; 
+  overflow-y: auto;
+}
   
