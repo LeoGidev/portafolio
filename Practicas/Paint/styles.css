@@ -38,3 +38,7 @@ ul {
     backdrop-filter: blur(12px);
     padding: 10px;
   }
+  .dropdown-menu {
+    max-height: 80vh; 
+    overflow-y: auto;
+  }
