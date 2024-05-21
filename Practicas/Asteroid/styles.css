@@ -112,7 +112,6 @@
     font-size:18;
    }
    .dropdown-menu {
-    max-height: 300px; 
+    max-height: 80vh; 
     overflow-y: auto;
   }
-  
