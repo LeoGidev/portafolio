@@ -57,3 +57,8 @@ h4{
       height: 17px;
     text-align: center;
     }
+
+    .dropdown-menu {
+        max-height: 80vh; 
+        overflow-y: auto;
+      }
