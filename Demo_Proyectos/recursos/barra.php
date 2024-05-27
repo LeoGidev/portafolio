@@ -26,7 +26,7 @@
               <a class="dropdown-item" href="../TagsApp/">TagsApp(Python)</a>
               <div class="dropdown-divider"></div>
               <h6 class="ml-3">Prácticas</h6>
-              <a class="dropdown-item" href="#practicas" >Ver prácticas <i class="fa-solid fa-arrow-up-right-from-square fa-bounce"></i></a>
+              <a class="dropdown-item" href="../../index.html#practicas" >Ver prácticas <i class="fa-solid fa-arrow-up-right-from-square fa-bounce"></i></a>
             </div>
           </li>
           <li class="nav-item">
