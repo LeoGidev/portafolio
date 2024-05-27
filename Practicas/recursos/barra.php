@@ -26,18 +26,7 @@
               <a class="dropdown-item" href="../../Demo_Proyectos/TagsApp/">TagsApp(Python)</a>
               <div class="dropdown-divider"></div>
               <h6 class="ml-3">Prácticas</h6>
-              <a class="dropdown-item" href="../Arkanoid/">Arkanoid Web</a>
-              <a class="dropdown-item" href="../Asteroid/">Asteroid Web</a>
-              <a class="dropdown-item" href="../Tetris/">Tetris Web</a>
-              <a class="dropdown-item" href="../Tateti/">TA-TE-TI Web</a>
-              <a class="dropdown-item" href="../Paint/">Simple Paint Web</a>
-              <a class="dropdown-item" href="../Gusanito/">Gusanito Web</a>
-              <a class="dropdown-item" href="../CartondeRifa/">Carton de Rifas</a>
-              <a class="dropdown-item" href="../cuadricular/">Cuadricular Imágenes</a>
-              <a class="dropdown-item" href="../bannergiratorio/">Banner giratorio</a>
-              <a class="dropdown-item" href="../Redes/">Selector de Redes mágico</a>
-              <a class="dropdown-item" href="../calculadora/">Calculadora</a>
-              <a class="dropdown-item" href="../Reloj/">Reloj y calendario</a>
+              <a class="dropdown-item" href="#practicas" >Ver prácticas <i class="fa-solid fa-arrow-up-right-from-square fa-bounce"></i></a>
             </div>
           </li>
           <li class="nav-item">
