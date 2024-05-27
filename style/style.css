@@ -548,7 +548,7 @@ footer img:hover{
   }
   .btn-pr:hover,
   .btn-pr:active {
-    background: linear-gradient(to top, #ffffff00, #eaeaea);
+    background: linear-gradient(to top, #ffffff00, #f7f7f7);
     transition: background-color 4.5s ease !important;
     color: #000000;
   }
