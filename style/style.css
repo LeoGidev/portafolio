@@ -527,6 +527,16 @@ footer img:hover{
       z-index: 100; /* Hace que la segunda imagen esté sobre la primera */
       
     }
+
+    .contenedor-pr{
+      display: flex;
+      justify-content: space-around;
+    }
+    @media only screen and (max-width: 600px){
+      .contenedor-pr{
+        display: block;
+      }
+    }
   
   .table{
     table-layout:auto;
