@@ -532,8 +532,8 @@ footer img:hover{
     table-layout:auto;
   }
 td{
-  border: 2px solid red;
   text-align:center;
+  width: 50%;
 }
 td a{
   color:#000000
