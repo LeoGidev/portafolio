@@ -532,7 +532,7 @@ footer img:hover{
       display: flex;
       justify-content: space-around;
     }
-    @media only screen and (max-width: 600px){
+    @media only screen and (max-width: 900px){
       .contenedor-pr{
         display: block;
       }

@@ -149,3 +149,13 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 });
+
+document.querySelectorAll('a[data-toggle="collapse"]').forEach(function(collapseLink) {
+  
+  collapseLink.addEventListener('click', function() {
+    var linkText = this.querySelector('.link-text');
+    if (linkText) {
+      linkText.textContent = linkText.textContent.trim() === 'Ver' ? 'Ocultar' : 'Ver';
+    }
+  });
+});
