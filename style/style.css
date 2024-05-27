@@ -550,12 +550,12 @@ footer img:hover{
   .btn-pr:active {
     background: linear-gradient(to top, #ffffff00, #eaeaea);
     transition: background-color 4.5s ease !important;
-    color: #00ff51;
+    color: #000000;
   }
   
   #pr a{   
-    color: #2c2c2c;
-    font-family: 'Blinker', sans-serif;;
+    color: #696969;
+    font-family: 'Blinker', sans-serif;
   }
   .table{
     table-layout:auto;
